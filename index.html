@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GLITCH // Custom Websites, QR Code Menus & Dashboards</title>
+  <meta name="description" content="Glitch is a dark-futuristic software house engineering high-performance websites, contactless QR code menus, and real-time management dashboards.">
+  <meta name="keywords" content="Software House, Web Development, Custom Websites, QR Code Menu, SaaS Dashboard, Dark Cyber Theme">
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="css/glitch.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="cyber-grid-bg">
+
+  <!-- Ambient Glow Orbs -->
+  <div class="orb orb-purple" style="top: 5%; left: -100px;"></div>
+  <div class="orb orb-cyan" style="top: 35%; right: -150px;"></div>
+  <div class="orb orb-purple" style="bottom: 15%; left: -150px;"></div>
+
+  <!-- Header / Navigation -->
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-glitch" id="main-navbar">
+      <div class="container">
+        <a class="navbar-brand brand-logo" href="#hero">
+          <span class="brand-icon"><i class="fa-solid fa-terminal"></i></span>
+          <span class="glitch-wrapper">
+            <span class="glitch-text" data-text="GLITCH//">GLITCH//</span>
+          </span>
+        </a>
+
+        <button class="navbar-toggler border-0 text-light shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars-staggered fs-3 text-cyan"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link nav-link-glitch active" href="#hero">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-glitch" href="#services">What We Build</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-glitch" href="#projects">Our Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-glitch" href="#process">Process</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-glitch" href="#technologies">Stack</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-glitch" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-glitch" href="#contact">Contact</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-3">
+            <a href="#contact" class="btn btn-cyber-primary btn-glitch">
+              <i class="fa-solid fa-bolt me-1"></i>Start Project
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7">
+            <div class="badge-cyber mb-4">
+              <span class="status-dot"></span>
+              SPECIALIZED OFFERINGS // WEBSITES • QR MENUS • DASHBOARDS
+            </div>
+            
+            <h1 class="hero-title">
+              WE ENGINEER <br>
+              <span class="glitch-wrapper">
+                <span class="glitch-text text-cyan" data-text="WEBSITES, QR MENUS">WEBSITES, QR MENUS</span>
+              </span>
+              <br>& DASHBOARDS.
+            </h1>
+
+            <p class="hero-subtitle">
+              Glitch is a modern software house specializing in crafting bespoke <strong class="text-light">high-speed websites</strong>, <strong class="text-cyan">contactless QR code menus</strong>, and <strong class="text-purple-bright">real-time management dashboards</strong>.
+            </p>
+
+            <div class="d-flex flex-wrap gap-3 mb-4">
+              <a href="#projects" class="btn btn-cyber-primary btn-glitch btn-lg">
+                <i class="fa-solid fa-layer-group me-2"></i>Explore Core Offerings
+              </a>
+              <a href="#contact" class="btn btn-cyber-outline btn-lg">
+                <i class="fa-solid fa-paper-plane me-2"></i>Send Direct Message
+              </a>
+            </div>
+
+            <!-- Core Offerings Pill Bar -->
+            <div class="d-flex flex-wrap gap-2 mb-4 font-monospace">
+              <span class="badge bg-dark border border-cyan text-cyan p-2"><i class="fa-solid fa-globe me-1"></i>Websites & PWA</span>
+              <span class="badge bg-dark border border-purple text-purple-bright p-2"><i class="fa-solid fa-qrcode me-1"></i>QR Code Menus</span>
+              <span class="badge bg-dark border border-info text-info p-2"><i class="fa-solid fa-chart-line me-1"></i>Management Dashboards</span>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="hero-stats">
+              <div class="row g-4">
+                <div class="col-6 col-md-3">
+                  <div class="stat-number counter" data-target="100" data-unit="%">100%</div>
+                  <div class="stat-label">Responsive Design</div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="stat-number counter" data-target="400" data-unit="ms">400ms</div>
+                  <div class="stat-label">QR Menu Load</div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="stat-number counter" data-target="3" data-unit="">3</div>
+                  <div class="stat-label">Core Pillars</div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="stat-number counter" data-target="24" data-unit="/7">24/7</div>
+                  <div class="stat-label">System Performance</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <!-- Hero Interactive Terminal Box -->
+            <div class="hero-terminal">
+              <div class="terminal-header">
+                <div class="terminal-dots">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                </div>
+                <div class="terminal-title">glitch-services.js</div>
+                <div class="small text-muted font-monospace"><i class="fa-solid fa-lock text-cyan"></i> ENCRYPTED</div>
+              </div>
+              <div class="terminal-body">
+                <pre id="terminal-typewriter" class="m-0"></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding position-relative">
+      <div class="container">
+        <div class="section-header text-center mx-auto" style="max-width: 700px;">
+          <div class="badge-cyber mb-3"><i class="fa-solid fa-gears me-1"></i>[ WHAT WE BUILD ]</div>
+          <h2 class="section-title">
+            <span class="glitch-wrapper">
+              <span class="glitch-text" data-text="OUR 3 CORE PILLARS">OUR 3 CORE PILLARS</span>
+            </span>
+          </h2>
+          <p class="section-desc mx-auto">
+            We focus our engineering expertise on three core digital products built with dark futuristic aesthetics and sub-second performance.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Pillar 1: Websites -->
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card service-card">
+              <div class="service-icon">
+                <i class="fa-solid fa-globe"></i>
+              </div>
+              <h3 class="service-title">1. Custom Websites</h3>
+              <p class="service-text">
+                Modern responsive websites, brand portfolios, and e-commerce storefronts engineered for fast loading speeds, clean typography, and high conversion rates.
+              </p>
+              <div class="mt-3 font-monospace small text-cyan">
+                <i class="fa-solid fa-check me-1"></i>SEO • Responsive • Fast
+              </div>
+            </div>
+          </div>
+
+          <!-- Pillar 2: QR Code Menus -->
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card service-card">
+              <div class="service-icon">
+                <i class="fa-solid fa-qrcode"></i>
+              </div>
+              <h3 class="service-title">2. QR Code Menus</h3>
+              <p class="service-text">
+                Instant contactless QR code menu solutions for restaurants and cafes. Diners scan and order without app downloads, linked directly to kitchen displays.
+              </p>
+              <div class="mt-3 font-monospace small text-purple-bright">
+                <i class="fa-solid fa-check me-1"></i>Zero App Req • Live POS KDS
+              </div>
+            </div>
+          </div>
+
+          <!-- Pillar 3: Dashboards -->
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card service-card">
+              <div class="service-icon">
+                <i class="fa-solid fa-chart-pie"></i>
+              </div>
+              <h3 class="service-title">3. Management Dashboards</h3>
+              <p class="service-text">
+                Powerful SaaS control panels, telemetry monitoring, and analytics dashboards that transform complex enterprise data into clear actionable insights.
+              </p>
+              <div class="mt-3 font-monospace small text-cyan">
+                <i class="fa-solid fa-check me-1"></i>Real-Time Charts • RBAC Security
+              </div>
+            </div>
+          </div>
+
+          <!-- Secondary Capabilities -->
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card service-card">
+              <div class="service-icon">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </div>
+              <h3 class="service-title">UI/UX Design Systems</h3>
+              <p class="service-text">
+                Dark-mode native design systems, custom component suites, and micro-interaction animations designed specifically for futuristic web applications.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card service-card">
+              <div class="service-icon">
+                <i class="fa-solid fa-gauge-high"></i>
+              </div>
+              <h3 class="service-title">Speed Optimization</h3>
+              <p class="service-text">
+                Refactoring existing codebases to achieve 95+ Lighthouse performance scores, instant page transitions, and zero unnecessary asset bloat.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="glass-card service-card">
+              <div class="service-icon">
+                <i class="fa-solid fa-network-wired"></i>
+              </div>
+              <h3 class="service-title">API & Web Integrations</h3>
+              <p class="service-text">
+                Connecting third-party payment gateways, Stripe checkout, WebSockets, and custom REST API endpoints to power your business workflow.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Projects Section -->
+    <section id="projects" class="section-padding position-relative">
+      <div class="container">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4">
+          <div>
+            <div class="badge-cyber mb-3"><i class="fa-solid fa-laptop-code me-1"></i>[ PORTFOLIO ]</div>
+            <h2 class="section-title">
+              <span class="glitch-wrapper">
+                <span class="glitch-text" data-text="FEATURED ARCHITECTURES">FEATURED ARCHITECTURES</span>
+              </span>
+            </h2>
+            <p class="section-desc mb-0">
+              Explore our flagship software solutions demonstrating our custom websites, QR menus, and dashboard systems.
+            </p>
+          </div>
+
+          <!-- Project Filter Tabs -->
+          <div class="filter-tabs mt-4 mt-md-0">
+            <button class="btn-filter active" data-filter="all">All Projects</button>
+            <button class="btn-filter" data-filter="website">Websites</button>
+            <button class="btn-filter" data-filter="qrmenu">QR Code Menus</button>
+            <button class="btn-filter" data-filter="dashboard">Dashboards</button>
+          </div>
+        </div>
+
+        <!-- Projects Grid Container -->
+        <div class="row" id="projects-container">
+          <!-- Dynamically populated via projects-data.js & main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Development Process Section -->
+    <section id="process" class="section-padding position-relative">
+      <div class="container">
+        <div class="section-header text-center mx-auto" style="max-width: 700px;">
+          <div class="badge-cyber mb-3"><i class="fa-solid fa-sitemap me-1"></i>[ METHODOLOGY ]</div>
+          <h2 class="section-title">
+            <span class="glitch-wrapper">
+              <span class="glitch-text" data-text="ENGINEERING LIFECYCLE">ENGINEERING LIFECYCLE</span>
+            </span>
+          </h2>
+          <p class="section-desc mx-auto">
+            Our disciplined four-stage execution framework guarantees rapid delivery for websites, QR code menus, and dashboards.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="process-step-card">
+              <div class="step-num">01</div>
+              <div class="badge-cyber mb-3" style="font-size:0.65rem;">PHASE 01</div>
+              <h3 class="h5 font-monospace mb-2 text-light">Discovery & Wireframe</h3>
+              <p class="small mb-0">
+                We analyze client goals, select site structure or menu layouts, and draft technical specifications before writing code.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="process-step-card">
+              <div class="step-num">02</div>
+              <div class="badge-cyber mb-3" style="font-size:0.65rem;">PHASE 02</div>
+              <h3 class="h5 font-monospace mb-2 text-light">Cyber UI Design</h3>
+              <p class="small mb-0">
+                Crafting dark futuristic design systems, fluid micro-interactions, and responsive layout components.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="process-step-card">
+              <div class="step-num">03</div>
+              <div class="badge-cyber mb-3" style="font-size:0.65rem;">PHASE 03</div>
+              <h3 class="h5 font-monospace mb-2 text-light">Agile Build</h3>
+              <p class="small mb-0">
+                Building clean HTML/CSS/JS code, testing QR code scanners, and connecting live dashboard data streams.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="process-step-card">
+              <div class="step-num">04</div>
+              <div class="badge-cyber mb-3" style="font-size:0.65rem;">PHASE 04</div>
+              <h3 class="h5 font-monospace mb-2 text-light">Launch & Optimize</h3>
+              <p class="small mb-0">
+                Production release with speed optimization, cross-device testing, and sub-second response times.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section id="technologies" class="section-padding position-relative">
+      <div class="container">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5">
+          <div>
+            <div class="badge-cyber mb-3"><i class="fa-solid fa-layer-group me-1"></i>[ TECH STACK ]</div>
+            <h2 class="section-title">
+              <span class="glitch-wrapper">
+                <span class="glitch-text" data-text="BATTLE-TESTED TOOLS">BATTLE-TESTED TOOLS</span>
+              </span>
+            </h2>
+            <p class="section-desc mb-0">
+              We leverage modern, lightweight, and responsive technologies to power websites, QR menus, and dashboards.
+            </p>
+          </div>
+
+          <div class="filter-tabs mt-4 mt-md-0">
+            <button class="btn-filter btn-tech-filter active" data-tech-filter="all">All Stack</button>
+            <button class="btn-filter btn-tech-filter" data-tech-filter="frontend">Frontend</button>
+            <button class="btn-filter btn-tech-filter" data-tech-filter="backend">Backend & DB</button>
+          </div>
+        </div>
+
+        <div class="row" id="tech-container">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+    </section>
+
+    <!-- About Company Section -->
+    <section id="about" class="section-padding position-relative">
+      <div class="container">
+        <div class="glass-card p-4 p-md-5">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+              <div class="badge-cyber mb-3"><i class="fa-solid fa-building-user me-1"></i>[ WHO WE ARE ]</div>
+              <h2 class="section-title mb-4">
+                WEBSITES, QR MENUS & <br>
+                <span class="glitch-wrapper">
+                  <span class="glitch-text text-purple" data-text="DASHBOARD SPECIALISTS">DASHBOARD SPECIALISTS</span>
+                </span>
+              </h2>
+              <p class="text-secondary mb-3">
+                Glitch is an elite software house specializing in three core digital products: custom websites, contactless QR code menus, and management dashboards.
+              </p>
+              <p class="text-secondary mb-4">
+                We eliminate framework bloat and unnecessary dependencies, preferring clean architecture, high-frequency concurrency, and dark futuristic user interfaces that captivate users from first glance.
+              </p>
+
+              <div class="row g-3 font-monospace">
+                <div class="col-6">
+                  <div class="p-3 rounded bg-dark border border-secondary border-opacity-10">
+                    <div class="text-cyan fw-bold h5 mb-1"><i class="fa-solid fa-code-commit me-2"></i>Clean Code</div>
+                    <div class="small text-muted">Zero unwanted bloat, maximum efficiency</div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="p-3 rounded bg-dark border border-secondary border-opacity-10">
+                    <div class="text-purple fw-bold h5 mb-1"><i class="fa-solid fa-shield-virus me-2"></i>Fast Load</div>
+                    <div class="small text-muted">Sub-second loading speed standard</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="p-4 rounded bg-dark border border-secondary border-opacity-25 font-monospace">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <span class="text-muted small">// GLITCH MANIFESTO</span>
+                  <span class="badge bg-purple p-1" style="font-size:0.65rem;">CORE PHILOSOPHY</span>
+                </div>
+                <div class="small text-light mb-3">
+                  <span class="text-cyan">01.</span> Websites must be blisteringly fast and visually striking.
+                </div>
+                <div class="small text-light mb-3">
+                  <span class="text-cyan">02.</span> QR code menus must load instantly with zero app download required.
+                </div>
+                <div class="small text-light mb-3">
+                  <span class="text-cyan">03.</span> Dashboards must present complex data with dark cyberpunk clarity.
+                </div>
+                <div class="small text-light">
+                  <span class="text-cyan">04.</span> All code must be responsive, clean, and accessible on any device.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="section-padding position-relative">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="form-cyber">
+              <div class="row g-5">
+                <div class="col-lg-5">
+                  <div class="badge-cyber mb-3"><i class="fa-solid fa-paper-plane me-1"></i>[ INQUIRIES ]</div>
+                  <h2 class="h2 font-monospace text-light mb-3">
+                    START YOUR <br>
+                    <span class="glitch-wrapper">
+                      <span class="glitch-text text-cyan" data-text="NEXT PROJECT">NEXT PROJECT</span>
+                    </span>
+                  </h2>
+                  <p class="text-muted small mb-4">
+                    Need a custom website, a contactless QR code menu system, or a management dashboard? Fill out the Formspree contact form to transmit your request directly to our team.
+                  </p>
+
+                  <div class="mb-4">
+                    <div class="small text-muted font-monospace mb-1"><i class="fa-solid fa-paper-plane text-cyan me-2"></i>FORMSPREE ENDPOINT</div>
+                    <div class="fw-bold text-light font-monospace small">https://formspree.io/f/mlgqzawq</div>
+                  </div>
+
+                  <div class="mb-4">
+                    <div class="small text-muted font-monospace mb-1"><i class="fa-solid fa-location-dot text-purple me-2"></i>SPECIALTIES</div>
+                    <div class="fw-bold text-light font-monospace">Websites • QR Menus • Dashboards</div>
+                  </div>
+
+                  <div>
+                    <div class="small text-muted font-monospace mb-1"><i class="fa-solid fa-clock text-cyan me-2"></i>SUBMISSION PROTOCOL</div>
+                    <div class="fw-bold text-light font-monospace">Fetch API AJAX (No Page Reload)</div>
+                  </div>
+                </div>
+
+                <div class="col-lg-7">
+                  
+                  <!-- Formspree Contact Form -->
+                  <form
+                    id="glitch-contact-form"
+                    action="https://formspree.io/f/mlgqzawq"
+                    method="POST"
+                    class="needs-validation"
+                    novalidate
+                  >
+                    <!-- Hidden Subject Field -->
+                    <input
+                      type="hidden"
+                      name="_subject"
+                      value="New Glitch Project Request"
+                    >
+
+                    <div class="row g-3">
+                      <!-- Full Name -->
+                      <div class="col-md-6">
+                        <label for="fullName" class="form-label-cyber">FULL NAME <span class="text-cyan">*</span></label>
+                        <input
+                          type="text"
+                          class="form-control form-control-cyber"
+                          id="fullName"
+                          name="fullName"
+                          placeholder="e.g. Alex Mercer"
+                          required
+                        >
+                        <div class="invalid-feedback small font-monospace text-danger">Please enter your full name.</div>
+                      </div>
+
+                      <!-- Email Address -->
+                      <div class="col-md-6">
+                        <label for="email" class="form-label-cyber">EMAIL ADDRESS <span class="text-cyan">*</span></label>
+                        <input
+                          type="email"
+                          class="form-control form-control-cyber"
+                          id="email"
+                          name="email"
+                          placeholder="alex@company.io"
+                          required
+                        >
+                        <div class="invalid-feedback small font-monospace text-danger">Please enter a valid email address.</div>
+                      </div>
+
+                      <!-- Company Name -->
+                      <div class="col-12">
+                        <label for="companyName" class="form-label-cyber">COMPANY / ORGANIZATION NAME <span class="text-cyan">*</span></label>
+                        <input
+                          type="text"
+                          class="form-control form-control-cyber"
+                          id="companyName"
+                          name="companyName"
+                          placeholder="e.g. Cyber Systems Corp"
+                          required
+                        >
+                        <div class="invalid-feedback small font-monospace text-danger">Please enter your company or organization name.</div>
+                      </div>
+
+                      <!-- Required Service -->
+                      <div class="col-md-6">
+                        <label for="requiredService" class="form-label-cyber">REQUIRED SERVICE <span class="text-cyan">*</span></label>
+                        <select class="form-select form-select-cyber" id="requiredService" name="requiredService" required>
+                          <option value="" selected disabled>Select Service...</option>
+                          <option value="Custom Website">Custom Website / E-Commerce</option>
+                          <option value="QR Code Menu">QR Code Menu System</option>
+                          <option value="Management Dashboard">Management Dashboard</option>
+                          <option value="UI/UX Design System">UI/UX Design System</option>
+                          <option value="Code Optimization">Code Optimization & Speed</option>
+                        </select>
+                        <div class="invalid-feedback small font-monospace text-danger">Please select a required service.</div>
+                      </div>
+
+                      <!-- Estimated Budget -->
+                      <div class="col-md-6">
+                        <label for="estimatedBudget" class="form-label-cyber">ESTIMATED BUDGET <span class="text-cyan">*</span></label>
+                        <select class="form-select form-select-cyber" id="estimatedBudget" name="estimatedBudget" required>
+                          <option value="" selected disabled>Select Budget...</option>
+                          <option value="$1,000 - $3,000">$1,000 - $3,000</option>
+                          <option value="$3,000 - $7,000">$3,000 - $7,000</option>
+                          <option value="$7,000 - $15,000">$7,000 - $15,000</option>
+                          <option value="$15,000+">$15,000+</option>
+                        </select>
+                        <div class="invalid-feedback small font-monospace text-danger">Please select an estimated budget.</div>
+                      </div>
+
+                      <!-- Project Details -->
+                      <div class="col-12">
+                        <label for="projectDetails" class="form-label-cyber">PROJECT DETAILS & REQUIREMENTS <span class="text-cyan">*</span></label>
+                        <textarea
+                          class="form-control form-control-cyber"
+                          id="projectDetails"
+                          name="projectDetails"
+                          rows="4"
+                          placeholder="Briefly describe your project requirements, goals, or timeline..."
+                          required
+                        ></textarea>
+                        <div class="invalid-feedback small font-monospace text-danger">Please provide project details.</div>
+                      </div>
+
+                      <!-- Submit Button -->
+                      <div class="col-12 mt-4">
+                        <button
+                          type="submit"
+                          id="submitBtn"
+                          class="btn btn-cyber-primary btn-glitch w-100 justify-content-center py-3 d-flex align-items-center gap-2"
+                        >
+                          <i class="fa-solid fa-paper-plane" id="btnIcon"></i>
+                          <span id="btnText">Transmit Project Request</span>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-glitch">
+    <div class="container">
+      <div class="row g-4 align-items-center mb-5">
+        <div class="col-md-6 text-center text-md-start">
+          <a class="brand-logo mb-2 d-inline-flex" href="#hero">
+            <span class="brand-icon"><i class="fa-solid fa-terminal"></i></span>
+            <span class="glitch-wrapper">
+              <span class="glitch-text" data-text="GLITCH//">GLITCH//</span>
+            </span>
+          </a>
+          <p class="text-muted small max-w-400 mb-0">
+            Specialized software engineering house for custom websites, QR code menus, and management dashboards.
+          </p>
+        </div>
+
+        <div class="col-md-6 text-center text-md-end">
+          <div class="d-inline-flex gap-2">
+            <a href="#" class="social-icon-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-4 border-top border-secondary border-opacity-10 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div class="small text-muted font-monospace">
+          &copy; 2026 GLITCH SOFTWARE HOUSE. WEBSITES • QR MENUS • DASHBOARDS.
+        </div>
+        <div class="badge-cyber" style="font-size:0.65rem;">
+          <span class="status-dot"></span> OPERATIONAL // LATENCY 4ms
+        </div>
+        <div class="small text-cyan font-monospace">
+          <i class="fa-solid fa-shield-halved me-1"></i>HIGH-PERFORMANCE SOFTWARE ENGINEERING
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Generic Project / Email Confirmation Modal -->
+  <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content modal-content-cyber">
+        <div class="modal-header modal-header-cyber d-flex justify-content-between align-items-center">
+          <div id="projectModalTitle" class="modal-title h5 m-0 font-monospace"></div>
+          <button type="button" class="btn-close btn-close-cyber" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4" id="projectModalBody">
+          <!-- Dynamic content -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS Data & Main Script -->
+  <script src="js/projects-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

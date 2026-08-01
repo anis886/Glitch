@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders Management - Glitch Bistro</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Custom Dashboard CSS -->
+    <link href="css/dashboard.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="app-wrapper">
+        <!-- Sidebar Injection -->
+        <div id="app-sidebar-container"></div>
+
+        <!-- Main Content Area -->
+        <div class="app-main-content">
+            <!-- Navbar Injection -->
+            <div id="app-navbar-container"></div>
+
+            <!-- Page Content -->
+            <main class="p-4">
+                
+                <!-- Action Bar & Stats -->
+                <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-4">
+                    <div>
+                        <h3 class="font-heading fw-bold text-white mb-1">Orders Management</h3>
+                        <p class="text-muted small m-0">Monitor live orders, update statuses, print receipts & track fulfillment.</p>
+                    </div>
+                    <a href="new-order.html" class="btn btn-glitch">
+                        <i class="bi bi-plus-circle-fill"></i>
+                        <span>Create New Order</span>
+                    </a>
+                </div>
+
+                <!-- Stats Summary Row -->
+                <div class="mb-4" id="orders-stats-bar">
+                    <!-- Dynamic stats -->
+                </div>
+
+                <!-- Filter Controls Toolbar -->
+                <div class="glass-card p-3 mb-4">
+                    <div class="row g-3 align-items-center">
+                        <div class="col-md-3">
+                            <div class="input-group">
+                                <span class="input-group-text bg-transparent border-secondary text-muted"><i class="bi bi-search"></i></span>
+                                <input type="text" id="order-search-input" class="form-control form-control-glitch" placeholder="Search order ID or customer..." oninput="applyOrderFilters()">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <select id="order-status-filter" class="form-select form-select-glitch" onchange="applyOrderFilters()">
+                                <option value="all">All Statuses</option>
+                                <option value="new">New</option>
+                                <option value="confirmed">Confirmed</option>
+                                <option value="preparing">Preparing</option>
+                                <option value="ready">Ready</option>
+                                <option value="completed">Completed</option>
+                                <option value="cancelled">Cancelled</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <select id="order-type-filter" class="form-select form-select-glitch" onchange="applyOrderFilters()">
+                                <option value="all">All Types</option>
+                                <option value="dine-in">Dine-in</option>
+                                <option value="takeaway">Takeaway</option>
+                                <option value="delivery">Delivery</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <select id="order-payment-filter" class="form-select form-select-glitch" onchange="applyOrderFilters()">
+                                <option value="all">All Payments</option>
+                                <option value="cash">Cash</option>
+                                <option value="visa">Visa</option>
+                                <option value="wallet">Mobile Wallet</option>
+                                <option value="online">Online</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <select id="order-sort-filter" class="form-select form-select-glitch" onchange="applyOrderFilters()">
+                                <option value="newest">Newest First</option>
+                                <option value="oldest">Oldest First</option>
+                                <option value="highest">Highest Amount</option>
+                                <option value="lowest">Lowest Amount</option>
+                            </select>
+                        </div>
+                        <div class="col-md-1">
+                            <button onclick="clearOrderFilters()" class="btn btn-glass w-100 justify-content-center" title="Reset Filters">
+                                <i class="bi bi-x-circle"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Orders Table Container -->
+                <div class="glass-card">
+                    <div class="custom-table-container">
+                        <table class="table-custom">
+                            <thead>
+                                <tr>
+                                    <th>Order ID</th>
+                                    <th>Customer Info</th>
+                                    <th>Order Type</th>
+                                    <th>Total Amount</th>
+                                    <th>Payment Method</th>
+                                    <th>Fulfillment Status</th>
+                                    <th>Date & Time</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="orders-table-tbody">
+                                <!-- Populated dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- Order Details Modal -->
+    <div class="modal fade" id="order-details-modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content glass-modal">
+                <div class="modal-header border-bottom border-secondary">
+                    <h5 class="modal-title font-heading fw-bold text-white" id="modal-order-id">Order Details</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4" id="modal-order-content">
+                    <!-- Populated dynamically -->
+                </div>
+                <div class="modal-footer border-top border-secondary">
+                    <button type="button" class="btn btn-glass" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-glitch" onclick="printReceiptFromModal()"><i class="bi bi-printer me-1"></i> Print Receipt</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core Application Scripts -->
+    <script src="js/storage.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/orders.js"></script>
+</body>
+</html>

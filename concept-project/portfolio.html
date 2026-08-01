@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio & Case Studies — Glitch Software House</title>
+    <meta name="description" content="Explore our portfolio of high-performance websites, web applications, SaaS dashboards, and digital experiences created by Glitch.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ==========================================
+         NAVBAR
+         ========================================== -->
+    <nav class="navbar navbar-expand-lg navbar-glitch">
+        <div class="container">
+            <a class="navbar-brand navbar-brand-glitch" href="index.html">
+                <div class="brand-logo-icon">
+                    <i class="bi bi-code-slash"></i>
+                </div>
+                GLITCH<span class="accent">.</span>
+            </a>
+            
+            <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <i class="bi bi-list fs-1 text-info"></i>
+            </button>
+            
+            <div class="offcanvas offcanvas-end offcanvas-dark" tabindex="-1" id="offcanvasNavbar">
+                <div class="offcanvas-header border-bottom border-secondary">
+                    <h5 class="offcanvas-title text-info font-heading">GLITCH.</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-glitch" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-glitch" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-glitch active" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-glitch" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-glitch" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-glitch text-info fw-bold" href="../index.html"><i class="bi bi-house me-1"></i>Glitch Hub</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-glitch text-cyan fw-bold" href="../dashboard/index.html"><i class="bi bi-speedometer2 me-1"></i>Dashboard</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <a href="contact.html" class="btn-glitch-primary">Start a Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==========================================
+         PAGE HEADER
+         ========================================== -->
+    <section class="hero-section" style="min-height: 45vh; padding-top: 150px; padding-bottom: 60px;">
+        <div class="container hero-content">
+            <span class="section-tag"><i class="bi bi-collection-fill"></i> Showcase Gallery</span>
+            <h1 class="hero-title">Selected <span class="text-gradient">Case Studies</span></h1>
+            <p class="hero-description">Discover how we help innovative businesses design, build, and scale world-class software products.</p>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         PORTFOLIO GRID & CATEGORY FILTERS
+         ========================================== -->
+    <section class="section-padding">
+        <div class="container">
+            <!-- Filter Tabs -->
+            <div class="filter-btn-group reveal">
+                <button class="filter-btn active" data-filter="all">All (9)</button>
+                <button class="filter-btn" data-filter="Websites">Websites</button>
+                <button class="filter-btn" data-filter="E-commerce">E-commerce</button>
+                <button class="filter-btn" data-filter="Dashboards">Dashboards</button>
+                <button class="filter-btn" data-filter="Applications">Applications</button>
+            </div>
+
+            <div class="row g-4" id="portfolioGrid">
+                <!-- Project 1: RevGate -->
+                <div class="col-md-6 col-lg-4 project-item reveal" data-category="Websites">
+                    <div class="bg-glass-card project-card">
+                        <div class="project-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80" alt="RevGate Automotive Platform">
+                            <div class="project-overlay">
+                                <button class="btn-glitch-primary" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="revgate">
+                                    <i class="bi bi-eye-fill"></i> View Details
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Websites &bull; Automotive</span>
+                            <h3 class="project-title">RevGate</h3>
+                            <p class="project-desc">High-performance digital vehicle showcase featuring interactive 3D configuration tools.</p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Bootstrap 5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Nova -->
+                <div class="col-md-6 col-lg-4 project-item reveal" data-category="E-commerce">
+                    <div class="bg-glass-card project-card">
+                        <div class="project-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80" alt="Nova Fashion E-commerce">
+                            <div class="project-overlay">
+                                <button class="btn-glitch-primary" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="nova">
+                                    <i class="bi bi-eye-fill"></i> View Details
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">E-commerce &bull; Fashion</span>
+                            <h3 class="project-title">Nova Store</h3>
+                            <p class="project-desc">Luxury fashion marketplace engineered with glassmorphic cards and instant checkout drawers.</p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Glitch Bistro -->
+                <div class="col-md-6 col-lg-4 project-item reveal" data-category="Dashboards">
+                    <div class="bg-glass-card project-card">
+                        <div class="project-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Glitch Bistro Restaurant Dashboard">
+                            <div class="project-overlay">
+                                <button class="btn-glitch-primary" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="orbit">
+                                    <i class="bi bi-eye-fill"></i> View Details
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Dashboards &bull; Restaurant POS</span>
+                            <h3 class="project-title">Glitch Bistro</h3>
+                            <p class="project-desc">Enterprise real-time POS, order tracking, sales analytics trends, and kitchen pipeline dashboard.</p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Bootstrap 5</span>
+                                <span class="tech-tag">Chart.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Zenith -->
+                <div class="col-md-6 col-lg-4 project-item reveal" data-category="Websites">
+                    <div class="bg-glass-card project-card">
+                        <div class="project-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" alt="Zenith Real Estate Platform">
+                            <div class="project-overlay">
+                                <button class="btn-glitch-primary" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="zenith">
+                                    <i class="bi bi-eye-fill"></i> View Details
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Websites &bull; Real Estate</span>
+                            <h3 class="project-title">Zenith Estate</h3>
+                            <p class="project-desc">Elite property portal with neighborhood video tours and agent booking modal.</p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Bite -->
+                <div class="col-md-6 col-lg-4 project-item reveal" data-category="Applications">
+                    <div class="bg-glass-card project-card">
+                        <div class="project-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" alt="Bite Restaurant System">
+                            <div class="project-overlay">
+                                <button class="btn-glitch-primary" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="bite">
+                                    <i class="bi bi-eye-fill"></i> View Details
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Applications &bull; POS System</span>
+                            <h3 class="project-title">Bite Mobile</h3>
+                            <p class="project-desc">Interactive restaurant POS order processing, digital menu builder, and automated receipt system.</p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Bootstrap 5</span>
+                                <span class="tech-tag">LocalStorage API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Pulse -->
+                <div class="col-md-6 col-lg-4 project-item reveal" data-category="Applications">
+                    <div class="bg-glass-card project-card">
+                        <div class="project-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80" alt="Pulse Fitness Application">
+                            <div class="project-overlay">
+                                <button class="btn-glitch-primary" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="pulse">
+                                    <i class="bi bi-eye-fill"></i> View Details
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Applications &bull; Health</span>
+                            <h3 class="project-title">Pulse Fit</h3>
+                            <p class="project-desc">AI health and biometric tracking web app with calorie burn progress rings.</p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7: Aether -->
+                <div class="col-md-6 col-lg-4 project-item reveal" data-category="Dashboards">
+                    <div class="bg-glass-card project-card">
+                        <div class="project-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80" alt="Aether AI Platform">
+                            <div class="project-overlay">
+                                <button class="btn-glitch-primary" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="aether">
+                                    <i class="bi bi-eye-fill"></i> View Details
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Dashboards &bull; AI Suite</span>
+                            <h3 class="project-title">Aether Intelligence</h3>
+                            <p class="project-desc">Predictive analytics dashboard and sentiment processing interface for enterprise clients.</p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Bootstrap 5</span>
+                                <span class="tech-tag">Python API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8: Lumina -->
+                <div class="col-md-6 col-lg-4 project-item reveal" data-category="Applications">
+                    <div class="bg-glass-card project-card">
+                        <div class="project-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=800&q=80" alt="Lumina Smart Home App">
+                            <div class="project-overlay">
+                                <button class="btn-glitch-primary" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="lumina">
+                                    <i class="bi bi-eye-fill"></i> View Details
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Applications &bull; IoT</span>
+                            <h3 class="project-title">Lumina Smart Home</h3>
+                            <p class="project-desc">Glassmorphic dashboard for managing smart home sensors, lighting, and security.</p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">MQTT API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 9: Krypton -->
+                <div class="col-md-6 col-lg-4 project-item reveal" data-category="E-commerce">
+                    <div class="bg-glass-card project-card">
+                        <div class="project-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80" alt="Krypton Web3 Exchange">
+                            <div class="project-overlay">
+                                <button class="btn-glitch-primary" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="krypton">
+                                    <i class="bi bi-eye-fill"></i> View Details
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">E-commerce &bull; Web3</span>
+                            <h3 class="project-title">Krypton Portal</h3>
+                            <p class="project-desc">Decentralized asset exchange platform featuring real-time tickers and Web3 wallet connectors.</p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Ethers.js</span>
+                                <span class="tech-tag">Bootstrap 5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         CALL TO ACTION SECTION
+         ========================================= -->
+    <section class="section-padding bg-darker border-top border-secondary text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 reveal">
+                    <h2 class="section-title">Impressionable portfolio? Let's build <span class="text-gradient-cyan">yours next.</span></h2>
+                    <p class="section-subtitle mb-4">Contact our team to get a detailed technical estimate for your project.</p>
+                    <a href="contact.html" class="btn-glitch-primary btn-lg">
+                        <span>Start a Project</span> <i class="bi bi-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         FOOTER
+         ========================================== -->
+    <footer class="footer-glitch">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <a class="navbar-brand navbar-brand-glitch mb-3" href="index.html">
+                        <div class="brand-logo-icon">
+                            <i class="bi bi-code-slash"></i>
+                        </div>
+                        GLITCH<span class="accent">.</span>
+                    </a>
+                    <p class="text-muted mt-3">
+                        Glitch is a premier software house specializing in custom front-end development, sleek UI/UX design, and scalable web apps for global brands.
+                    </p>
+                    <div class="team-socials justify-content-start mt-4">
+                        <a href="#" class="social-icon-btn" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                        <a href="#" class="social-icon-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="social-icon-btn" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="social-icon-btn" aria-label="Dribbble"><i class="bi bi-dribbble"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-widget-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="bi bi-chevron-right me-1"></i> Home</a></li>
+                        <li><a href="services.html"><i class="bi bi-chevron-right me-1"></i> Services</a></li>
+                        <li><a href="portfolio.html"><i class="bi bi-chevron-right me-1"></i> Portfolio</a></li>
+                        <li><a href="about.html"><i class="bi bi-chevron-right me-1"></i> About Us</a></li>
+                        <li><a href="contact.html"><i class="bi bi-chevron-right me-1"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-widget-title">Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="services.html"><i class="bi bi-chevron-right me-1"></i> Website Development</a></li>
+                        <li><a href="services.html"><i class="bi bi-chevron-right me-1"></i> Web Applications</a></li>
+                        <li><a href="services.html"><i class="bi bi-chevron-right me-1"></i> UI/UX Design</a></li>
+                        <li><a href="services.html"><i class="bi bi-chevron-right me-1"></i> E-commerce Solutions</a></li>
+                        <li><a href="services.html"><i class="bi bi-chevron-right me-1"></i> API Integrations</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-widget-title">Stay Connected</h5>
+                    <p class="text-muted small">Subscribe to receive tech insights and project updates from Glitch.</p>
+                    <form id="newsletterForm" class="newsletter-box">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" aria-label="Subscribe"><i class="bi bi-send-fill"></i></button>
+                    </form>
+                    <div class="mt-3 text-muted small">
+                        <i class="bi bi-envelope-at me-2 text-info"></i> hello@glitch-software.com
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright-text text-center">
+                <p class="mb-0">&copy; 2026 Glitch Software House. All rights reserved. Designed for Front-End Portfolio Showcase.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div id="backToTop" class="back-to-top" title="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </div>
+
+    <!-- PORTFOLIO PROJECT MODAL -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content modal-content-glitch">
+                <div class="modal-header">
+                    <div>
+                        <span id="modalCategory" class="badge bg-info text-dark mb-1">Category</span>
+                        <h4 class="modal-title font-heading" id="modalTitle">Project Title</h4>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="modalImage" src="" alt="Project Image" class="img-fluid rounded mb-4 w-100" style="max-height: 400px; object-fit: cover;">
+                    
+                    <h5 class="text-info mb-2 font-heading">Project Overview</h5>
+                    <p id="modalOverview" class="text-secondary">Overview content...</p>
+
+                    <div class="row g-3 my-2">
+                        <div class="col-md-6">
+                            <div class="p-3 bg-glass-card">
+                                <h6 class="text-danger font-heading"><i class="bi bi-exclamation-octagon me-2"></i> Client Challenge</h6>
+                                <p id="modalChallenge" class="small text-muted mb-0">Challenge content...</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 bg-glass-card">
+                                <h6 class="text-success font-heading"><i class="bi bi-check-circle me-2"></i> Glitch Solution</h6>
+                                <p id="modalSolution" class="small text-muted mb-0">Solution content...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5 class="text-info mt-4 mb-2 font-heading">Main Features</h5>
+                    <ul id="modalFeatures" class="list-unstyled text-secondary">
+                        <!-- Dynamic list items -->
+                    </ul>
+
+                    <div class="d-flex flex-wrap justify-content-between align-items-center mt-4 pt-3 border-top border-secondary">
+                        <div>
+                            <span class="text-muted small me-2">Technologies Used:</span>
+                            <div id="modalTechBadges" class="d-inline-block mt-1">
+                                <!-- Dynamic Badges -->
+                            </div>
+                        </div>
+                        <div class="mt-2 mt-sm-0 text-muted small">
+                            <i class="bi bi-clock me-1 text-info"></i> Duration: <strong id="modalDuration" class="text-white">--</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">Close</button>
+                    <a href="dashboard/index.html" target="_blank" id="modalVisitBtn" class="btn-glitch-outline me-2"><i class="bi bi-box-arrow-up-right me-1"></i> Launch Dashboard</a>
+                    <a href="contact.html" class="btn-glitch-primary">Request Similar Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

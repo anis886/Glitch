@@ -4,12 +4,63 @@
 
 const PROJECTS_DATA = [
   {
+    id: "bistro_dashboard",
+    title: "Glitch Bistro Management System",
+    subtitle: "Real-Time Restaurant, Orders & Sales Dashboard",
+    category: "dashboard",
+    categoryLabel: "Live Management Dashboard",
+    isConcept: false,
+    liveUrl: "dashboard/index.html",
+    summary: "Full-featured restaurant management suite with real-time KPI telemetry, active order queue, menu item builder, customer database, and sales reports.",
+    details: "Connected directly into the Glitch ecosystem, Glitch Bistro Management System provides restaurant managers with live revenue charts, POS order creation, order status toggles, and analytics.",
+    tags: ["HTML5", "CSS3", "JavaScript ES6", "Chart.js", "Bootstrap 5"],
+    stats: [
+      { label: "Real-Time KPIs", value: "Active" },
+      { label: "POS Speed", value: "< 100ms" },
+      { label: "Dashboard Sync", value: "100%" }
+    ],
+    features: [
+      "Interactive 7-day revenue and order status pipeline charts",
+      "Point-of-Sale (POS) order creation with payment status workflows",
+      "Dynamic menu item catalog management & stock toggling",
+      "Integrated customer relationship management & exportable sales reports"
+    ],
+    mockupType: "biteflow",
+    accentColor: "#00f0ff"
+  },
+  {
+    id: "concept_showcase",
+    title: "Glitch Concept Web Showcase",
+    subtitle: "Multi-Page Cyber Software House Platform & Portfolio",
+    category: "website",
+    categoryLabel: "Custom Website / Concept Showcase",
+    isConcept: false,
+    liveUrl: "concept-project/index.html",
+    summary: "Multi-page corporate & portfolio website with interactive canvas particle hero, service breakdowns, team showcase, and glassmorphism UI.",
+    details: "The Glitch Concept Project is a comprehensive multi-page corporate showcase featuring Home, About, Services, Portfolio, and Contact modules.",
+    tags: ["HTML5", "CSS3", "JavaScript", "HTML5 Canvas", "Bootstrap 5"],
+    stats: [
+      { label: "Pages Included", value: "5 Pages" },
+      { label: "Lighthouse Score", value: "98/100" },
+      { label: "UI System", value: "Glassmorphism" }
+    ],
+    features: [
+      "Interactive HTML5 Canvas particle background animation",
+      "Dedicated Services, Portfolio, About, and Contact pages",
+      "Filterable project grid with dynamic case study detail modals",
+      "Responsive glassmorphic UI layout with dark cyberpunk styling"
+    ],
+    mockupType: "blackcart",
+    accentColor: "#c77dff"
+  },
+  {
     id: "blackcart",
     title: "BlackCart Storefront",
     subtitle: "High-Performance Modern Website & E-Commerce Storefront",
     category: "website",
     categoryLabel: "Custom Website / E-Commerce",
     isConcept: true,
+    liveUrl: "concept-project/portfolio.html",
     summary: "Headless e-commerce storefront & brand website featuring 3D product customization, sub-second page loads, and dark cyber UI.",
     details: "BlackCart showcases our website engineering capabilities. Designed for modern brands requiring instant checkout rendering, SEO optimization, and dark visual storytelling.",
     tags: ["HTML5/CSS3", "JavaScript", "Shopify API", "Web Animations", "PWA"],
@@ -34,6 +85,7 @@ const PROJECTS_DATA = [
     category: "qrmenu",
     categoryLabel: "QR Code Menu / Ordering",
     isConcept: true,
+    liveUrl: "dashboard/menu.html",
     summary: "Instant web QR menu, contactless table ordering, dynamic bill splitting, and zero-latency kitchen display system (KDS).",
     details: "BiteFlow eliminates app downloads with instant PWA QR menu scanning. Diners scan table QR codes, browse interactive menus, order directly, while kitchen staff receive live prioritized tickets.",
     tags: ["QR Scanner", "PWA", "Node.js", "WebSockets", "Stripe API"],
@@ -58,6 +110,7 @@ const PROJECTS_DATA = [
     category: "dashboard",
     categoryLabel: "Management Dashboard",
     isConcept: true,
+    liveUrl: "dashboard/index.html",
     summary: "Unified workspace management, automated recurring subscription telemetry, team RBAC, and executive metrics aggregation.",
     details: "FlowDesk provides enterprise B2B SaaS platforms with an ultra-responsive management control panel. Built with modular widget isolation and real-time chart data visualization.",
     tags: ["JavaScript", "PostgreSQL", "GraphQL", "Data Charts", "RBAC Security"],
@@ -82,6 +135,7 @@ const PROJECTS_DATA = [
     category: "dashboard",
     categoryLabel: "Operations Dashboard",
     isConcept: true,
+    liveUrl: "dashboard/reports.html",
     summary: "High-speed real-time telemetry streaming, hardware sensor mapping, and live diagnostic monitoring dashboards.",
     details: "RevGate was engineered as a high-performance control dashboard capable of processing over 50,000 telemetry datapoints per second per vehicle cluster.",
     tags: ["Rust Core", "WebSockets", "Data Charts", "Live HUD UI", "IoT Stream"],

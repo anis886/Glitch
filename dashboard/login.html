@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Login - Glitch Bistro Management System</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Custom Dashboard CSS -->
+    <link href="css/dashboard.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: #060813;
+            background-image: 
+                radial-gradient(circle at 20% 20%, rgba(0, 242, 254, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(168, 85, 247, 0.08) 0%, transparent 50%);
+        }
+        .login-card {
+            width: 100%;
+            max-width: 440px;
+            padding: 2.5rem;
+            background: rgba(15, 21, 42, 0.75);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-xl);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-card">
+        <!-- Logo & Header -->
+        <div class="text-center mb-4">
+            <div class="brand-icon mx-auto mb-3" style="width: 54px; height: 54px; font-size: 1.75rem;">
+                <i class="bi bi-lightning-charge-fill"></i>
+            </div>
+            <h3 class="font-heading fw-bold text-white mb-1">Staff Portal</h3>
+            <p class="text-muted small">Sign in to access Glitch Bistro Dashboard</p>
+        </div>
+
+        <!-- Alert Error Msg -->
+        <div id="login-error-alert" class="alert alert-danger border-0 glass-modal text-white small d-none" role="alert">
+            <i class="bi bi-exclamation-triangle-fill me-2"></i>
+            <span id="login-error-text">Invalid credentials</span>
+        </div>
+
+        <!-- Login Form -->
+        <form id="login-form" onsubmit="handleLoginSubmit(event)">
+            <div class="mb-3">
+                <label for="email" class="form-label text-muted small fw-semibold">Email Address</label>
+                <div class="input-group">
+                    <span class="input-group-text bg-dark border-secondary text-muted"><i class="bi bi-envelope"></i></span>
+                    <input type="email" id="email" class="form-control form-control-glitch" placeholder="admin@restaurant.com" required value="admin@restaurant.com">
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="password" class="form-label text-muted small fw-semibold">Password</label>
+                <div class="input-group">
+                    <span class="input-group-text bg-dark border-secondary text-muted"><i class="bi bi-lock"></i></span>
+                    <input type="password" id="password" class="form-control form-control-glitch" placeholder="••••••••" required value="admin123">
+                    <button class="btn btn-outline-secondary border-secondary text-muted" type="button" onclick="togglePasswordVisibility()">
+                        <i class="bi bi-eye" id="toggle-pwd-icon"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-between mb-4">
+                <div class="form-check">
+                    <input class="form-check-input bg-dark border-secondary" type="checkbox" id="rememberMe" checked>
+                    <label class="form-check-label text-muted small" for="rememberMe">
+                        Remember me
+                    </label>
+                </div>
+                <a href="#" onclick="showToast('Contact administrator to reset password.', 'info')" class="text-info small text-decoration-none">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="btn btn-glitch w-100 justify-content-center py-2.5">
+                <i class="bi bi-box-arrow-in-right"></i>
+                Sign In to Dashboard
+            </button>
+        </form>
+
+        <!-- Demo Credentials Info Box -->
+        <div class="mt-4 p-3 rounded-3 bg-dark border border-secondary text-center">
+            <div class="small text-muted fw-bold mb-1"><i class="bi bi-info-circle text-info me-1"></i> Demo Access Credentials</div>
+            <div class="small text-white">Email: <span class="text-info font-monospace">admin@restaurant.com</span></div>
+            <div class="small text-white">Password: <span class="text-info font-monospace">admin123</span></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/storage.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/layout.js"></script>
+    <script>
+        function togglePasswordVisibility() {
+            const pwdInput = document.getElementById('password');
+            const icon = document.getElementById('toggle-pwd-icon');
+            if (pwdInput.type === 'password') {
+                pwdInput.type = 'text';
+                icon.className = 'bi bi-eye-slash';
+            } else {
+                pwdInput.type = 'password';
+                icon.className = 'bi bi-eye';
+            }
+        }
+
+        function handleLoginSubmit(e) {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const remember = document.getElementById('rememberMe').checked;
+
+            const res = loginUser(email, password, remember);
+
+            const alertEl = document.getElementById('login-error-alert');
+            const alertText = document.getElementById('login-error-text');
+
+            if (res.success) {
+                alertEl.classList.add('d-none');
+                showToast('Login successful! Redirecting...', 'success');
+                setTimeout(() => {
+                    window.location.href = 'index.html';
+                }, 800);
+            } else {
+                alertText.textContent = res.message;
+                alertEl.classList.remove('d-none');
+            }
+        }
+    </script>
+</body>
+</html>

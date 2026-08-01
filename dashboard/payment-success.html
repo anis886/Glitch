@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Verification - Glitch Bistro</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Custom Dashboard CSS -->
+    <link href="css/dashboard.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: #060813;
+            color: #f8fafc;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+        .result-card {
+            width: 100%;
+            max-width: 520px;
+            padding: 2.5rem;
+            background: rgba(15, 21, 42, 0.85);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="result-card">
+        <div id="status-icon-container" class="mb-3">
+            <div class="spinner-border text-info" style="width: 3rem; height: 3rem;" role="status"></div>
+        </div>
+
+        <h3 class="font-heading fw-bold text-white mb-2" id="status-headline">Verifying Payment Status...</h3>
+        <p class="text-muted small mb-4" id="status-subtext">Communicating with backend payment-status API to confirm Paymob transaction status.</p>
+
+        <div id="payment-details-box" class="p-3 mb-4 rounded-3 bg-dark border border-secondary text-start d-none">
+            <div class="d-flex justify-content-between small text-muted mb-2">
+                <span>Order Reference:</span>
+                <strong class="text-info font-monospace" id="res-order-number">--</strong>
+            </div>
+            <div class="d-flex justify-content-between small text-muted mb-2">
+                <span>Amount Paid:</span>
+                <strong class="text-white" id="res-paid-amount">--</strong>
+            </div>
+            <div class="d-flex justify-content-between small text-muted mb-2">
+                <span>Payment Method:</span>
+                <span class="text-uppercase text-white" id="res-payment-method">--</span>
+            </div>
+            <div class="d-flex justify-content-between small text-muted">
+                <span>Server Payment Status:</span>
+                <span class="badge bg-success text-uppercase" id="res-payment-status">PAID</span>
+            </div>
+        </div>
+
+        <div class="d-flex gap-2 justify-content-center">
+            <a href="orders.html" id="btn-view-receipt" class="btn btn-glitch d-none">
+                <i class="bi bi-receipt me-1"></i> View Orders List
+            </a>
+            <a href="index.html" class="btn btn-glass">
+                <i class="bi bi-house me-1"></i> Back to Dashboard
+            </a>
+        </div>
+    </div>
+
+    <script>
+        let pollCount = 0;
+        const maxPolls = 6;
+        const API_BASE = 'http://localhost:5000/api';
+
+        async function verifyPaymentWithBackend() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const orderId = urlParams.get('orderId') || urlParams.get('ref') || urlParams.get('id');
+
+            if (!orderId) {
+                document.getElementById('status-headline').textContent = 'Order Reference Missing';
+                document.getElementById('status-subtext').textContent = 'Could not verify payment status because no order ID was provided in the URL.';
+                document.getElementById('status-icon-container').innerHTML = '<i class="bi bi-exclamation-triangle-fill fs-1 text-warning"></i>';
+                return;
+            }
+
+            try {
+                // Call GET /api/payments/orders/:orderId/payment-status
+                const response = await fetch(`${API_BASE}/payments/orders/${orderId}/payment-status`, {
+                    method: 'GET',
+                    headers: { 'Accept': 'application/json' }
+                });
+
+                if (!response.ok) {
+                    // Fallback to GET /api/orders/:orderId
+                    const fallbackRes = await fetch(`${API_BASE}/orders/${orderId}`);
+                    if (!fallbackRes.ok) throw new Error('Order not found on backend');
+                    const fallbackData = await fallbackRes.json();
+                    processPaymentStatusResult(fallbackData.data || fallbackData);
+                    return;
+                }
+
+                const result = await response.json();
+                processPaymentStatusResult(result.data || result);
+
+            } catch (err) {
+                console.warn('Backend payment-status query failed:', err);
+                if (pollCount < maxPolls) {
+                    pollCount++;
+                    document.getElementById('status-subtext').textContent = `Verifying payment with server (${pollCount}/${maxPolls})...`;
+                    setTimeout(verifyPaymentWithBackend, 2000);
+                } else {
+                    document.getElementById('status-icon-container').innerHTML = '<i class="bi bi-exclamation-circle-fill fs-1 text-warning"></i>';
+                    document.getElementById('status-headline').textContent = 'Payment Verification Pending';
+                    document.getElementById('status-subtext').textContent = 'Your payment was submitted to Paymob. Official backend confirmation is still processing.';
+                }
+            }
+        }
+
+        function processPaymentStatusResult(statusData) {
+            const status = statusData.paymentStatus || statusData.latestPaymentStatus || 'PENDING';
+            const orderNum = statusData.orderNumber || statusData.orderId || '--';
+            const amount = statusData.paidAmount || statusData.orderTotal || '0.00';
+            const method = statusData.latestPaymentMethod || statusData.paymentMethod || 'ONLINE_CARD';
+
+            if (status === 'PAID') {
+                document.getElementById('status-icon-container').innerHTML = '<i class="bi bi-check-circle-fill fs-1 text-success"></i>';
+                document.getElementById('status-headline').textContent = 'Payment Verified & Successful!';
+                document.getElementById('status-subtext').textContent = 'Thank you! Your payment was verified by backend API and official Paymob webhook.';
+
+                document.getElementById('res-order-number').textContent = `#${orderNum}`;
+                document.getElementById('res-paid-amount').textContent = `EGP ${parseFloat(amount).toFixed(2)}`;
+                document.getElementById('res-payment-method').textContent = method.replace('_', ' ');
+                document.getElementById('res-payment-status').textContent = 'PAID';
+                document.getElementById('res-payment-status').className = 'badge bg-success text-uppercase';
+
+                document.getElementById('payment-details-box').classList.remove('d-none');
+                document.getElementById('btn-view-receipt').classList.remove('d-none');
+
+            } else if (status === 'PENDING' && pollCount < maxPolls) {
+                pollCount++;
+                document.getElementById('status-subtext').textContent = `Checking server payment status (${pollCount}/${maxPolls})...`;
+                setTimeout(verifyPaymentWithBackend, 2000);
+
+            } else if (status === 'FAILED') {
+                window.location.href = `payment-failed.html?orderId=${statusData.orderId || ''}`;
+            } else {
+                document.getElementById('status-icon-container').innerHTML = '<i class="bi bi-hourglass-split fs-1 text-warning"></i>';
+                document.getElementById('status-headline').textContent = 'Payment Awaiting Webhook';
+                document.getElementById('status-subtext').textContent = 'Your payment was submitted. Backend will update as soon as Paymob webhook triggers.';
+                document.getElementById('res-order-number').textContent = `#${orderNum}`;
+                document.getElementById('res-paid-amount').textContent = `EGP ${parseFloat(amount).toFixed(2)}`;
+                document.getElementById('res-payment-method').textContent = method.replace('_', ' ');
+                document.getElementById('res-payment-status').textContent = status;
+                document.getElementById('res-payment-status').className = 'badge bg-warning text-dark text-uppercase';
+                document.getElementById('payment-details-box').classList.remove('d-none');
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', verifyPaymentWithBackend);
+    </script>
+</body>
+</html>

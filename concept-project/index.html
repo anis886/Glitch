@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glitch — Creative Software House | Future-Ready Web Solutions</title>
+    <meta name="description" content="Glitch is a premier creative software house crafting modern websites, enterprise web applications, and cutting-edge digital experiences.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ==========================================
+         NAVBAR
+         ========================================== -->
+    <nav class="navbar navbar-expand-lg navbar-glitch">
+        <div class="container">
+            <a class="navbar-brand navbar-brand-glitch" href="index.html">
+                <div class="brand-logo-icon">
+                    <i class="bi bi-code-slash"></i>
+                </div>
+                GLITCH<span class="accent">.</span>
+            </a>
+            
+            <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <i class="bi bi-list fs-1 text-info"></i>
+            </button>
+            
+            <div class="offcanvas offcanvas-end offcanvas-dark" tabindex="-1" id="offcanvasNavbar">
+                <div class="offcanvas-header border-bottom border-secondary">
+                    <h5 class="offcanvas-title text-info font-heading">GLITCH.</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-glitch active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-glitch" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-glitch" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-glitch" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-glitch" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-glitch text-info fw-bold" href="../index.html"><i class="bi bi-house me-1"></i>Glitch Hub</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-glitch text-cyan fw-bold" href="../dashboard/index.html"><i class="bi bi-speedometer2 me-1"></i>Dashboard</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <a href="contact.html" class="btn-glitch-primary">Start a Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==========================================
+         HERO SECTION
+         ========================================== -->
+    <section class="hero-section">
+        <canvas id="heroCanvas"></canvas>
+        <div class="container hero-content">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="hero-badge reveal">
+                        <span class="pulse-dot"></span> Next-Gen Digital Product Studio
+                    </div>
+                    <h1 class="hero-title reveal">
+                        We Build Digital Experiences That <span class="text-gradient">Break the Ordinary.</span>
+                    </h1>
+                    <p class="hero-description reveal">
+                        Glitch is a creative software house building modern websites, web applications, and digital products for ambitious brands.
+                    </p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3 reveal">
+                        <a href="contact.html" class="btn-glitch-primary">
+                            <span>Start Your Project</span> <i class="bi bi-arrow-right"></i>
+                        </a>
+                        <a href="portfolio.html" class="btn-glitch-outline">
+                            <span>View Our Work</span> <i class="bi bi-eye"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         TRUSTED BRANDS SECTION
+         ========================================== -->
+    <section class="brands-section">
+        <div class="container">
+            <p class="text-center text-muted small text-uppercase tracking-wider mb-4 fw-semibold">Trusted by Innovative Brands & Startups Worldwide</p>
+            <div class="row align-items-center justify-content-center g-4 text-center">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="brand-logo-item"><i class="bi bi-cpu me-2"></i>QUANTUM</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="brand-logo-item"><i class="bi bi-lightning-charge me-2"></i>VELOCE</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="brand-logo-item"><i class="bi bi-triangle me-2"></i>APEX</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="brand-logo-item"><i class="bi bi-shield-check me-2"></i>CYBERDYNE</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="brand-logo-item"><i class="bi bi-globe2 me-2"></i>NEXUS</div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="brand-logo-item"><i class="bi bi-rocket-takeoff me-2"></i>HYPERION</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         SERVICES PREVIEW SECTION
+         ========================================== -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-tag"><i class="bi bi-gear-fill"></i> What We Do</span>
+                <h2 class="section-title">Engineered For <span class="text-gradient-cyan">Maximum Impact</span></h2>
+                <p class="section-subtitle">We design and develop high-performance software solutions tailored to solve complex engineering challenges.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Service 1 -->
+                <div class="col-md-6 col-lg-4 reveal">
+                    <div class="bg-glass-card service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-window-sidebar"></i>
+                        </div>
+                        <h3 class="service-title">Website Development</h3>
+                        <p class="service-desc">Custom high-performance websites built with semantic architecture, responsive layouts, and lightning-fast load speeds.</p>
+                        <a href="services.html" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="col-md-6 col-lg-4 reveal">
+                    <div class="bg-glass-card service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-cpu"></i>
+                        </div>
+                        <h3 class="service-title">Web Applications</h3>
+                        <p class="service-desc">Scalable, interactive web apps engineered with smooth user flows, robust state management, and real-time features.</p>
+                        <a href="services.html" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="col-md-6 col-lg-4 reveal">
+                    <div class="bg-glass-card service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-palette"></i>
+                        </div>
+                        <h3 class="service-title">UI/UX Design</h3>
+                        <p class="service-desc">Human-centered digital interfaces, dark-mode aesthetics, wireframing, and interactive design systems.</p>
+                        <a href="services.html" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Service 4 -->
+                <div class="col-md-6 col-lg-4 reveal">
+                    <div class="bg-glass-card service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-bag-check"></i>
+                        </div>
+                        <h3 class="service-title">E-commerce Development</h3>
+                        <p class="service-desc">High-converting online storefronts with seamless checkout experiences, security compliance, and catalog management.</p>
+                        <a href="services.html" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Service 5 -->
+                <div class="col-md-6 col-lg-4 reveal">
+                    <div class="bg-glass-card service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-diagram-3"></i>
+                        </div>
+                        <h3 class="service-title">API Integration</h3>
+                        <p class="service-desc">Seamless third-party system integrations, microservices connectivity, RESTful architectures, and secure webhooks.</p>
+                        <a href="services.html" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Service 6 -->
+                <div class="col-md-6 col-lg-4 reveal">
+                    <div class="bg-glass-card service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <h3 class="service-title">Website Maintenance</h3>
+                        <p class="service-desc">Continuous performance monitoring, security hardening, code refactoring, and 24/7 dedicated technical support.</p>
+                        <a href="services.html" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         FEATURED PROJECTS SECTION
+         ========================================== -->
+    <section class="section-padding bg-darker position-relative">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-tag"><i class="bi bi-briefcase"></i> Showcase</span>
+                <h2 class="section-title">Featured <span class="text-gradient-purple">Projects</span></h2>
+                <p class="section-subtitle">Explore a selection of our recent digital products crafted for forward-thinking clients.</p>
+            </div>
+
+            <!-- Category Filter Tabs -->
+            <div class="filter-btn-group reveal">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="Websites">Websites</button>
+                <button class="filter-btn" data-filter="E-commerce">E-commerce</button>
+                <button class="filter-btn" data-filter="Dashboards">Dashboards</button>
+                <button class="filter-btn" data-filter="Applications">Applications</button>
+            </div>
+
+            <div class="row g-4" id="portfolioGrid">
+                <!-- Project 1: RevGate -->
+                <div class="col-md-6 col-lg-4 project-item reveal" data-category="Websites">
+                    <div class="bg-glass-card project-card">
+                        <div class="project-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80" alt="RevGate Automotive Platform">
+                            <div class="project-overlay">
+                                <button class="btn-glitch-primary" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="revgate">
+                                    <i class="bi bi-eye-fill"></i> View Project
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Automotive Platform</span>
+                            <h3 class="project-title">RevGate</h3>
+                            <p class="project-desc">High-performance digital car showcase platform featuring dynamic 3D configuration tools.</p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Bootstrap 5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Nova -->
+                <div class="col-md-6 col-lg-4 project-item reveal" data-category="E-commerce">
+                    <div class="bg-glass-card project-card">
+                        <div class="project-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80" alt="Nova Fashion E-commerce">
+                            <div class="project-overlay">
+                                <button class="btn-glitch-primary" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="nova">
+                                    <i class="bi bi-eye-fill"></i> View Project
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Fashion E-commerce</span>
+                            <h3 class="project-title">Nova Store</h3>
+                            <p class="project-desc">Luxury fashion marketplace engineered with glassmorphic cards and instant quick-buy flows.</p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Glitch Bistro -->
+                <div class="col-md-6 col-lg-4 project-item reveal" data-category="Dashboards">
+                    <div class="bg-glass-card project-card">
+                        <div class="project-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Glitch Bistro Restaurant Dashboard">
+                            <div class="project-overlay">
+                                <button class="btn-glitch-primary" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="orbit">
+                                    <i class="bi bi-eye-fill"></i> View Project
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Restaurant POS & Dashboards</span>
+                            <h3 class="project-title">Glitch Bistro</h3>
+                            <p class="project-desc">Enterprise real-time POS, order tracking, sales analytics, and kitchen pipeline management.</p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Bootstrap 5</span>
+                                <span class="tech-tag">Chart.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Zenith -->
+                <div class="col-md-6 col-lg-4 project-item reveal" data-category="Websites">
+                    <div class="bg-glass-card project-card">
+                        <div class="project-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" alt="Zenith Real Estate Platform">
+                            <div class="project-overlay">
+                                <button class="btn-glitch-primary" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="zenith">
+                                    <i class="bi bi-eye-fill"></i> View Project
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Real Estate Platform</span>
+                            <h3 class="project-title">Zenith Estate</h3>
+                            <p class="project-desc">Elite architectural property portal with integrated virtual map walkthroughs.</p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Bite -->
+                <div class="col-md-6 col-lg-4 project-item reveal" data-category="Applications">
+                    <div class="bg-glass-card project-card">
+                        <div class="project-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" alt="Bite Restaurant System">
+                            <div class="project-overlay">
+                                <button class="btn-glitch-primary" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="bite">
+                                    <i class="bi bi-eye-fill"></i> View Project
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Restaurant POS & Ordering</span>
+                            <h3 class="project-title">Bite Mobile</h3>
+                            <p class="project-desc">Interactive restaurant POS order processing, digital menu builder, and automated receipt system.</p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Bootstrap 5</span>
+                                <span class="tech-tag">LocalStorage API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Pulse -->
+                <div class="col-md-6 col-lg-4 project-item reveal" data-category="Applications">
+                    <div class="bg-glass-card project-card">
+                        <div class="project-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80" alt="Pulse Fitness Application">
+                            <div class="project-overlay">
+                                <button class="btn-glitch-primary" data-bs-toggle="modal" data-bs-target="#projectModal" data-project-id="pulse">
+                                    <i class="bi bi-eye-fill"></i> View Project
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Fitness Application</span>
+                            <h3 class="project-title">Pulse Fit</h3>
+                            <p class="project-desc">AI health and biometric tracking web application with interactive progress cards.</p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="portfolio.html" class="btn-glitch-outline">View All Projects <i class="bi bi-grid-3x3-gap-fill ms-2"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         WHY CHOOSE GLITCH SECTION
+         ========================================== -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5 reveal">
+                    <span class="section-tag"><i class="bi bi-shield-lock-fill"></i> Our Advantage</span>
+                    <h2 class="section-title">Why Innovators Partner With <span class="text-gradient">Glitch</span></h2>
+                    <p class="text-secondary mb-4">We combine cutting-edge design aesthetics with bulletproof front-end engineering to construct digital products that stand out in crowded markets.</p>
+                    <a href="about.html" class="btn-glitch-primary">More About Us <i class="bi bi-arrow-right"></i></a>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="row g-4">
+                        <div class="col-sm-6 reveal">
+                            <div class="bg-glass-card p-4 h-100">
+                                <div class="fs-1 text-info mb-3"><i class="bi bi-lightbulb"></i></div>
+                                <h4 class="mb-2">Creative Solutions</h4>
+                                <p class="text-muted small">Bespoke designs custom-tailored to reflect your brand's unique identity without cookie-cutter templates.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 reveal">
+                            <div class="bg-glass-card p-4 h-100">
+                                <div class="fs-1 text-info mb-3"><i class="bi bi-code-square"></i></div>
+                                <h4 class="mb-2">Clean Development</h4>
+                                <p class="text-muted small">Modular, maintainable, semantic code respecting modern industry standards and accessibility guidelines.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 reveal">
+                            <div class="bg-glass-card p-4 h-100">
+                                <div class="fs-1 text-info mb-3"><i class="bi bi-speedometer2"></i></div>
+                                <h4 class="mb-2">Fast Performance</h4>
+                                <p class="text-muted small">Optimized core web vitals, minimal footprint, and swift interaction response under 100ms.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 reveal">
+                            <div class="bg-glass-card p-4 h-100">
+                                <div class="fs-1 text-info mb-3"><i class="bi bi-headset"></i></div>
+                                <h4 class="mb-2">Reliable Support</h4>
+                                <p class="text-muted small">Dedicated post-launch technical assistance and continuous maintenance guarantees peace of mind.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         STATISTICS SECTION
+         ========================================== -->
+    <section class="section-padding bg-darker border-top border-bottom border-secondary">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-6 col-lg-3 reveal">
+                    <div class="bg-glass-card stat-card">
+                        <div class="stat-number text-gradient-cyan">
+                            <span class="counter-value" data-target="40">0</span>+
+                        </div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 reveal">
+                    <div class="bg-glass-card stat-card">
+                        <div class="stat-number text-gradient-purple">
+                            <span class="counter-value" data-target="25">0</span>+
+                        </div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 reveal">
+                    <div class="bg-glass-card stat-card">
+                        <div class="stat-number text-gradient-cyan">
+                            <span class="counter-value" data-target="3">0</span>+
+                        </div>
+                        <div class="stat-label">Years of Experience</div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 reveal">
+                    <div class="bg-glass-card stat-card">
+                        <div class="stat-number text-gradient-purple">
+                            <span class="counter-value" data-target="99">0</span>%
+                        </div>
+                        <div class="stat-label">Client Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         DEVELOPMENT PROCESS TIMELINE
+         ========================================== -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-tag"><i class="bi bi-kanban"></i> Workflow</span>
+                <h2 class="section-title">Our Development <span class="text-gradient">Process</span></h2>
+                <p class="section-subtitle">A proven, transparent step-by-step methodology from initial discovery to final deployment.</p>
+            </div>
+
+            <div class="timeline-container">
+                <div class="row g-4 position-relative">
+                    <div class="col-lg-2-4 col-md-6 reveal">
+                        <div class="bg-glass-card process-step-card">
+                            <div class="step-number">01</div>
+                            <h4 class="mb-2">Discovery</h4>
+                            <p class="text-muted small">Deep dive into project scope, user personas, market requirements, and technical strategy.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2-4 col-md-6 reveal">
+                        <div class="bg-glass-card process-step-card">
+                            <div class="step-number">02</div>
+                            <h4 class="mb-2">Strategy</h4>
+                            <p class="text-muted small">Architecting information flow, design systems, tech stack selection, and milestone roadmaps.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2-4 col-md-6 reveal">
+                        <div class="bg-glass-card process-step-card">
+                            <div class="step-number">03</div>
+                            <h4 class="mb-2">Design</h4>
+                            <p class="text-muted small">Crafting interactive wireframes, UI prototypes, glassmorphism components, and animations.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2-4 col-md-6 reveal">
+                        <div class="bg-glass-card process-step-card">
+                            <div class="step-number">04</div>
+                            <h4 class="mb-2">Development</h4>
+                            <p class="text-muted small">Writing pixel-perfect clean code, implementing interactive JS logic, and cross-browser testing.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2-4 col-md-6 reveal">
+                        <div class="bg-glass-card process-step-card">
+                            <div class="step-number">05</div>
+                            <h4 class="mb-2">Launch</h4>
+                            <p class="text-muted small">Performance optimization, final deployment quality check, launch delivery, and ongoing support.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         TESTIMONIALS SECTION
+         ========================================== -->
+    <section class="section-padding bg-darker">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-tag"><i class="bi bi-chat-square-quote"></i> Testimonials</span>
+                <h2 class="section-title">What Our <span class="text-gradient-cyan">Clients Say</span></h2>
+                <p class="section-subtitle">Real feedback from founders and executives who built their core products with Glitch.</p>
+            </div>
+
+            <!-- Testimonial Bootstrap Carousel -->
+            <div id="testimonialCarousel" class="carousel slide reveal" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="bg-glass-card testimonial-card text-center">
+                                    <div class="rating-stars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                    <p class="testimonial-quote">
+                                        "Glitch delivered a phenomenal digital experience for RevGate. Their attention to futuristic dark design, performance, and clean interactive code exceeded every expectation we had."
+                                    </p>
+                                    <div class="testimonial-client justify-content-center">
+                                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Marcus Vance" class="client-avatar">
+                                        <div class="text-start">
+                                            <div class="client-name">Marcus Vance</div>
+                                            <div class="client-role">Founder & CEO, RevGate Motors</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="bg-glass-card testimonial-card text-center">
+                                    <div class="rating-stars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                    <p class="testimonial-quote">
+                                        "Working with the Glitch software house team was effortless. They turned our complex analytics dashboard concept into a sleek, blazing-fast web app in record time!"
+                                    </p>
+                                    <div class="testimonial-client justify-content-center">
+                                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Elena Rostova" class="client-avatar">
+                                        <div class="text-start">
+                                            <div class="client-name">Elena Rostova</div>
+                                            <div class="client-role">Head of Product, Orbit SaaS</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="bg-glass-card testimonial-card text-center">
+                                    <div class="rating-stars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                    <p class="testimonial-quote">
+                                        "The glassmorphism styling and smooth animations Glitch built for our e-commerce platform doubled our mobile conversion rates within the first month of launch."
+                                    </p>
+                                    <div class="testimonial-client justify-content-center">
+                                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80" alt="David Chen" class="client-avatar">
+                                        <div class="text-start">
+                                            <div class="client-name">David Chen</div>
+                                            <div class="client-role">Creative Director, Nova Fashion</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon p-3 bg-dark border border-secondary rounded-circle" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon p-3 bg-dark border border-secondary rounded-circle" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         CALL TO ACTION SECTION
+         ========================================== -->
+    <section class="section-padding text-center position-relative overflow-hidden">
+        <div class="container position-relative z-2">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 reveal">
+                    <h2 class="section-title">Have an idea? Let’s turn it into <span class="text-gradient">something remarkable.</span></h2>
+                    <p class="section-subtitle mb-4">Partner with Glitch to engineer your next high-converting website or digital product.</p>
+                    <a href="contact.html" class="btn-glitch-primary btn-lg">
+                        <span>Start a Project</span> <i class="bi bi-rocket-takeoff-fill ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         FOOTER
+         ========================================== -->
+    <footer class="footer-glitch">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Col 1: Brand -->
+                <div class="col-lg-4 col-md-6">
+                    <a class="navbar-brand navbar-brand-glitch mb-3" href="index.html">
+                        <div class="brand-logo-icon">
+                            <i class="bi bi-code-slash"></i>
+                        </div>
+                        GLITCH<span class="accent">.</span>
+                    </a>
+                    <p class="text-muted mt-3">
+                        Glitch is a premier software house specializing in custom front-end development, sleek UI/UX design, and scalable web apps for global brands.
+                    </p>
+                    <div class="team-socials justify-content-start mt-4">
+                        <a href="#" class="social-icon-btn" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                        <a href="#" class="social-icon-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="social-icon-btn" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="social-icon-btn" aria-label="Dribbble"><i class="bi bi-dribbble"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-widget-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="bi bi-chevron-right me-1"></i> Home</a></li>
+                        <li><a href="services.html"><i class="bi bi-chevron-right me-1"></i> Services</a></li>
+                        <li><a href="portfolio.html"><i class="bi bi-chevron-right me-1"></i> Portfolio</a></li>
+                        <li><a href="about.html"><i class="bi bi-chevron-right me-1"></i> About Us</a></li>
+                        <li><a href="contact.html"><i class="bi bi-chevron-right me-1"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Services -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-widget-title">Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="services.html"><i class="bi bi-chevron-right me-1"></i> Website Development</a></li>
+                        <li><a href="services.html"><i class="bi bi-chevron-right me-1"></i> Web Applications</a></li>
+                        <li><a href="services.html"><i class="bi bi-chevron-right me-1"></i> UI/UX Design</a></li>
+                        <li><a href="services.html"><i class="bi bi-chevron-right me-1"></i> E-commerce Solutions</a></li>
+                        <li><a href="services.html"><i class="bi bi-chevron-right me-1"></i> API Integrations</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Newsletter -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-widget-title">Stay Connected</h5>
+                    <p class="text-muted small">Subscribe to receive tech insights and project updates from Glitch.</p>
+                    <form id="newsletterForm" class="newsletter-box">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" aria-label="Subscribe"><i class="bi bi-send-fill"></i></button>
+                    </form>
+                    <div class="mt-3 text-muted small">
+                        <i class="bi bi-envelope-at me-2 text-info"></i> hello@glitch-software.com
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright-text text-center">
+                <p class="mb-0">&copy; 2026 Glitch Software House. All rights reserved. Designed for Front-End Portfolio Showcase.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div id="backToTop" class="back-to-top" title="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </div>
+
+    <!-- ==========================================
+         PORTFOLIO PROJECT MODAL
+         ========================================== -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content modal-content-glitch">
+                <div class="modal-header">
+                    <div>
+                        <span id="modalCategory" class="badge bg-info text-dark mb-1">Category</span>
+                        <h4 class="modal-title font-heading" id="modalTitle">Project Title</h4>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="modalImage" src="" alt="Project Image" class="img-fluid rounded mb-4 w-100" style="max-height: 400px; object-fit: cover;">
+                    
+                    <h5 class="text-info mb-2 font-heading">Project Overview</h5>
+                    <p id="modalOverview" class="text-secondary">Overview content...</p>
+
+                    <div class="row g-3 my-2">
+                        <div class="col-md-6">
+                            <div class="p-3 bg-glass-card">
+                                <h6 class="text-danger font-heading"><i class="bi bi-exclamation-octagon me-2"></i> Client Challenge</h6>
+                                <p id="modalChallenge" class="small text-muted mb-0">Challenge content...</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 bg-glass-card">
+                                <h6 class="text-success font-heading"><i class="bi bi-check-circle me-2"></i> Glitch Solution</h6>
+                                <p id="modalSolution" class="small text-muted mb-0">Solution content...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5 class="text-info mt-4 mb-2 font-heading">Main Features</h5>
+                    <ul id="modalFeatures" class="list-unstyled text-secondary">
+                        <!-- Dynamic list items -->
+                    </ul>
+
+                    <div class="d-flex flex-wrap justify-content-between align-items-center mt-4 pt-3 border-top border-secondary">
+                        <div>
+                            <span class="text-muted small me-2">Technologies Used:</span>
+                            <div id="modalTechBadges" class="d-inline-block mt-1">
+                                <!-- Dynamic Badges -->
+                            </div>
+                        </div>
+                        <div class="mt-2 mt-sm-0 text-muted small">
+                            <i class="bi bi-clock me-1 text-info"></i> Duration: <strong id="modalDuration" class="text-white">--</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">Close</button>
+                    <a href="dashboard/index.html" target="_blank" id="modalVisitBtn" class="btn-glitch-outline me-2"><i class="bi bi-box-arrow-up-right me-1"></i> Launch Dashboard</a>
+                    <a href="contact.html" class="btn-glitch-primary">Request Similar Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

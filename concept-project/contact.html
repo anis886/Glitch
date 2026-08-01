@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us — Glitch Software House</title>
+    <meta name="description" content="Get in touch with Glitch software house to discuss your web application, website design, or technical project.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ==========================================
+         NAVBAR
+         ========================================== -->
+    <nav class="navbar navbar-expand-lg navbar-glitch">
+        <div class="container">
+            <a class="navbar-brand navbar-brand-glitch" href="index.html">
+                <div class="brand-logo-icon">
+                    <i class="bi bi-code-slash"></i>
+                </div>
+                GLITCH<span class="accent">.</span>
+            </a>
+            
+            <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <i class="bi bi-list fs-1 text-info"></i>
+            </button>
+            
+            <div class="offcanvas offcanvas-end offcanvas-dark" tabindex="-1" id="offcanvasNavbar">
+                <div class="offcanvas-header border-bottom border-secondary">
+                    <h5 class="offcanvas-title text-info font-heading">GLITCH.</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-glitch" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-glitch" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-glitch" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-glitch" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-glitch active" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <a href="contact.html" class="btn-glitch-primary">Start a Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==========================================
+         PAGE HEADER
+         ========================================== -->
+    <section class="hero-section" style="min-height: 45vh; padding-top: 150px; padding-bottom: 60px;">
+        <div class="container hero-content">
+            <span class="section-tag"><i class="bi bi-envelope-open-fill"></i> Get In Touch</span>
+            <h1 class="hero-title">Let’s Build Something <span class="text-gradient">Great Together</span></h1>
+            <p class="hero-description">Have a project in mind, a request for a quote, or a technical inquiry? Fill out the form below and our engineering team will respond within 24 hours.</p>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         CONTACT FORM & CONTACT INFO SECTION
+         ========================================== -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Contact Form Column -->
+                <div class="col-lg-7 reveal">
+                    <div class="bg-glass-card contact-form-card">
+                        <h3 class="text-white mb-4 font-heading"><i class="bi bi-chat-left-dots text-info me-2"></i> Send Us a Message</h3>
+                        
+                        <!-- FORMSPREE INTEGRATION READY FORM -->
+                        <!-- REPLACE YOUR_FORM_ID WITH YOUR FORMSPREE FORM ID (e.g. https://formspree.io/f/xbjnopqr) -->
+                        <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="needs-validation" novalidate>
+                            <div class="row g-3">
+                                <!-- Full Name -->
+                                <div class="col-md-6">
+                                    <label for="fullName" class="form-label text-secondary small fw-semibold">Full Name *</label>
+                                    <input type="text" class="form-control form-control-glitch" id="fullName" name="name" placeholder="e.g. Mohamed Anis" required>
+                                    <div class="invalid-feedback">Please provide your full name.</div>
+                                </div>
+
+                                <!-- Email -->
+                                <div class="col-md-6">
+                                    <label for="emailAddress" class="form-label text-secondary small fw-semibold">Email Address *</label>
+                                    <input type="email" class="form-control form-control-glitch" id="emailAddress" name="_replyto" placeholder="name@company.com" required>
+                                    <div class="invalid-feedback">Please provide a valid email address.</div>
+                                </div>
+
+                                <!-- Phone Number -->
+                                <div class="col-md-6">
+                                    <label for="phoneNumber" class="form-label text-secondary small fw-semibold">Phone Number</label>
+                                    <input type="tel" class="form-control form-control-glitch" id="phoneNumber" name="phone" placeholder="+1 (555) 000-0000">
+                                </div>
+
+                                <!-- Company Name -->
+                                <div class="col-md-6">
+                                    <label for="companyName" class="form-label text-secondary small fw-semibold">Company / Organization</label>
+                                    <input type="text" class="form-control form-control-glitch" id="companyName" name="company" placeholder="e.g. Nexus Tech">
+                                </div>
+
+                                <!-- Required Service -->
+                                <div class="col-md-6">
+                                    <label for="requiredService" class="form-label text-secondary small fw-semibold">Required Service *</label>
+                                    <select class="form-select form-select-glitch" id="requiredService" name="service" required>
+                                        <option value="" selected disabled>Select a service...</option>
+                                        <option value="Website Development">Website Development</option>
+                                        <option value="Web Applications">Web Applications</option>
+                                        <option value="UI/UX Design">UI/UX Design</option>
+                                        <option value="E-commerce Development">E-commerce Development</option>
+                                        <option value="API Integration">API Integration</option>
+                                        <option value="Website Maintenance">Website Maintenance</option>
+                                    </select>
+                                    <div class="invalid-feedback">Please select a service.</div>
+                                </div>
+
+                                <!-- Estimated Budget -->
+                                <div class="col-md-6">
+                                    <label for="estimatedBudget" class="form-label text-secondary small fw-semibold">Estimated Budget</label>
+                                    <select class="form-select form-select-glitch" id="estimatedBudget" name="budget">
+                                        <option value="" selected disabled>Select budget range...</option>
+                                        <option value="$2,500 - $5,000">$2,500 - $5,000</option>
+                                        <option value="$5,000 - $10,000">$5,000 - $10,000</option>
+                                        <option value="$10,000 - $25,000">$10,000 - $25,000</option>
+                                        <option value="$25,000+">$25,000+</option>
+                                    </select>
+                                </div>
+
+                                <!-- Project Details -->
+                                <div class="col-12">
+                                    <label for="projectDetails" class="form-label text-secondary small fw-semibold">Project Details *</label>
+                                    <textarea class="form-control form-control-glitch" id="projectDetails" name="message" rows="5" placeholder="Tell us about your project goals, timelines, and technical requirements..." required></textarea>
+                                    <div class="invalid-feedback">Please enter project details.</div>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <div class="col-12 mt-4">
+                                    <button type="submit" class="btn-glitch-primary btn-lg w-100">
+                                        <span>Submit Project Inquiry</span> <i class="bi bi-send-fill ms-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <!-- Form Feedback Alert -->
+                        <div id="formAlert" class="alert mt-3 d-none" role="alert"></div>
+                    </div>
+                </div>
+
+                <!-- Contact Details & Map Column -->
+                <div class="col-lg-5 reveal">
+                    <!-- Contact Details Card -->
+                    <div class="bg-glass-card p-4 mb-4">
+                        <h4 class="text-white mb-4 font-heading">Contact Information</h4>
+                        
+                        <!-- Email -->
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <i class="bi bi-envelope"></i>
+                            </div>
+                            <div>
+                                <h6 class="text-white mb-1">Email Address</h6>
+                                <p class="text-muted small mb-0">hello@glitch-software.com</p>
+                                <p class="text-muted small mb-0">support@glitch-software.com</p>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <i class="bi bi-telephone"></i>
+                            </div>
+                            <div>
+                                <h6 class="text-white mb-1">Phone Number</h6>
+                                <p class="text-muted small mb-0">+1 (555) 234-5678</p>
+                                <p class="text-muted small mb-0">Mon - Fri, 9:00 AM - 6:00 PM PST</p>
+                            </div>
+                        </div>
+
+                        <!-- Location -->
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <i class="bi bi-geo-alt"></i>
+                            </div>
+                            <div>
+                                <h6 class="text-white mb-1">Headquarters Location</h6>
+                                <p class="text-muted small mb-0">Silicon Tower, 77 Cyber Way</p>
+                                <p class="text-muted small mb-0">San Francisco, CA 94105, USA</p>
+                            </div>
+                        </div>
+
+                        <!-- Working Hours -->
+                        <div class="contact-info-item mb-0">
+                            <div class="contact-info-icon">
+                                <i class="bi bi-clock"></i>
+                            </div>
+                            <div>
+                                <h6 class="text-white mb-1">Working Hours</h6>
+                                <p class="text-muted small mb-0">Monday – Friday: 9:00 AM – 6:00 PM</p>
+                                <p class="text-muted small mb-0">Saturday – Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Embedded Dark Google Map Placeholder -->
+                    <div class="map-container">
+                        <iframe 
+                            title="Glitch Office Location Map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0864887309995!2d-122.39868768468205!3d37.78815197975767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807abc3f8b03%3A0x6b772c69cf7bb58e!2sFinancial%20District%2C%20San%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1689000000000!5m2!1sen!2sus" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         CALL TO ACTION SECTION
+         ========================================== -->
+    <section class="section-padding bg-darker border-top border-secondary text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 reveal">
+                    <h2 class="section-title">Prefer to talk directly? <span class="text-gradient-cyan">Schedule a call.</span></h2>
+                    <p class="section-subtitle mb-4">Our solution architects are available for a 30-minute discovery consultation.</p>
+                    <a href="mailto:hello@glitch-software.com" class="btn-glitch-outline btn-lg">
+                        <span>Email Direct: hello@glitch-software.com</span> <i class="bi bi-envelope-paper-fill ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         FOOTER
+         ========================================== -->
+    <footer class="footer-glitch">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <a class="navbar-brand navbar-brand-glitch mb-3" href="index.html">
+                        <div class="brand-logo-icon">
+                            <i class="bi bi-code-slash"></i>
+                        </div>
+                        GLITCH<span class="accent">.</span>
+                    </a>
+                    <p class="text-muted mt-3">
+                        Glitch is a premier software house specializing in custom front-end development, sleek UI/UX design, and scalable web apps for global brands.
+                    </p>
+                    <div class="team-socials justify-content-start mt-4">
+                        <a href="#" class="social-icon-btn" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                        <a href="#" class="social-icon-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="social-icon-btn" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="social-icon-btn" aria-label="Dribbble"><i class="bi bi-dribbble"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-widget-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="bi bi-chevron-right me-1"></i> Home</a></li>
+                        <li><a href="services.html"><i class="bi bi-chevron-right me-1"></i> Services</a></li>
+                        <li><a href="portfolio.html"><i class="bi bi-chevron-right me-1"></i> Portfolio</a></li>
+                        <li><a href="about.html"><i class="bi bi-chevron-right me-1"></i> About Us</a></li>
+                        <li><a href="contact.html"><i class="bi bi-chevron-right me-1"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-widget-title">Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="services.html"><i class="bi bi-chevron-right me-1"></i> Website Development</a></li>
+                        <li><a href="services.html"><i class="bi bi-chevron-right me-1"></i> Web Applications</a></li>
+                        <li><a href="services.html"><i class="bi bi-chevron-right me-1"></i> UI/UX Design</a></li>
+                        <li><a href="services.html"><i class="bi bi-chevron-right me-1"></i> E-commerce Solutions</a></li>
+                        <li><a href="services.html"><i class="bi bi-chevron-right me-1"></i> API Integrations</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-widget-title">Stay Connected</h5>
+                    <p class="text-muted small">Subscribe to receive tech insights and project updates from Glitch.</p>
+                    <form id="newsletterForm" class="newsletter-box">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" aria-label="Subscribe"><i class="bi bi-send-fill"></i></button>
+                    </form>
+                    <div class="mt-3 text-muted small">
+                        <i class="bi bi-envelope-at me-2 text-info"></i> hello@glitch-software.com
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright-text text-center">
+                <p class="mb-0">&copy; 2026 Glitch Software House. All rights reserved. Designed for Front-End Portfolio Showcase.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div id="backToTop" class="back-to-top" title="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

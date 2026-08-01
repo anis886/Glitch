@@ -101,9 +101,12 @@ function renderProjects(filter = 'all') {
 
           <div class="mt-3 pt-3 border-top border-secondary border-opacity-10 d-flex justify-content-between align-items-center">
             <span class="small text-muted font-monospace"><i class="fa-solid fa-code-branch me-1 text-cyan"></i>v2.4-production</span>
-            <button class="btn btn-link text-cyan p-0 text-decoration-none small font-monospace" onclick="openProjectModal('${project.id}')">
-              View Case Study <i class="fa-solid fa-arrow-right ms-1"></i>
-            </button>
+            <div class="d-flex gap-2 align-items-center">
+              ${project.liveUrl ? `<a href="${project.liveUrl}" class="btn btn-cyber-primary btn-sm font-monospace text-decoration-none"><i class="fa-solid fa-rocket me-1"></i>Launch Live</a>` : ''}
+              <button class="btn btn-link text-cyan p-0 text-decoration-none small font-monospace" onclick="openProjectModal('${project.id}')">
+                Inspect <i class="fa-solid fa-arrow-right ms-1"></i>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -296,11 +299,12 @@ window.openProjectModal = function(projectId) {
           ${project.tags.map(t => `<span class="badge-cyber">${t}</span>`).join('')}
         </div>
 
-        <div class="alert alert-dark border border-cyan border-opacity-25 rounded p-3 mb-0" style="background: rgba(0, 240, 255, 0.05);">
-          <div class="d-flex gap-2 align-items-center">
+        <div class="alert alert-dark border border-cyan border-opacity-25 rounded p-3 mb-3" style="background: rgba(0, 240, 255, 0.05);">
+          <div class="d-flex gap-2 align-items-center mb-2">
             <i class="fa-solid fa-shield-halved text-cyan"></i>
             <span class="small text-cyan font-monospace">GLITCH ARCHITECTURE: Production-ready software solution engineered by Glitch Software House.</span>
           </div>
+          ${project.liveUrl ? `<a href="${project.liveUrl}" class="btn btn-cyber-primary w-100 font-monospace text-center mt-2"><i class="fa-solid fa-arrow-up-right-from-square me-2"></i>Launch Live Application</a>` : ''}
         </div>
       </div>
     </div>

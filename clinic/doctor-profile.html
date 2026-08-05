@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doctor Profile | Pearl Dental Clinic Kuwait</title>
+  <meta name="description" content="View biography, specialization, and availability for expert dentists at Pearl Dental Clinic in Kuwait." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.pearldental.com.kw/doctor-profile.html" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦷</text></svg>" />
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- NAVBAR -->
+<header class="navbar-pearl scrolled" role="banner">
+  <div class="navbar-inner">
+    <a href="index.html" class="navbar-logo">
+      <div class="navbar-logo-icon">🦷</div>
+      <div class="navbar-logo-text">
+        <span class="name" data-i18n="siteName">Pearl Dental Clinic</span>
+        <div class="lang-switcher" role="group" aria-label="Language selector">
+          <button class="lang-btn active" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="ar">AR</button>
+        </div>
+      </div>
+    </a>
+    <nav class="navbar-nav-links">
+      <a href="index.html" class="nav-link" data-i18n="navHome">Home</a>
+      <a href="about.html" class="nav-link" data-i18n="navAbout">About</a>
+      <a href="services.html" class="nav-link" data-i18n="navServices">Services</a>
+      <a href="doctors.html" class="nav-link active" data-i18n="navDoctors">Doctors</a>
+      <a href="contact.html" class="nav-link" data-i18n="navContact">Contact</a>
+    </nav>
+    <div class="navbar-actions">
+      <button type="button" class="btn-outline-custom d-none d-lg-inline-flex ms-2" data-bs-toggle="modal" data-bs-target="#manageBookingModal">
+        <i class="bi bi-search" aria-hidden="true"></i>
+        <span data-i18n="navManageAppt">Manage Booking</span>
+      </button>
+      <a href="appointment.html" class="btn-primary-custom d-none d-lg-inline-flex">
+        <i class="bi bi-calendar-check"></i>
+        <span data-i18n="navBook">Book Appointment</span>
+      </a>
+      <button class="navbar-toggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-drawer-overlay"></div>
+<nav class="mobile-drawer">
+  <div class="mobile-drawer-header">
+    <a href="index.html" class="navbar-logo">
+      <div class="navbar-logo-icon">🦷</div>
+      <div class="navbar-logo-text">
+        <span class="name" data-i18n="siteName">Pearl Dental Clinic</span>
+        <span class="tagline" data-i18n="tagline">Advanced Dental Care</span>
+      </div>
+    </a>
+    <button class="mobile-drawer-close"><i class="bi bi-x-lg"></i></button>
+  </div>
+  <div class="mobile-drawer-links">
+    <a href="index.html" class="nav-link"><i class="bi bi-house"></i> <span data-i18n="navHome">Home</span></a>
+    <a href="about.html" class="nav-link"><i class="bi bi-info-circle"></i> <span data-i18n="navAbout">About</span></a>
+    <a href="services.html" class="nav-link"><i class="bi bi-grid"></i> <span data-i18n="navServices">Services</span></a>
+    <a href="doctors.html" class="nav-link active"><i class="bi bi-person-badge"></i> <span data-i18n="navDoctors">Doctors</span></a>
+    <a href="contact.html" class="nav-link"><i class="bi bi-geo-alt"></i> <span data-i18n="navContact">Contact</span></a>
+  </div>
+  <div class="mobile-drawer-footer">
+    <a href="appointment.html" class="btn-primary-custom" style="width:100%;justify-content:center;">
+      <i class="bi bi-calendar-check"></i>
+      <span data-i18n="navBook">Book Appointment</span>
+    </a>
+  </div>
+</nav>
+
+<main id="main">
+  <!-- Dynamic Hero -->
+  <div class="page-hero">
+    <div class="container text-center">
+      <div class="breadcrumb-pearl justify-content-center mb-2">
+        <a href="index.html" data-i18n="navHome">Home</a>
+        <span class="sep">›</span>
+        <a href="doctors.html" data-i18n="navDoctors">Doctors</a>
+        <span class="sep">›</span>
+        <span class="current" id="dr-name-breadcrumb">Doctor Profile</span>
+      </div>
+      <h1 id="dr-name-main">Dr. Fatima</h1>
+      <p id="dr-spec-main">Cosmetic &amp; General Dentistry Specialist</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-5 text-center" data-aos="fade-right">
+          <div class="doctor-avatar-placeholder mx-auto rounded-2xl shadow-custom" style="max-width:320px;height:340px;">
+            <div class="doctor-avatar-initials" id="dr-initials" style="width:110px;height:110px;font-size:2.5rem;background:var(--color-primary);">FA</div>
+          </div>
+        </div>
+
+        <div class="col-lg-7" data-aos="fade-left">
+          <div class="p-4 bg-white border rounded-xl shadow-custom">
+            <h2 class="h3 text-navy fw-bold mb-1" id="dr-name-heading">Dr. Fatima</h2>
+            <p class="text-primary fw-semibold mb-3" id="dr-spec-sub">Cosmetic &amp; General Dentistry</p>
+            
+            <div class="d-flex flex-wrap gap-2 mb-4">
+              <span class="doctor-meta-tag"><i class="bi bi-clock"></i> <span id="dr-exp-val">12</span> <span data-i18n="yearsExp">yrs exp</span></span>
+              <span class="doctor-meta-tag"><i class="bi bi-translate"></i> <span id="dr-lang-val">Arabic, English</span></span>
+            </div>
+
+            <h4 class="h6 text-navy fw-bold mb-2">Biography</h4>
+            <p class="text-muted small mb-4" id="dr-bio-full">
+              Dr. Fatima is the founder and lead dentist at Pearl Dental Clinic. With over 12 years of clinical experience in Kuwait and abroad, she specializes in aesthetic smile makeovers, porcelain veneers, and comprehensive general dental care.
+            </p>
+
+            <a href="appointment.html" id="dr-book-btn" class="btn-primary-custom">
+              <i class="bi bi-calendar-check"></i>
+              <span data-i18n="bookDoctor">Book Appointment with This Doctor</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom-content pb-4">
+      <span class="copyright" data-i18n="footerCopyright">© 2024 Pearl Dental Clinic. All rights reserved.</span>
+      <div class="footer-legal-links">
+        <a href="privacy.html" data-i18n="footerPrivacy">Privacy Policy</a>
+        <a href="terms.html" data-i18n="footerTerms">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Manage Booking / Patient Portal Modal -->
+<div class="modal fade" id="manageBookingModal" tabindex="-1" aria-labelledby="manageBookingModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg rounded-2xl overflow-hidden">
+      <div class="modal-header text-white" style="background:var(--color-navy);color:white;padding:1.25rem;">
+        <h5 class="modal-title font-heading fw-bold d-flex align-items-center gap-2 mb-0" id="manageBookingModalLabel" style="font-size:1.15rem;">
+          <i class="bi bi-search text-primary"></i> <span data-i18n="lookupTitle">Find Your Appointment</span>
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-4">
+        <p class="text-muted small mb-3" data-i18n="lookupDesc">Enter your reference number and contact info to view or manage your appointment.</p>
+        
+        <form id="lookup-form" class="mb-3">
+          <div class="mb-3">
+            <label for="lookup-ref" class="form-label-custom" data-i18n="fieldRef">Reference Number (e.g. PDC-XXXXXX)</label>
+            <input type="text" id="lookup-ref" class="form-control-custom" placeholder="PDC-XXXXXX" required style="text-transform:uppercase;" />
+          </div>
+          <div class="mb-3">
+            <label for="lookup-contact" class="form-label-custom" data-i18n="fieldContactVerify">Phone Number or Email</label>
+            <input type="text" id="lookup-contact" class="form-control-custom" placeholder="Entered when booking" />
+          </div>
+          <button type="submit" class="btn-primary-custom w-100 justify-content-center">
+            <i class="bi bi-search"></i> <span data-i18n="btnLookup">Search Appointment</span>
+          </button>
+        </form>
+
+        <div id="lookup-error" class="alert alert-danger py-2 small mb-3" style="display:none;" role="alert"></div>
+
+        <div id="lookup-result" class="border rounded-xl p-3 bg-light" style="display:none;">
+          <div class="d-flex justify-content-between align-items-center mb-2 pb-2 border-bottom">
+            <span class="fw-bold text-navy" id="res-ref">PDC-123456</span>
+            <div id="res-status"></div>
+          </div>
+          <div class="small mb-1"><strong data-i18n="summaryPatient">Patient:</strong> <span id="res-patient"></span></div>
+          <div class="small mb-1"><strong data-i18n="summaryService">Service:</strong> <span id="res-service"></span></div>
+          <div class="small mb-1"><strong data-i18n="summaryDoctor">Doctor:</strong> <span id="res-doctor"></span></div>
+          <div class="small mb-1"><strong data-i18n="summaryDate">Date:</strong> <span id="res-date"></span></div>
+          <div class="small mb-3"><strong data-i18n="summaryTime">Time:</strong> <span id="res-time"></span></div>
+          
+          <button type="button" id="btn-cancel-appt" class="btn btn-outline-danger btn-sm w-100 mt-2">
+            <i class="bi bi-x-circle me-1"></i> <span data-i18n="btnCancelAppt">Cancel Appointment</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="js/translations.js"></script>
+<script src="js/supabase.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+<script src="js/manage-booking.js"></script>
+<script>
+  (function() {
+    const params = new URLSearchParams(window.location.search);
+    const drId = params.get('id') || 'dr-fatima';
+    const lang = localStorage.getItem('pearl_lang') || 'en';
+    const t = (TRANSLATIONS[lang] || TRANSLATIONS.en);
+
+    const doctorsMap = {
+      'dr-malak':  { name: t.dr1Name, spec: t.dr1Spec, exp: t.dr1Exp, lang: t.dr1Lang, bio: t.dr1Bio, initials: 'FA', color: '#1A9CB0' },
+      'dr-fatima': { name: t.dr1Name, spec: t.dr1Spec, exp: t.dr1Exp, lang: t.dr1Lang, bio: t.dr1Bio, initials: 'FA', color: '#1A9CB0' },
+      'dr-mahy':   { name: t.dr2Name, spec: t.dr2Spec, exp: t.dr2Exp, lang: t.dr2Lang, bio: t.dr2Bio, initials: 'HS', color: '#0F2744' },
+      'dr-hana':   { name: t.dr2Name, spec: t.dr2Spec, exp: t.dr2Exp, lang: t.dr2Lang, bio: t.dr2Bio, initials: 'HS', color: '#0F2744' },
+      'dr-ahmad':  { name: t.dr2Name, spec: t.dr2Spec, exp: t.dr2Exp, lang: t.dr2Lang, bio: t.dr2Bio, initials: 'HS', color: '#0F2744' },
+      'dr-sara':   { name: t.dr3Name, spec: t.dr3Spec, exp: t.dr3Exp, lang: t.dr3Lang, bio: t.dr3Bio, initials: 'SE', color: '#10B981' },
+      'dr-khalid': { name: t.dr4Name, spec: t.dr4Spec, exp: t.dr4Exp, lang: t.dr4Lang, bio: t.dr4Bio, initials: 'KS', color: '#6366F1' }
+    };
+
+    const dr = doctorsMap[drId] || doctorsMap['dr-fatima'];
+    document.getElementById('dr-name-main').textContent = dr.name;
+    document.getElementById('dr-name-breadcrumb').textContent = dr.name;
+    document.getElementById('dr-name-heading').textContent = dr.name;
+    document.getElementById('dr-spec-main').textContent = dr.spec;
+    document.getElementById('dr-spec-sub').textContent = dr.spec;
+    document.getElementById('dr-exp-val').textContent = dr.exp;
+    document.getElementById('dr-lang-val').textContent = dr.lang;
+    document.getElementById('dr-bio-full').textContent = dr.bio;
+    document.getElementById('dr-initials').textContent = dr.initials;
+    document.getElementById('dr-initials').style.background = dr.color;
+    document.getElementById('dr-book-btn').href = 'appointment.html?doctor=' + drId;
+  })();
+</script>
+</body>
+</html>

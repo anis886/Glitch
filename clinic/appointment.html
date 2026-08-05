@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book an Appointment | Pearl Dental Clinic Kuwait</title>
+  <meta name="description" content="Book your dental appointment online at Pearl Dental Clinic, Kuwait. Choose your service, doctor, and preferred time slot in just a few steps." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.pearldental.com.kw/appointment.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Book a Dental Appointment | Pearl Dental Clinic Kuwait" />
+  <meta property="og:description" content="Schedule your visit online in minutes. Choose your service, doctor, and preferred time." />
+  <meta property="og:url" content="https://www.pearldental.com.kw/appointment.html" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦷</text></svg>" />
+</head>
+
+<body>
+
+<a class="skip-link" href="#appt-form">Skip to appointment form</a>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     NAVBAR (scrolled by default on inner pages)
+════════════════════════════════════════════════════════════════ -->
+<header class="navbar-pearl scrolled" role="banner">
+  <div class="navbar-inner">
+    <a href="index.html" class="navbar-logo">
+      <div class="navbar-logo-icon">🦷</div>
+      <div class="navbar-logo-text">
+        <span class="name" data-i18n="siteName">Pearl Dental Clinic</span>
+        <div class="lang-switcher" role="group" aria-label="Language selector">
+          <button class="lang-btn active" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="ar">AR</button>
+        </div>
+      </div>
+    </a>
+    <nav class="navbar-nav-links">
+      <a href="index.html" class="nav-link" data-i18n="navHome">Home</a>
+      <a href="index.html#services" class="nav-link" data-i18n="navServices">Services</a>
+      <a href="doctors.html" class="nav-link" data-i18n="navDoctors">Doctors</a>
+      <a href="index.html#contact" class="nav-link" data-i18n="navContact">Contact</a>
+    </nav>
+    <div class="navbar-actions">
+      <button type="button" class="btn-outline-custom d-none d-lg-inline-flex ms-2" data-bs-toggle="modal" data-bs-target="#manageBookingModal">
+        <i class="bi bi-search" aria-hidden="true"></i>
+        <span data-i18n="navManageAppt">Manage Booking</span>
+      </button>
+      <button class="navbar-toggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-drawer-overlay"></div>
+<nav class="mobile-drawer">
+  <div class="mobile-drawer-header">
+    <a href="index.html" class="navbar-logo">
+      <div class="navbar-logo-icon">🦷</div>
+      <div class="navbar-logo-text">
+        <span class="name" data-i18n="siteName">Pearl Dental Clinic</span>
+        <span class="tagline" data-i18n="tagline">Advanced Dental Care</span>
+      </div>
+    </a>
+    <button class="mobile-drawer-close"><i class="bi bi-x-lg"></i></button>
+  </div>
+  <div class="mobile-drawer-links">
+    <a href="index.html" class="nav-link"><i class="bi bi-house"></i> <span data-i18n="navHome">Home</span></a>
+    <a href="index.html#services" class="nav-link"><i class="bi bi-grid"></i> <span data-i18n="navServices">Services</span></a>
+    <a href="doctors.html" class="nav-link"><i class="bi bi-person-badge"></i> <span data-i18n="navDoctors">Doctors</span></a>
+    <a href="index.html#contact" class="nav-link"><i class="bi bi-geo-alt"></i> <span data-i18n="navContact">Contact</span></a>
+    <div style="display:flex;gap:0.5rem;padding:1rem 1rem 0.5rem;border-top:1px solid var(--color-border);margin-top:0.5rem;">
+      <button class="lang-btn" data-lang="en" style="flex:1;padding:0.5rem;border:1.5px solid var(--color-border);border-radius:var(--radius-md);">EN</button>
+      <button class="lang-btn" data-lang="ar" style="flex:1;padding:0.5rem;border:1.5px solid var(--color-border);border-radius:var(--radius-md);">AR</button>
+    </div>
+  </div>
+  <div class="mobile-drawer-footer">
+    <a href="appointment.html" class="btn-primary-custom" style="width:100%;justify-content:center;">
+      <i class="bi bi-calendar-check"></i>
+      <span data-i18n="navBook">Book Appointment</span>
+    </a>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     MAIN
+════════════════════════════════════════════════════════════════ -->
+<main id="appt-form">
+  <!-- Page Hero -->
+  <div class="appt-hero">
+    <div class="container text-center">
+      <div class="breadcrumb-pearl justify-content-center mb-2">
+        <a href="index.html" data-i18n="navHome">Home</a>
+        <span class="sep">›</span>
+        <span class="current" data-i18n="apptPageTitle">Book an Appointment</span>
+      </div>
+      <h1 data-i18n="apptPageTitle">Book an Appointment</h1>
+      <p data-i18n="apptSubtitle">Complete the form below to schedule your visit at Pearl Dental Clinic.</p>
+    </div>
+  </div>
+
+  <!-- Form Container -->
+  <div class="appt-form-wrap">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-9">
+
+          <!-- Supabase Notice -->
+          <div class="supabase-notice" id="supabase-notice" style="display:none;" role="status">
+            <i class="bi bi-info-circle-fill"></i>
+            <span data-i18n="supabaseSetupMsg">Supabase not configured. Appointments will be saved locally until setup is complete.</span>
+          </div>
+
+          <!-- Step Indicator -->
+          <div class="step-indicator" role="list" aria-label="Appointment booking steps">
+            <div class="step-item active" role="listitem">
+              <div class="step-circle" aria-label="Step 1: Patient Info" aria-current="step">1</div>
+              <div class="step-label" data-i18n="step1">Patient Info</div>
+            </div>
+            <div class="step-item" role="listitem">
+              <div class="step-circle" aria-label="Step 2: Select Service">2</div>
+              <div class="step-label" data-i18n="step2">Select Service</div>
+            </div>
+            <div class="step-item" role="listitem">
+              <div class="step-circle" aria-label="Step 3: Doctor and Time">3</div>
+              <div class="step-label" data-i18n="step3">Doctor &amp; Time</div>
+            </div>
+            <div class="step-item" role="listitem">
+              <div class="step-circle" aria-label="Step 4: Confirm">4</div>
+              <div class="step-label" data-i18n="step4">Confirm</div>
+            </div>
+          </div>
+
+          <!-- Form Card -->
+          <div class="appt-card" data-aos="fade-up">
+
+            <!-- ── STEP 1: Patient Info ── -->
+            <div class="appt-step active" id="appt-step-1" role="tabpanel" aria-labelledby="step-1-label">
+              <h2 class="appt-step-title" id="step-1-label" data-i18n="step1Title">Patient Information</h2>
+              <p class="appt-step-desc" data-i18n="step1Desc">Please provide your contact details so we can confirm your appointment.</p>
+
+              <div class="row g-3">
+                <!-- Full Name -->
+                <div class="col-12">
+                  <div class="mb-3">
+                    <label for="appt-name" class="form-label-custom">
+                      <span data-i18n="fieldFullName">Full Name</span> <span style="color:var(--color-error);">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="appt-name"
+                      class="form-control-custom"
+                      placeholder="Enter your full name"
+                      required
+                      autocomplete="name"
+                      aria-required="true"
+                      aria-describedby="appt-name-err"
+                    />
+                    <span class="form-error-msg" id="appt-name-err" role="alert"></span>
+                  </div>
+                </div>
+
+                <!-- Phone -->
+                <div class="col-sm-6">
+                  <div class="mb-3">
+                    <label for="appt-phone" class="form-label-custom">
+                      <span data-i18n="fieldPhone">Phone Number</span> <span style="color:var(--color-error);">*</span>
+                    </label>
+                    <div class="phone-input-wrap" style="display:flex;gap:0.5rem;">
+                      <div style="
+                        display:flex;align-items:center;padding:0 0.875rem;
+                        background:var(--color-gray-100);border:1.5px solid var(--color-border);
+                        border-radius:var(--radius-md);font-size:0.875rem;font-weight:600;
+                        color:var(--color-text);white-space:nowrap;flex-shrink:0;
+                        gap:0.25rem;
+                      " aria-label="Kuwait country code">
+                        🇰🇼 +965
+                      </div>
+                      <input
+                        type="tel"
+                        id="appt-phone"
+                        class="form-control-custom"
+                        style="flex:1;"
+                        placeholder="6XXX XXXX or 9XXX XXXX"
+                        required
+                        autocomplete="tel"
+                        maxlength="13"
+                        pattern="[0-9\s\-]+"
+                        aria-required="true"
+                        aria-describedby="appt-phone-err"
+                        aria-label="Phone number (Kuwait)"
+                      />
+                    </div>
+                    <span class="form-error-msg" id="appt-phone-err" role="alert"></span>
+                  </div>
+                </div>
+
+                <!-- Email -->
+                <div class="col-sm-6">
+                  <div class="mb-3">
+                    <label for="appt-email" class="form-label-custom">
+                      <span data-i18n="fieldEmail">Email Address</span> <span style="color:var(--color-error);">*</span>
+                    </label>
+                    <input
+                      type="email"
+                      id="appt-email"
+                      class="form-control-custom"
+                      placeholder="your@email.com"
+                      required
+                      autocomplete="email"
+                      aria-required="true"
+                      aria-describedby="appt-email-err"
+                    />
+                    <span class="form-error-msg" id="appt-email-err" role="alert"></span>
+                  </div>
+                </div>
+
+                <!-- Contact Preference -->
+                <div class="col-sm-6">
+                  <div class="mb-3">
+                    <div class="form-label-custom" data-i18n="fieldContactPref">Preferred Contact Method</div>
+                    <div style="display:flex;gap:0.5rem;flex-wrap:wrap;" role="radiogroup" aria-label="Preferred contact method">
+                      <label style="display:flex;align-items:center;gap:0.4rem;cursor:pointer;padding:0.5rem 0.875rem;border:1.5px solid var(--color-border);border-radius:var(--radius-md);font-size:0.875rem;font-weight:500;transition:all 0.15s;flex:1;">
+                        <input type="radio" name="contact-pref" value="whatsapp" checked style="accent-color:var(--color-primary);" />
+                        <i class="bi bi-whatsapp" style="color:#25D366;"></i> <span data-i18n="contactPrefWhatsApp">WhatsApp</span>
+                      </label>
+                      <label style="display:flex;align-items:center;gap:0.4rem;cursor:pointer;padding:0.5rem 0.875rem;border:1.5px solid var(--color-border);border-radius:var(--radius-md);font-size:0.875rem;font-weight:500;transition:all 0.15s;flex:1;">
+                        <input type="radio" name="contact-pref" value="phone" style="accent-color:var(--color-primary);" />
+                        <i class="bi bi-telephone" style="color:var(--color-primary);"></i> <span data-i18n="contactPrefPhone">Phone</span>
+                      </label>
+                      <label style="display:flex;align-items:center;gap:0.4rem;cursor:pointer;padding:0.5rem 0.875rem;border:1.5px solid var(--color-border);border-radius:var(--radius-md);font-size:0.875rem;font-weight:500;transition:all 0.15s;flex:1;">
+                        <input type="radio" name="contact-pref" value="email" style="accent-color:var(--color-primary);" />
+                        <i class="bi bi-envelope" style="color:var(--color-primary);"></i> <span data-i18n="contactPrefEmail">Email</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Patient Type -->
+                <div class="col-sm-6">
+                  <div class="mb-3">
+                    <div class="form-label-custom" data-i18n="fieldPatientType">Are you a new patient?</div>
+                    <div style="display:flex;gap:0.5rem;" role="radiogroup" aria-label="Patient type">
+                      <label style="display:flex;align-items:center;gap:0.4rem;cursor:pointer;padding:0.5rem 0.875rem;border:1.5px solid var(--color-border);border-radius:var(--radius-md);font-size:0.875rem;font-weight:500;flex:1;">
+                        <input type="radio" name="patient-type" value="new" checked style="accent-color:var(--color-primary);" />
+                        <span data-i18n="patientNew">New Patient</span>
+                      </label>
+                      <label style="display:flex;align-items:center;gap:0.4rem;cursor:pointer;padding:0.5rem 0.875rem;border:1.5px solid var(--color-border);border-radius:var(--radius-md);font-size:0.875rem;font-weight:500;flex:1;">
+                        <input type="radio" name="patient-type" value="existing" style="accent-color:var(--color-primary);" />
+                        <span data-i18n="patientExisting">Existing Patient</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ── STEP 2: Service Selection ── -->
+            <div class="appt-step" id="appt-step-2" role="tabpanel">
+              <h2 class="appt-step-title" data-i18n="step2Title">Select a Service</h2>
+              <p class="appt-step-desc" data-i18n="step2Desc">Choose the dental service you need.</p>
+
+              <div class="service-select-grid" id="service-select-grid" role="radiogroup" aria-label="Select a dental service">
+                <!-- Dynamically rendered by appointment.js -->
+              </div>
+
+              <span class="form-error-msg" id="service-error" role="alert" style="display:block;"></span>
+            </div>
+
+            <!-- ── STEP 3: Doctor & Time ── -->
+            <div class="appt-step" id="appt-step-3" role="tabpanel">
+              <h2 class="appt-step-title" data-i18n="step3Title">Doctor &amp; Appointment Time</h2>
+              <p class="appt-step-desc" data-i18n="step3Desc">Select your preferred doctor and available time slot.</p>
+
+              <!-- Doctor selection -->
+              <div class="mb-4">
+                <div class="form-label-custom" style="margin-bottom:0.875rem;" data-i18n="fieldDoctor">Select Doctor</div>
+                <div class="doctor-select-grid" id="doctor-select-grid" role="radiogroup" aria-label="Select a doctor">
+                  <!-- Dynamically rendered by appointment.js -->
+                </div>
+              </div>
+
+              <!-- Date -->
+              <div class="row g-3 mb-4">
+                <div class="col-sm-6">
+                  <div class="mb-3">
+                    <label for="appt-date" class="form-label-custom">
+                      <span data-i18n="fieldDate">Preferred Date</span> <span style="color:var(--color-error);">*</span>
+                    </label>
+                    <input
+                      type="date"
+                      id="appt-date"
+                      class="form-control-custom"
+                      required
+                      aria-required="true"
+                      aria-describedby="date-error"
+                    />
+                    <span class="form-error-msg" id="date-error" role="alert"></span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Time Slots -->
+              <div class="mb-4">
+                <div class="form-label-custom" style="margin-bottom:0.875rem;" data-i18n="availableSlots">Available Time Slots</div>
+                <div id="time-slots-wrap" style="min-height:60px;">
+                  <p class="text-muted" style="font-size:0.9rem;">Please select a date to see available times.</p>
+                </div>
+                <span class="form-error-msg" id="time-error" role="alert"></span>
+              </div>
+
+              <!-- Notes -->
+              <div class="mb-3">
+                <label for="appt-notes" class="form-label-custom" data-i18n="fieldNotes">Additional Notes (Optional)</label>
+                <textarea
+                  id="appt-notes"
+                  class="form-control-custom"
+                  rows="3"
+                  placeholder="Any special requests, medical conditions, or information you'd like us to know..."
+                  aria-label="Additional notes for your appointment"
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- ── STEP 4: Confirmation ── -->
+            <div class="appt-step" id="appt-step-4" role="tabpanel">
+              <h2 class="appt-step-title" data-i18n="step4Title">Confirm Your Appointment</h2>
+              <p class="appt-step-desc" data-i18n="step4Desc">Please review your appointment details before confirming.</p>
+
+              <!-- Summary Card -->
+              <div class="confirmation-summary">
+                <div class="confirmation-summary-header" data-i18n="confirmSummaryHeader">Appointment Summary</div>
+                <div class="confirmation-summary-body" id="confirmation-rows">
+                  <!-- Rendered by appointment.js -->
+                </div>
+              </div>
+
+              <!-- Consent -->
+              <div class="mb-3" style="padding:1rem;background:var(--color-gray-100);border-radius:var(--radius-lg);">
+                <label class="consent-check" for="appt-consent">
+                  <input type="checkbox" id="appt-consent" required aria-required="true" aria-describedby="consent-err" />
+                  <span class="consent-check-label">
+                    <span data-i18n="consentLabel">I agree to the</span>
+                    <a href="privacy.html" target="_blank" rel="noopener" style="color:var(--color-primary);" data-i18n="footerPrivacy">Privacy Policy</a>
+                    <span>and consent to Pearl Dental Clinic contacting me regarding my appointment.</span>
+                  </span>
+                </label>
+              </div>
+            </div>
+
+            <!-- ── Navigation Buttons ── -->
+            <div class="appt-nav-btns">
+              <button type="button" class="btn-outline-custom" id="btn-back" style="min-width:120px;">
+                <i class="bi bi-arrow-left" aria-hidden="true"></i>
+                <span data-i18n="btnBack">Back</span>
+              </button>
+
+              <button type="button" class="btn-primary-custom" id="btn-next" style="min-width:160px;">
+                <span data-i18n="btnNext">Next Step</span>
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </button>
+
+              <button type="button" class="btn-primary-custom" id="btn-confirm" style="min-width:200px;display:none;">
+                <i class="bi bi-check-circle" aria-hidden="true"></i>
+                <span data-i18n="btnConfirm">Confirm Appointment</span>
+              </button>
+            </div>
+
+          </div>
+          <!-- /appt-card -->
+
+          <!-- Info boxes below form -->
+          <div class="row g-3 mt-4" data-aos="fade-up">
+            <div class="col-sm-4">
+              <div style="background:white;border:1px solid var(--color-border);border-radius:var(--radius-xl);padding:1.25rem;text-align:center;">
+                <div style="font-size:1.75rem;margin-bottom:0.5rem;">📞</div>
+                <div style="font-size:0.875rem;font-weight:600;color:var(--color-navy);margin-bottom:0.25rem;">Need help booking?</div>
+                <a href="tel:+96522345678" style="font-size:0.875rem;color:var(--color-primary);">+965 2234 5678</a>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div style="background:white;border:1px solid var(--color-border);border-radius:var(--radius-xl);padding:1.25rem;text-align:center;">
+                <div style="font-size:1.75rem;margin-bottom:0.5rem;">💬</div>
+                <div style="font-size:0.875rem;font-weight:600;color:var(--color-navy);margin-bottom:0.25rem;">WhatsApp us</div>
+                <a href="https://wa.me/96598765432" target="_blank" rel="noopener" style="font-size:0.875rem;color:#25D366;">+965 9876 5432</a>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div style="background:white;border:1px solid var(--color-border);border-radius:var(--radius-xl);padding:1.25rem;text-align:center;">
+                <div style="font-size:1.75rem;margin-bottom:0.5rem;">🕐</div>
+                <div style="font-size:0.875rem;font-weight:600;color:var(--color-navy);margin-bottom:0.25rem;">Working Hours</div>
+                <div style="font-size:0.8125rem;color:var(--color-text-light);">Sat–Thu: 9AM–8PM</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Footer (minimal) -->
+<footer style="background:var(--color-navy);padding:1.5rem 0;margin-top:3rem;">
+  <div class="container">
+    <div class="footer-bottom-content">
+      <span class="copyright" data-i18n="footerCopyright">© 2024 Pearl Dental Clinic. All rights reserved.</span>
+      <div class="footer-legal-links">
+        <a href="privacy.html" data-i18n="footerPrivacy">Privacy Policy</a>
+        <a href="terms.html" data-i18n="footerTerms">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<div class="fab-container">
+  <a href="https://wa.me/96598765432" target="_blank" rel="noopener" class="fab-btn fab-whatsapp" aria-label="WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+  <button class="fab-btn fab-scroll-top" id="fab-scroll-top" aria-label="Scroll to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+</div>
+
+<!-- Manage Booking / Patient Portal Modal -->
+<div class="modal fade" id="manageBookingModal" tabindex="-1" aria-labelledby="manageBookingModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg rounded-2xl overflow-hidden">
+      <div class="modal-header text-white" style="background:var(--color-navy);color:white;padding:1.25rem;">
+        <h5 class="modal-title font-heading fw-bold d-flex align-items-center gap-2 mb-0" id="manageBookingModalLabel" style="font-size:1.15rem;">
+          <i class="bi bi-search text-primary"></i> <span data-i18n="lookupTitle">Find Your Appointment</span>
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-4">
+        <p class="text-muted small mb-3" data-i18n="lookupDesc">Enter your reference number and contact info to view or manage your appointment.</p>
+        
+        <form id="lookup-form" class="mb-3">
+          <div class="mb-3">
+            <label for="lookup-ref" class="form-label-custom" data-i18n="fieldRef">Reference Number (e.g. PDC-XXXXXX)</label>
+            <input type="text" id="lookup-ref" class="form-control-custom" placeholder="PDC-XXXXXX" required style="text-transform:uppercase;" />
+          </div>
+          <div class="mb-3">
+            <label for="lookup-contact" class="form-label-custom" data-i18n="fieldContactVerify">Phone Number or Email</label>
+            <input type="text" id="lookup-contact" class="form-control-custom" placeholder="Entered when booking" />
+          </div>
+          <button type="submit" class="btn-primary-custom w-100 justify-content-center">
+            <i class="bi bi-search"></i> <span data-i18n="btnLookup">Search Appointment</span>
+          </button>
+        </form>
+
+        <div id="lookup-error" class="alert alert-danger py-2 small mb-3" style="display:none;" role="alert"></div>
+
+        <div id="lookup-result" class="border rounded-xl p-3 bg-light" style="display:none;">
+          <div class="d-flex justify-content-between align-items-center mb-2 pb-2 border-bottom">
+            <span class="fw-bold text-navy" id="res-ref">PDC-123456</span>
+            <div id="res-status"></div>
+          </div>
+          <div class="small mb-1"><strong data-i18n="summaryPatient">Patient:</strong> <span id="res-patient"></span></div>
+          <div class="small mb-1"><strong data-i18n="summaryService">Service:</strong> <span id="res-service"></span></div>
+          <div class="small mb-1"><strong data-i18n="summaryDoctor">Doctor:</strong> <span id="res-doctor"></span></div>
+          <div class="small mb-1"><strong data-i18n="summaryDate">Date:</strong> <span id="res-date"></span></div>
+          <div class="small mb-3"><strong data-i18n="summaryTime">Time:</strong> <span id="res-time"></span></div>
+          
+          <button type="button" id="btn-cancel-appt" class="btn btn-outline-danger btn-sm w-100 mt-2">
+            <i class="bi bi-x-circle me-1"></i> <span data-i18n="btnCancelAppt">Cancel Appointment</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="js/translations.js"></script>
+<script src="js/supabase.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+<script src="js/appointment.js"></script>
+<script src="js/manage-booking.js"></script>
+
+<!-- Step 4/Confirm button toggle logic -->
+<script>
+  (function() {
+    function syncButtons(step) {
+      const btnNext    = document.getElementById('btn-next');
+      const btnConfirm = document.getElementById('btn-confirm');
+      const btnBack    = document.getElementById('btn-back');
+      if (!btnNext || !btnConfirm) return;
+
+      if (step === 4) {
+        btnNext.style.display = 'none';
+        btnConfirm.style.display = '';
+      } else {
+        btnNext.style.display = '';
+        btnConfirm.style.display = 'none';
+      }
+
+      if (btnBack) {
+        btnBack.style.visibility = step === 1 ? 'hidden' : 'visible';
+      }
+    }
+
+    // Monkey-patch PearlAppt step change
+    document.addEventListener('DOMContentLoaded', function() {
+      // Observe step changes via MutationObserver
+      const steps = document.querySelectorAll('.appt-step');
+      const observer = new MutationObserver(function() {
+        steps.forEach(function(s, i) {
+          if (s.classList.contains('active')) {
+            syncButtons(i + 1);
+          }
+        });
+      });
+      steps.forEach(function(s) {
+        observer.observe(s, { attributes: true, attributeFilter: ['class'] });
+      });
+
+      syncButtons(1);
+    });
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,238 @@
+/* ============================================================
+   Pearl Dental Clinic — RTL Stylesheet (Arabic)
+   Overrides for right-to-left layout
+   ============================================================ */
+
+/* ─── Base RTL ──────────────────────────────────────────────── */
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+/* ─── Typography direction ───────────────────────────────────── */
+[dir="rtl"] .section-tag,
+[dir="rtl"] .service-link,
+[dir="rtl"] .contact-info-item,
+[dir="rtl"] .why-card,
+[dir="rtl"] .about-feature-item,
+[dir="rtl"] .footer-contact-item,
+[dir="rtl"] .supabase-notice,
+[dir="rtl"] .ba-disclaimer {
+  flex-direction: row-reverse;
+}
+
+/* ─── Navbar RTL ─────────────────────────────────────────────── */
+[dir="rtl"] .navbar-inner {
+  direction: rtl;
+}
+
+[dir="rtl"] .navbar-actions {
+  direction: rtl;
+}
+
+/* ─── Hero RTL ───────────────────────────────────────────────── */
+[dir="rtl"] .hero-content {
+  text-align: right;
+}
+
+[dir="rtl"] .hero-actions {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .hero-trust {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .trust-badge {
+  flex-direction: row-reverse;
+}
+
+/* ─── Stats Strip RTL ────────────────────────────────────────── */
+[dir="rtl"] .stat-item:last-child {
+  border-left: none;
+}
+
+/* ─── About RTL ──────────────────────────────────────────────── */
+[dir="rtl"] .about-features {
+  direction: rtl;
+}
+
+/* ─── Doctor cards RTL ───────────────────────────────────────── */
+[dir="rtl"] .doctor-meta {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .doctor-meta-tag {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .doctor-actions {
+  flex-direction: row-reverse;
+}
+
+/* ─── Service cards RTL ──────────────────────────────────────── */
+[dir="rtl"] .service-card::before {
+  border-radius: 0 0 0 var(--radius-xl);
+}
+
+/* ─── Testimonial RTL ────────────────────────────────────────── */
+[dir="rtl"] .testimonial-author {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+/* ─── FAQ RTL ────────────────────────────────────────────────── */
+[dir="rtl"] .faq-question {
+  flex-direction: row-reverse;
+}
+
+/* ─── Contact RTL ────────────────────────────────────────────── */
+[dir="rtl"] .contact-info-content {
+  text-align: right;
+}
+
+[dir="rtl"] .hours-table td:last-child {
+  text-align: left;
+}
+
+/* ─── Appointment Steps RTL ──────────────────────────────────── */
+[dir="rtl"] .appt-nav-btns {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .step-item:not(:last-child)::after {
+  left: auto;
+  right: 50%;
+}
+
+[dir="rtl"] .service-select-card {
+  text-align: center;
+}
+
+[dir="rtl"] .summary-row {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .summary-value {
+  text-align: left;
+}
+
+[dir="rtl"] .confirmation-summary-header {
+  text-align: right;
+}
+
+[dir="rtl"] .consent-check {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .appt-success {
+  direction: rtl;
+}
+
+/* ─── Why cards RTL ──────────────────────────────────────────── */
+[dir="rtl"] .why-text {
+  text-align: right;
+}
+
+/* ─── Footer RTL ─────────────────────────────────────────────── */
+[dir="rtl"] .footer {
+  text-align: right;
+  direction: rtl;
+}
+
+[dir="rtl"] .footer-bottom-content {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .footer-legal-links {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .footer-social {
+  flex-direction: row-reverse;
+}
+
+/* ─── Mobile drawer RTL ──────────────────────────────────────── */
+[dir="rtl"] .mobile-drawer-header {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .mobile-drawer-links .nav-link {
+  flex-direction: row-reverse;
+}
+
+/* ─── Floating buttons RTL ───────────────────────────────────── */
+[dir="rtl"] .fab-btn.fab-book {
+  flex-direction: row-reverse;
+}
+
+/* ─── Form labels RTL ────────────────────────────────────────── */
+[dir="rtl"] .form-label-custom {
+  text-align: right;
+}
+
+[dir="rtl"] .form-error-msg {
+  text-align: right;
+}
+
+[dir="rtl"] select.form-control-custom {
+  background-position: left 0.75rem center;
+  padding-left: 2.25rem;
+  padding-right: 0.75rem;
+}
+
+/* ─── Phone input RTL ────────────────────────────────────────── */
+[dir="rtl"] .phone-input-wrap {
+  flex-direction: row-reverse;
+}
+
+/* ─── Breadcrumb RTL ─────────────────────────────────────────── */
+[dir="rtl"] .breadcrumb-pearl {
+  flex-direction: row-reverse;
+}
+
+/* ─── Page hero RTL ──────────────────────────────────────────── */
+[dir="rtl"] .page-hero {
+  text-align: right;
+}
+
+/* ─── Doctor card RTL ────────────────────────────────────────── */
+[dir="rtl"] .doctor-card-body {
+  text-align: right;
+}
+
+/* ─── Before & After RTL ─────────────────────────────────────── */
+[dir="rtl"] .before-after-tabs {
+  flex-direction: row-reverse;
+}
+
+/* ─── Section titles RTL ─────────────────────────────────────── */
+[dir="rtl"] .section-title,
+[dir="rtl"] .section-subtitle {
+  text-align: right;
+}
+
+[dir="rtl"] .section-subtitle.centered {
+  text-align: center;
+}
+
+/* ─── Input text direction ───────────────────────────────────── */
+[dir="rtl"] input[type="text"],
+[dir="rtl"] input[type="email"],
+[dir="rtl"] input[type="tel"],
+[dir="rtl"] textarea {
+  text-align: right;
+  direction: rtl;
+}
+
+/* When in English inside RTL body, preserve LTR for email/phone */
+[dir="rtl"] input[type="email"],
+[dir="rtl"] input[type="tel"] {
+  text-align: left;
+  direction: ltr;
+}
+
+/* ─── Supabase notice RTL ────────────────────────────────────── */
+[dir="rtl"] .supabase-notice {
+  text-align: right;
+}

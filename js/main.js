@@ -197,6 +197,23 @@ function getGraphicMarkup(type) {
           </div>
         </div>
       `;
+    case 'pearldental':
+      return `
+        <div class="w-100 p-3 rounded" style="background: rgba(0,0,0,0.6); border: 1px solid rgba(0,210,255,0.3);">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <span class="small font-monospace text-cyan"><i class="fa-solid fa-tooth me-1"></i>PEARL DENTAL // MEDICAL PORTAL</span>
+            <span class="badge bg-primary p-1" style="font-size:0.65rem;">ONLINE BOOKING</span>
+          </div>
+          <div class="p-2 rounded bg-dark border border-secondary border-opacity-25 mb-2 d-flex justify-content-between align-items-center">
+            <span class="small font-monospace text-light"><i class="fa-solid fa-calendar-check text-cyan me-1"></i> Dr. Sarah Al-Mansoor</span>
+            <span class="badge bg-success font-monospace" style="font-size:0.65rem;">CONFIRMED</span>
+          </div>
+          <div class="d-flex justify-content-between align-items-center font-monospace" style="font-size:0.75rem;">
+            <span class="text-muted">Supabase RLS Active</span>
+            <span class="text-cyan">Kuwait City, KW</span>
+          </div>
+        </div>
+      `;
     default:
       return '';
   }

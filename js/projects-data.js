@@ -4,6 +4,31 @@
 
 const PROJECTS_DATA = [
   {
+    id: "pearl_dental",
+    title: "Pearl Dental Clinic Platform",
+    subtitle: "Advanced Medical & Dental Care Portal in Kuwait",
+    category: "website",
+    categoryLabel: "Custom Website / Healthcare Platform",
+    isConcept: false,
+    liveUrl: "clinic/index.html",
+    summary: "Full-featured healthcare & dental clinic platform with online appointment booking, doctor profiles, interactive services catalog, and Supabase integration.",
+    details: "Pearl Dental Clinic is a premier medical platform engineered for high patient conversion, multi-language support (EN/AR), real-time appointment scheduling, doctor profiles, and Supabase database integration.",
+    tags: ["HTML5", "CSS3", "JavaScript ES6", "Bootstrap 5", "Supabase", "AOS Animations"],
+    stats: [
+      { label: "Online Booking", value: "Real-Time" },
+      { label: "Lighthouse Score", value: "99/100" },
+      { label: "Database", value: "Supabase RLS" }
+    ],
+    features: [
+      "Interactive online appointment booking system with date & time selection",
+      "Comprehensive doctor profiles with specialty filters and patient ratings",
+      "Detailed dental service breakdown pages and pricing calculator",
+      "Secure backend with Supabase database schema and Row Level Security (RLS)"
+    ],
+    mockupType: "pearldental",
+    accentColor: "#00d2ff"
+  },
+  {
     id: "bistro_dashboard",
     title: "Glitch Bistro Management System",
     subtitle: "Real-Time Restaurant, Orders & Sales Dashboard",

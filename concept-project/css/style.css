@@ -321,6 +321,22 @@ img {
     box-shadow: 0 0 15px rgba(138, 43, 226, 0.5);
 }
 
+.navbar-brand-glitch .brand-logo-img,
+.brand-logo-img {
+    height: 38px;
+    width: auto;
+    max-height: 42px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 8px rgba(0, 240, 255, 0.4));
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.navbar-brand-glitch:hover .brand-logo-img,
+.brand-logo:hover .brand-logo-img {
+    transform: scale(1.08);
+    filter: drop-shadow(0 0 12px rgba(0, 240, 255, 0.8));
+}
+
 .navbar-brand-glitch span.accent {
     color: var(--accent-cyan);
 }

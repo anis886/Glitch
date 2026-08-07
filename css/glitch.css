@@ -121,6 +121,7 @@
   pointer-events: none;
   opacity: 0.25;
   z-index: 0;
+  max-width: 100%;
 }
 
 .orb-purple {
@@ -133,6 +134,20 @@
   background: radial-gradient(circle, var(--accent-cyan) 0%, transparent 70%);
   width: 400px;
   height: 400px;
+}
+
+@media (max-width: 768px) {
+  .orb-purple {
+    width: 280px;
+    height: 280px;
+    left: 0 !important;
+  }
+  
+  .orb-cyan {
+    width: 280px;
+    height: 280px;
+    right: 0 !important;
+  }
 }
 
 /* Pulsing Status Dot */

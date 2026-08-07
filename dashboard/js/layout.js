@@ -57,9 +57,7 @@ function renderSidebar(activePage) {
         <aside class="app-sidebar">
             <div class="sidebar-header">
                 <a href="index.html" class="brand-logo">
-                    <div class="brand-icon">
-                        <i class="bi bi-lightning-charge-fill"></i>
-                    </div>
+                    <img src="../assets/glitchlogo (2).png" alt="GLITCH" class="brand-logo-img">
                     <div class="brand-text">
                         <span>GLITCH</span> BISTRO
                     </div>

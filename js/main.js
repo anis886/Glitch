@@ -72,7 +72,7 @@ function renderProjects(filter = 'all') {
     const col = document.createElement('div');
     col.className = 'col-lg-6 mb-4';
 
-    let graphicContentHTML = getGraphicMarkup(project.mockupType);
+    let graphicContentHTML = getGraphicMarkup(project.mockupType, project);
 
     col.innerHTML = `
       <div class="glass-card project-card">
@@ -88,7 +88,7 @@ function renderProjects(filter = 'all') {
         </div>
         <div class="project-body">
           <div class="d-flex justify-content-between align-items-center mb-2">
-            <span class="badge-concept"><i class="fa-solid fa-star me-1"></i>FEATURED PROJECT</span>
+            <span class="badge-concept">${project.isConcept ? '<i class="fa-solid fa-flask me-1"></i>CONCEPT' : '<i class="fa-solid fa-star me-1"></i>FEATURED PROJECT'}</span>
             <span class="badge-cyber" style="font-size:0.7rem;">${project.categoryLabel}</span>
           </div>
           <h3 class="h4 mt-2 mb-1" style="font-family: var(--font-heading);">${project.title}</h3>
@@ -100,7 +100,7 @@ function renderProjects(filter = 'all') {
           </div>
 
           <div class="mt-3 pt-3 border-top border-secondary border-opacity-10 d-flex justify-content-between align-items-center">
-            <span class="small text-muted font-monospace"><i class="fa-solid fa-code-branch me-1 text-cyan"></i>v2.4-production</span>
+            <span class="small text-muted font-monospace"><i class="fa-solid fa-code-branch me-1 text-cyan"></i>${project.isConcept ? 'concept build' : 'v2.4-production'}</span>
             <div class="d-flex gap-2 align-items-center">
               ${project.liveUrl ? `<a href="${project.liveUrl}" class="btn btn-cyber-primary btn-sm font-monospace text-decoration-none"><i class="fa-solid fa-rocket me-1"></i>Launch Live</a>` : ''}
               <button class="btn btn-link text-cyan p-0 text-decoration-none small font-monospace" onclick="openProjectModal('${project.id}')">
@@ -117,7 +117,10 @@ function renderProjects(filter = 'all') {
 }
 
 /* Custom Wireframe UI Graphics Generator */
-function getGraphicMarkup(type) {
+function getGraphicMarkup(type, project) {
+  if (type === 'site' && project && project.liveUrl) {
+    return `<div class="concept-frame"><iframe src="${project.liveUrl}" loading="lazy" tabindex="-1" aria-hidden="true" title="${project.title}"></iframe></div>`;
+  }
   switch (type) {
     case 'revgate':
       return `
@@ -278,7 +281,7 @@ window.openProjectModal = function(projectId) {
 
   modalTitle.innerHTML = `
     <div class="d-flex align-items-center gap-2">
-      <span class="badge-concept"><i class="fa-solid fa-star me-1"></i>FEATURED PROJECT</span>
+      <span class="badge-concept">${project.isConcept ? '<i class="fa-solid fa-flask me-1"></i>CONCEPT' : '<i class="fa-solid fa-star me-1"></i>FEATURED PROJECT'}</span>
       <span class="text-cyan font-monospace">${project.title}</span>
     </div>
   `;
@@ -287,10 +290,10 @@ window.openProjectModal = function(projectId) {
     <div class="row g-4">
       <div class="col-lg-6">
         <div class="p-3 rounded mb-3" style="background: #090a0f; border: 1px solid var(--border-dark);">
-          ${getGraphicMarkup(project.mockupType)}
+          ${getGraphicMarkup(project.mockupType, project)}
         </div>
         <div class="p-3 rounded bg-dark border border-secondary border-opacity-10 mb-3">
-          <h6 class="text-purple font-monospace mb-2"><i class="fa-solid fa-chart-pie me-2"></i>Performance Benchmarks</h6>
+          <h6 class="text-purple font-monospace mb-2"><i class="fa-solid fa-chart-pie me-2"></i>${project.isConcept ? 'At a Glance' : 'Performance Benchmarks'}</h6>
           <div class="row text-center font-monospace">
             ${project.stats.map(s => `
               <div class="col-4">

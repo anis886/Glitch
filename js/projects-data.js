@@ -4,6 +4,146 @@
 
 const PROJECTS_DATA = [
   {
+    id: "clara_skin",
+    title: "Clara Skin Clinic",
+    subtitle: "Dermatology & Laser Clinic – Arabic Website",
+    category: "website",
+    categoryLabel: "Healthcare Concept",
+    isConcept: true,
+    liveUrl: "concepts/clara-skin/index.html",
+    summary: "Calm, clinical one-page site for a dermatology clinic: services, starting prices, first-visit steps and a booking form that sends a ready WhatsApp message.",
+    details: "A concept website by Glitch (not a real business). Mobile-first, Arabic RTL, every form sends a ready-made WhatsApp message to the business.",
+    tags: ["HTML5", "CSS3", "JavaScript", "Arabic RTL", "WhatsApp"],
+    stats: [
+      { label: "Type", value: "One Page" },
+      { label: "Booking", value: "WhatsApp" },
+      { label: "Language", value: "Arabic" }
+    ],
+    features: ['Services & starting prices', 'First-visit steps (consult → plan)', 'Booking form → WhatsApp', 'FAQ & clinic info'],
+    mockupType: "site",
+    accentColor: "#2f7d6d"
+  },
+  {
+    id: "nest_interiors",
+    title: "NEST Interiors",
+    subtitle: "Interior Design & Finishing – Arabic Website",
+    category: "website",
+    categoryLabel: "Interior Concept",
+    isConcept: true,
+    liveUrl: "concepts/nest-interiors/index.html",
+    summary: "Minimal, photo-led site for an interior design & finishing studio: services, project gallery, process timeline and a site-visit request form.",
+    details: "A concept website by Glitch (not a real business). Mobile-first, Arabic RTL, every form sends a ready-made WhatsApp message to the business.",
+    tags: ["HTML5", "CSS3", "JavaScript", "Arabic RTL", "WhatsApp"],
+    stats: [
+      { label: "Type", value: "One Page" },
+      { label: "Booking", value: "WhatsApp" },
+      { label: "Language", value: "Arabic" }
+    ],
+    features: ['Services: 3D design, finishing, furnishing', 'Before/after project gallery', '4-step process', 'Site-visit request → WhatsApp'],
+    mockupType: "site",
+    accentColor: "#9a7b4f"
+  },
+  {
+    id: "bean_co",
+    title: "Bean & Co",
+    subtitle: "Specialty Coffee & Kitchen – Arabic Website",
+    category: "website",
+    categoryLabel: "Café Concept",
+    isConcept: true,
+    liveUrl: "concepts/bean-and-co/index.html",
+    summary: "Warm, dark café site with a priced menu, why-us section and a table booking / takeaway / delivery form.",
+    details: "A concept website by Glitch (not a real business). Mobile-first, Arabic RTL, every form sends a ready-made WhatsApp message to the business.",
+    tags: ["HTML5", "CSS3", "JavaScript", "Arabic RTL", "WhatsApp"],
+    stats: [
+      { label: "Type", value: "One Page" },
+      { label: "Booking", value: "WhatsApp" },
+      { label: "Language", value: "Arabic" }
+    ],
+    features: ['Menu with prices', 'Table booking, takeaway & delivery', 'Opening hours & map', 'WhatsApp ordering'],
+    mockupType: "site",
+    accentColor: "#d98e4a"
+  },
+  {
+    id: "pulse_fitness",
+    title: "PULSE Fitness Studio",
+    subtitle: "Gym & Group Classes – Arabic Website",
+    category: "website",
+    categoryLabel: "Fitness Concept",
+    isConcept: true,
+    liveUrl: "concepts/pulse-fitness/index.html",
+    summary: "Bold, high-energy gym site with a weekly class schedule, membership plans and a free trial-session booking form.",
+    details: "A concept website by Glitch (not a real business). Mobile-first, Arabic RTL, every form sends a ready-made WhatsApp message to the business.",
+    tags: ["HTML5", "CSS3", "JavaScript", "Arabic RTL", "WhatsApp"],
+    stats: [
+      { label: "Type", value: "One Page" },
+      { label: "Booking", value: "WhatsApp" },
+      { label: "Language", value: "Arabic" }
+    ],
+    features: ['Weekly class schedule', '3 membership plans', 'Free trial booking → WhatsApp', 'Ladies hours & FAQ'],
+    mockupType: "site",
+    accentColor: "#c6ff3d"
+  },
+  {
+    id: "lumiere_beauty",
+    title: "Lumière Beauty Lounge",
+    subtitle: "Ladies Salon & Spa – Arabic Website",
+    category: "website",
+    categoryLabel: "Beauty Concept",
+    isConcept: true,
+    liveUrl: "concepts/lumiere-beauty/index.html",
+    summary: "Soft, elegant salon site with a full priced service menu, bridal packages and an appointment form.",
+    details: "A concept website by Glitch (not a real business). Mobile-first, Arabic RTL, every form sends a ready-made WhatsApp message to the business.",
+    tags: ["HTML5", "CSS3", "JavaScript", "Arabic RTL", "WhatsApp"],
+    stats: [
+      { label: "Type", value: "One Page" },
+      { label: "Booking", value: "WhatsApp" },
+      { label: "Language", value: "Arabic" }
+    ],
+    features: ['Service menu with prices', 'Bridal packages', 'Appointment form → WhatsApp', 'Policies & FAQ'],
+    mockupType: "site",
+    accentColor: "#b76e79"
+  },
+  {
+    id: "azure_stays",
+    title: "Azure Stays",
+    subtitle: "Sahel Chalets & Villas – Arabic Website",
+    category: "website",
+    categoryLabel: "Rentals Concept",
+    isConcept: true,
+    liveUrl: "concepts/azure-stays/index.html",
+    summary: "Holiday rental site for beach chalets and villas: units with nightly prices, amenities, booking steps and an availability request form.",
+    details: "A concept website by Glitch (not a real business). Mobile-first, Arabic RTL, every form sends a ready-made WhatsApp message to the business.",
+    tags: ["HTML5", "CSS3", "JavaScript", "Arabic RTL", "WhatsApp"],
+    stats: [
+      { label: "Type", value: "One Page" },
+      { label: "Booking", value: "WhatsApp" },
+      { label: "Language", value: "Arabic" }
+    ],
+    features: ['Units with nightly prices', 'Check-in / check-out availability form', 'Amenities & booking steps', 'WhatsApp confirmation'],
+    mockupType: "site",
+    accentColor: "#1d7ea6"
+  },
+  {
+    id: "sanad_law",
+    title: "Sanad Law Firm",
+    subtitle: "Law & Legal Consulting – Arabic Website",
+    category: "website",
+    categoryLabel: "Legal Concept",
+    isConcept: true,
+    liveUrl: "concepts/sanad-law/index.html",
+    summary: "Formal, trustworthy law firm site: practice areas, how we work, consultation fees and a consultation request form.",
+    details: "A concept website by Glitch (not a real business). Mobile-first, Arabic RTL, every form sends a ready-made WhatsApp message to the business.",
+    tags: ["HTML5", "CSS3", "JavaScript", "Arabic RTL", "WhatsApp"],
+    stats: [
+      { label: "Type", value: "One Page" },
+      { label: "Booking", value: "WhatsApp" },
+      { label: "Language", value: "Arabic" }
+    ],
+    features: ['4 practice areas', 'How we work in 4 steps', 'Online / in-office consultation fees', 'Consultation request → WhatsApp'],
+    mockupType: "site",
+    accentColor: "#a8853f"
+  },
+  {
     id: "pearl_dental",
     title: "Pearl Dental Clinic Platform",
     subtitle: "Advanced Medical & Dental Care Portal in Kuwait",

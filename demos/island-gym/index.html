@@ -1,34 +1,247 @@
-<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Island Gym – تصور مقترح</title><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Archivo+Black&display=swap" rel="stylesheet"><style>:root{--bg:#07141a;--card:#0f222b;--line:#1d3a46;--ink:#f4f4f0;--muted:#a3a39a;--accent:#19c2b4;--accent2:#19c2b4;--onaccent:#0b0b0b;--navbg:#07141ae6;--font:Cairo;--display:'Archivo Black',Cairo;--r:12px}*{box-sizing:border-box;margin:0;padding:0}body{font-family:var(--font),Cairo,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}a{color:inherit;text-decoration:none}
-.concept{background:var(--accent);color:var(--onaccent);text-align:center;font-size:12px;font-weight:700;padding:6px}
-nav{position:sticky;top:0;z-index:20;background:var(--navbg);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:12px 20px}
-.brand{font-family:var(--display);font-size:24px;font-weight:800;letter-spacing:.5px}.brand small{display:block;font-family:var(--font);font-size:10px;letter-spacing:2px;color:var(--muted);font-weight:600;margin-top:-4px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:var(--r);padding:12px 20px;font-weight:700;font-size:15px;border:0;cursor:pointer;font-family:inherit}
-.btn-a{background:var(--accent);color:var(--onaccent)}.btn-g{border:1.5px solid var(--line);background:transparent;color:var(--ink)}
-.hero{padding:40px 20px 34px;display:grid;gap:26px}
-.eyebrow{display:inline-block;font-size:13px;font-weight:700;color:var(--accent2);letter-spacing:.5px}
-.hero h1{font-family:var(--display);font-size:36px;line-height:1.2;margin:10px 0 12px;font-weight:800}
-.hero p{color:var(--muted);font-size:16px;max-width:520px}.cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
-.art{border-radius:calc(var(--r)*1.4);overflow:hidden;aspect-ratio:4/3;border:1px solid var(--line)}.art svg{width:100%;height:100%;display:block}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:6px}.stat{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px 8px;text-align:center}.stat b{display:block;font-family:var(--display);font-size:22px;color:var(--accent2)}.stat span{font-size:12px;color:var(--muted)}
-section{padding:36px 20px}h2{font-family:var(--display);font-size:26px;font-weight:800;margin-bottom:6px}.sub{color:var(--muted);font-size:14px;margin-bottom:18px}
-.grid{display:grid;gap:12px}.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px}
-.card .ic{font-size:26px;margin-bottom:8px}.card h3{font-size:17px;margin-bottom:4px}.card p{color:var(--muted);font-size:14px}
-.price{display:flex;justify-content:space-between;align-items:baseline;padding:12px 0;border-bottom:1px dashed var(--line)}.price:last-child{border:0}.price b{font-size:15px}.price small{display:block;color:var(--muted);font-size:12px}.price span{color:var(--accent2);font-weight:800;white-space:nowrap}
-.plan{position:relative}.plan.hot{border:2px solid var(--accent)}.plan .tag{position:absolute;top:-11px;left:16px;background:var(--accent);color:var(--onaccent);font-size:11px;font-weight:800;padding:2px 10px;border-radius:99px}.plan .amt{font-family:var(--display);font-size:30px;font-weight:800;margin:6px 0}.plan .amt small{font-size:13px;color:var(--muted);font-weight:600}.plan ul{list-style:none;margin:10px 0 0;font-size:14px;color:var(--muted)}.plan li{padding:4px 0}.plan li:before{content:"✓ ";color:var(--accent2);font-weight:800}
-table{width:100%;border-collapse:collapse;font-size:14px}th,td{padding:10px 8px;border-bottom:1px solid var(--line);text-align:right}th{color:var(--muted);font-weight:600;font-size:12px}
-.steps{counter-reset:s;display:grid;gap:10px}.step{display:flex;gap:14px;align-items:flex-start}.step:before{counter-increment:s;content:counter(s);flex:none;width:34px;height:34px;border-radius:50%;background:var(--accent);color:var(--onaccent);display:grid;place-items:center;font-weight:800}.step b{display:block}.step span{color:var(--muted);font-size:14px}
-details{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px;margin-bottom:8px}summary{cursor:pointer;font-weight:700}details p{color:var(--muted);font-size:14px;margin-top:8px}
-form{display:grid;gap:12px}label{font-size:13px;color:var(--muted);display:block;margin-bottom:4px}input,select,textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:calc(var(--r)*.7);background:var(--bg);color:var(--ink);font:inherit}.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.note{font-size:12px;color:var(--muted);text-align:center}
-.info .r{display:flex;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid var(--line);font-size:15px}.info .r:last-child{border:0}.info span{color:var(--muted)}
-footer{text-align:center;color:var(--muted);font-size:13px;padding:26px 20px 90px;border-top:1px solid var(--line)}
-.fab{position:fixed;bottom:16px;left:16px;z-index:30;width:56px;height:56px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.25)}
-@media(min-width:820px){.hero{grid-template-columns:1.1fr 1fr;align-items:center;padding:60px 9vw}.hero h1{font-size:50px}section{padding:50px 9vw}.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}}</style></head><body><div class="concept">تصور مقترح من Glitch لموقع Island Gym – مش الموقع الرسمي</div><nav><div class="brand">ISLAND<small>GYM · ISLAND OF THE INCREDIBLES</small></div><a class="btn btn-a" href="#book">اشترك</a></nav><header class="hero"><div><span class="eyebrow">جيم · بلاتينيوم مول – التجمع الخامس</span><h1>جزيرة <span style='color:var(--accent)'>الأبطال</span> في قلب التجمع</h1><p>أجهزة لكل العضلات، ساونا، ومدربين محترفين معاك خطوة بخطوة. شوف العروض والباقات واشترك من الموبايل.</p><div class="cta"><a class="btn btn-a" href="#book">اشترك دلوقتي</a><a class="btn btn-g" href="#offer">العروض</a></div><div class="stats" style="margin-top:24px"><div class="stat"><b>4.3 ⭐</b><span>360 تقييم على جوجل</span></div><div class="stat"><b>لحد 1 بالليل</b><span>مفتوحين من 6 الصبح</span></div><div class="stat"><b>ساونا</b><span>ودُش</span></div></div></div><div class="art"><svg viewBox="0 0 400 300"><rect width="400" height="300" fill="#07141a"/><circle cx="300" cy="80" r="120" fill="#19c2b4" opacity=".13"/><circle cx="70" cy="260" r="90" fill="#19c2b4" opacity=".08"/>
-<g transform="translate(200 135)" stroke="#19c2b4" stroke-width="10" stroke-linecap="round"><line x1="-90" y1="0" x2="90" y2="0"/><rect x="-118" y="-38" width="22" height="76" rx="6" fill="#19c2b4" stroke="none"/><rect x="-96" y="-28" width="14" height="56" rx="4" fill="#19c2b4" stroke="none"/><rect x="96" y="-38" width="22" height="76" rx="6" fill="#19c2b4" stroke="none"/><rect x="82" y="-28" width="14" height="56" rx="4" fill="#19c2b4" stroke="none"/></g>
-<text x="200" y="235" text-anchor="middle" font-family="Archivo Black,Impact" font-size="40" fill="#f4f4f0" letter-spacing="5">ISLAND</text>
-<text x="200" y="268" text-anchor="middle" font-family="Cairo" font-size="16" fill="#19c2b4" font-weight="700">بلاتينيوم مول · التجمع</text></svg></div></header><section id="offer"><h2>العرض الحالي</h2><div class="sub"></div><div class="card plan hot" style="text-align:center"><span class="tag">عرض</span><h3 style="font-size:22px">اشترك 6 شهور… وخد 6 شهور هدية</h3><p style="margin-top:8px">يعني سنة كاملة تدريب بجو احترافي، ومدربين معاك خطوة بخطوة.</p><a class="btn btn-a" href="#book" style="margin-top:14px">احجز العرض</a></div></section><section id="plans"><h2>الباقات</h2><div class="sub">كل الأسعار مكتوبة – من غير ما تتصل تسأل.</div><div class="grid g3"><div class="card plan"><h3>شهري</h3><div class="amt">[السعر] <small>ج / شهر</small></div><ul><li>الأجهزة كلها</li><li>ساونا</li></ul></div><div class="card plan hot"><span class=tag>الأكثر طلباً</span><h3>6 + 6 شهور</h3><div class="amt">[السعر] <small>ج</small></div><ul><li>سنة كاملة بسعر 6 شهور</li><li>متابعة مع مدرب</li></ul></div><div class="card plan"><h3>سنوي</h3><div class="amt">[السعر] <small>ج / سنة</small></div><ul><li>كل المميزات</li></ul></div></div><div class="note" style="margin-top:10px">الأسعار هنا مكانها بس – هتتحط أسعاركم الحقيقية.</div></section><section id="why"><h2>ليه Island</h2><div class="sub"></div><div class="grid g3"><div class="card"><div class="ic">🏋️</div><h3>أجهزة لكل العضلات</h3><p>منطقة أوزان وأجهزة كارديو.</p></div><div class="card"><div class="ic">🧖</div><h3>ساونا ودُش</h3><p>ريّح بعد التمرين.</p></div><div class="card"><div class="ic">👨‍🏫</div><h3>مدربين محترفين</h3><p>معاك سواء بتبدأ من الصفر أو راجع تتمرن.</p></div><div class="card"><div class="ic">📍</div><h3>مكان سهل</h3><p>جوه بلاتينيوم مول – التجمع الخامس.</p></div><div class="card"><div class="ic">⏰</div><h3>مواعيد مرنة</h3><p>من 6 الصبح لحد 1 بالليل.</p></div><div class="card"><div class="ic">💬</div><h3>اشترك من الموبايل</h3><p>من غير مكالمات ولا انتظار.</p></div></div></section><section id="faq"><h2>أسئلة شائعة</h2><div class="sub"></div><details><summary>أسأل على الأسعار إزاي؟</summary><p>كل الباقات مكتوبة هنا، وتقدر تحجز على واتساب على طول.</p></details><details><summary>فيه مدربين؟</summary><p>أيوه، مدربين محترفين معاك خطوة بخطوة.</p></details></section><section id="book"><h2>احجز حصة تجريبية</h2><div class="sub">املا البيانات وهيتأكد معاك الميعاد على واتساب.</div><div class="card"><form id="f"><div><label>الاسم</label><input name="الاسم" type="text" placeholder="اسمك"></div><div class="row2"><div><label>الاهتمام</label><select name="الاهتمام"><option>أجهزة</option><option>كارديو</option><option>عرض 6 + 6</option></select></div><div><label>اليوم</label><input name="اليوم" type="date" placeholder=""></div></div><div><label>الهدف</label><select name="الهدف"><option>خسارة وزن</option><option>بناء عضل</option><option>لياقة عامة</option></select></div><button class="btn btn-a" type="submit">احجز على واتساب</button><div class="note">الطلب بيتبعت على واتساب، والفريق بيأكد معاك.</div></form></div></section><section><h2>العنوان والتواصل</h2><div class="card info"><div class="r"><span>العنوان</span><b>بلاتينيوم مول، الحي التالت – التجمع الخامس</b></div><div class="r"><span>المواعيد</span><b>يومياً 6 ص – 1 ص</b></div><div class="r"><span>واتساب</span><b>01016666144</b></div></div></section><footer>© 2026 Island Gym<br>تصور مقترح من Glitch</footer><a class="fab" id="fab" href="#" aria-label="واتساب"><svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2z"/></svg></a><script>
-const WA="201016666144"; // حط رقم الواتساب هنا (مثلاً 2010xxxxxxx)
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Island Gym – تصور مقترح من Glitch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Readex+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --abyss:#03141a;      /* deep water */
+  --reef:#0a2a33;       /* panels */
+  --lagoon:#16b3a4;     /* brand */
+  --foam:#eaf5f1;       /* text */
+  --mist:#9fbcb8;       /* muted */
+  --sun:#ffb238;        /* the offer, only */
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Readex Pro",system-ui,sans-serif;background:var(--abyss);color:var(--foam);line-height:1.7;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+.disclaimer{background:#000;color:var(--mist);font-size:12px;text-align:center;padding:7px 14px}
+.disclaimer b{color:var(--foam);font-weight:600}
+
+/* top bar floats over the photo */
+.top{position:absolute;inset:34px 0 auto 0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:14px 22px}
+.logo{font-family:Lalezar,sans-serif;font-size:30px;line-height:1;letter-spacing:.5px}
+.logo span{display:block;font-family:"Readex Pro";font-size:11px;font-weight:400;color:var(--mist);letter-spacing:0;margin-top:4px}
+.top a.call{font-size:14px;font-weight:600;border:1px solid rgba(234,245,241,.35);padding:8px 14px;border-radius:999px;backdrop-filter:blur(6px)}
+
+/* HERO: the 6+6 offer is the whole point */
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding:120px 22px 34px;overflow:hidden;isolation:isolate;background:#06222a}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;filter:saturate(.85)}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(3,20,26,.35) 0%,rgba(3,20,26,.55) 45%,var(--abyss) 92%)}
+.where{font-size:14px;color:var(--mist)}
+.offer{font-family:Lalezar,sans-serif;font-weight:400;line-height:.86;margin:10px 0 6px;display:flex;align-items:flex-end;gap:.08em;direction:ltr;justify-content:flex-end}
+.offer .n{font-size:clamp(150px,44vw,300px);color:var(--foam)}
+.offer .plus{font-size:clamp(80px,22vw,150px);color:var(--sun);transform:translateY(-.18em)}
+.offer .n.gift{color:var(--sun)}
+.hero h1{font-size:clamp(22px,6vw,34px);font-weight:700;line-height:1.35;max-width:22ch}
+.hero p{color:var(--mist);margin-top:8px;max-width:40ch}
+.cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.btn{display:inline-flex;align-items:center;gap:8px;font:600 16px "Readex Pro";padding:14px 22px;border-radius:999px;border:0;cursor:pointer}
+.btn.sun{background:var(--sun);color:#1d1100}
+.btn.line{border:1px solid rgba(234,245,241,.4);color:var(--foam);background:transparent}
+
+/* facts strip */
+.facts{display:grid;grid-template-columns:repeat(3,1fr);border-block:1px solid rgba(159,188,184,.18)}
+.facts div{padding:18px 10px;text-align:center}
+.facts div+div{border-inline-start:1px solid rgba(159,188,184,.18)}
+.facts b{display:block;font-family:Lalezar;font-weight:400;font-size:26px;line-height:1.1;color:var(--lagoon)}
+.facts span{font-size:12.5px;color:var(--mist)}
+
+section{padding:64px 22px}
+h2{font-family:Lalezar,sans-serif;font-weight:400;font-size:clamp(32px,8vw,48px);line-height:1.1;margin-bottom:10px}
+.lede{color:var(--mist);max-width:46ch;margin-bottom:28px}
+
+/* inside the island: photo mosaic */
+.mosaic{display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:150px;gap:8px}
+.mosaic figure{position:relative;overflow:hidden;border-radius:6px;background:var(--reef)}
+.mosaic figure:first-child{grid-column:1/-1;grid-row:span 2}
+.mosaic img{width:100%;height:100%;object-fit:cover}
+.mosaic figcaption{position:absolute;inset:auto 0 0 0;padding:28px 12px 10px;font-size:14px;font-weight:600;background:linear-gradient(transparent,rgba(3,20,26,.85))}
+
+/* plans as a price list, not cards */
+.plans{border-top:1px solid rgba(159,188,184,.25)}
+.plan{display:grid;grid-template-columns:1fr auto;gap:4px 16px;padding:20px 0;border-bottom:1px solid rgba(159,188,184,.25)}
+.plan h3{font-size:19px;font-weight:700}
+.plan p{grid-column:1;color:var(--mist);font-size:14px}
+.plan .price{grid-row:1/3;grid-column:2;align-self:center;font-family:Lalezar;font-size:28px;color:var(--foam);text-align:left}
+.plan .price small{display:block;font-family:"Readex Pro";font-size:12px;color:var(--mist)}
+.plan.best h3{color:var(--sun)}
+.plan.best h3::after{content:"العرض الحالي";font-size:11px;font-weight:600;color:#1d1100;background:var(--sun);padding:2px 8px;border-radius:999px;margin-inline-start:8px;vertical-align:middle}
+.fine{font-size:13px;color:var(--mist);margin-top:14px}
+
+/* coaches */
+.coach{display:grid;gap:22px}
+.coach img{border-radius:6px;aspect-ratio:4/5;object-fit:cover;background:var(--reef)}
+.coach ul{list-style:none;display:grid;gap:14px}
+.coach li{padding-inline-start:18px;position:relative}
+.coach li::before{content:"";position:absolute;inset-inline-start:0;top:.7em;width:8px;height:8px;border-radius:50%;background:var(--lagoon)}
+.coach li b{display:block}
+.coach li span{color:var(--mist);font-size:14px}
+
+/* location */
+.map{background:var(--reef);border-radius:6px;padding:22px;display:grid;gap:14px}
+.map .row{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid rgba(159,188,184,.18);padding-bottom:12px;font-size:15px}
+.map .row:last-of-type{border:0}
+.map .row span{color:var(--mist)}
+
+/* booking */
+form{display:grid;gap:14px;background:var(--reef);padding:22px;border-radius:6px}
+label{font-size:13px;color:var(--mist);display:block;margin-bottom:6px}
+input,select{width:100%;font:400 16px "Readex Pro";padding:13px 14px;border-radius:6px;border:1px solid rgba(159,188,184,.3);background:var(--abyss);color:var(--foam)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+form .btn{justify-content:center;width:100%}
+.note{font-size:12.5px;color:var(--mist);text-align:center}
+
+footer{padding:30px 22px 110px;color:var(--mist);font-size:12.5px;text-align:center;border-top:1px solid rgba(159,188,184,.18)}
+footer a{text-decoration:underline}
+
+/* sticky mobile bar */
+.bar{position:fixed;inset:auto 12px 12px 12px;z-index:20;display:flex;gap:8px;background:rgba(10,42,51,.92);backdrop-filter:blur(10px);padding:8px;border-radius:999px;border:1px solid rgba(159,188,184,.2)}
+.bar a{flex:1;text-align:center;padding:11px;border-radius:999px;font-weight:600;font-size:15px}
+.bar .wa{background:#25D366;color:#03140b}
+
+/* the one motion moment: the offer assembles on load */
+@media (prefers-reduced-motion:no-preference){
+  .offer span{opacity:0;transform:translateY(30px);animation:rise .7s cubic-bezier(.2,.8,.2,1) forwards}
+  .offer .plus{animation-delay:.25s}
+  .offer .gift{animation-delay:.45s}
+  .offer .plus{transform:translateY(calc(-.18em + 30px))}
+  @keyframes rise{to{opacity:1;transform:translateY(0)}}
+  .offer .plus{animation-name:riseplus}
+  @keyframes riseplus{to{opacity:1;transform:translateY(-.18em)}}
+}
+
+@media(min-width:860px){
+  .top{padding:22px 7vw}
+  .hero{padding:140px 7vw 60px}
+  section{padding:96px 7vw}
+  .mosaic{grid-template-columns:2fr 1fr 1fr;grid-auto-rows:220px}
+  .mosaic figure:first-child{grid-column:1;grid-row:span 2}
+  .coach{grid-template-columns:1fr 1.2fr;align-items:center;gap:56px}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+  .bar{inset:auto auto 20px 20px;width:auto}
+  .bar a.callb{display:none}
+  .bar a{padding:12px 22px}
+  footer{padding-bottom:40px}
+}
+</style>
+</head>
+<body>
+
+<div class="disclaimer"><b>تصور مقترح من Glitch لموقع Island Gym</b> · مش الموقع الرسمي</div>
+
+<header class="hero">
+  <div class="top">
+    <div class="logo">ISLAND<span>Island of the Incredibles</span></div>
+    <a class="call" href="#book">احجز</a>
+  </div>
+  <img src="https://images.unsplash.com/photo-1646656130630-07af3a262a9b?auto=format&fit=crop&w=1600&q=70" alt="منطقة الأجهزة جوه الجيم">
+  <div class="where">بلاتينيوم مول، التجمع الخامس</div>
+  <div class="offer" aria-label="6 شهور زائد 6 شهور هدية"><span class="n">6</span><span class="plus">+</span><span class="n gift">6</span></div>
+  <h1>اشترك 6 شهور، وخد 6 شهور كمان هدية</h1>
+  <p>سنة كاملة تمرين، أجهزة لكل العضلات وساونا، ومدربين معاك خطوة بخطوة.</p>
+  <div class="cta">
+    <a class="btn sun" href="#book">احجز العرض</a>
+    <a class="btn line" href="#plans">شوف الباقات</a>
+  </div>
+</header>
+
+<div class="facts">
+  <div><b>4.3</b><span>360 تقييم على جوجل</span></div>
+  <div><b>6 ص</b><span>لحد 1 بالليل</span></div>
+  <div><b>ساونا</b><span>بعد التمرين</span></div>
+</div>
+
+<section id="inside">
+  <h2>جوه الجزيرة</h2>
+  <p class="lede">منطقة أوزان حرة، أجهزة لكل عضلة، كارديو، وساونا تريّح فيها بعد التمرين.</p>
+  <div class="mosaic">
+    <figure><img loading="lazy" src="https://images.unsplash.com/photo-1620188467120-5042ed1eb5da?auto=format&fit=crop&w=1200&q=70" alt="بار وأوزان"><figcaption>الأوزان الحرة</figcaption></figure>
+    <figure><img loading="lazy" src="https://images.unsplash.com/photo-1771586791190-97ed536c54af?auto=format&fit=crop&w=700&q=70" alt="أجهزة كارديو"><figcaption>الكارديو</figcaption></figure>
+    <figure><img loading="lazy" src="https://images.unsplash.com/photo-1589579234096-25cb6b83e021?auto=format&fit=crop&w=700&q=70" alt="دمبل"><figcaption>الدمبلز</figcaption></figure>
+    <figure><img loading="lazy" src="https://images.unsplash.com/photo-1583417657209-d3dd44dc9c09?auto=format&fit=crop&w=700&q=70" alt="ساونا خشب"><figcaption>الساونا</figcaption></figure>
+    <figure><img loading="lazy" src="https://images.unsplash.com/photo-1646492169621-d8da8016354a?auto=format&fit=crop&w=700&q=70" alt="بار حديد"><figcaption>منطقة الباور</figcaption></figure>
+  </div>
+</section>
+
+<section id="plans">
+  <div class="split">
+    <div>
+      <h2>الباقات</h2>
+      <p class="lede">كل الأسعار مكتوبة هنا. مش محتاج تتصل تسأل.</p>
+    </div>
+    <div>
+      <div class="plans">
+        <div class="plan"><h3>شهر</h3><p>كل الأجهزة والساونا</p><div class="price">[السعر]<small>جنيه</small></div></div>
+        <div class="plan"><h3>3 شهور</h3><p>كل الأجهزة والساونا</p><div class="price">[السعر]<small>جنيه</small></div></div>
+        <div class="plan best"><h3>6 + 6 شهور</h3><p>سنة كاملة بسعر 6 شهور، ومتابعة مع مدرب</p><div class="price">[السعر]<small>جنيه</small></div></div>
+      </div>
+      <p class="fine">الأسعار هنا مكانها بس، وهتتحط أسعاركم الحقيقية.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="coach">
+    <img loading="lazy" src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=900&q=70" alt="مدرب مع متدربة">
+    <div>
+      <h2>مش هتتمرن لوحدك</h2>
+      <p class="lede">سواء بتبدأ من الصفر أو راجع بعد فترة، المدرب بيعملك خطة على قد مستواك.</p>
+      <ul>
+        <li><b>أول يوم</b><span>المدرب بيوريك الأجهزة ويسألك عن هدفك.</span></li>
+        <li><b>خطة تمرين</b><span>على حسب هدفك: خسارة وزن، عضل، أو لياقة.</span></li>
+        <li><b>متابعة</b><span>بتعدّل الخطة مع المدرب كل ما تتقدم.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="book">
+  <div class="split">
+    <div>
+      <h2>احجز العرض</h2>
+      <p class="lede">املا البيانات، والطلب هيوصل على واتساب الجيم ويأكدوا معاك.</p>
+      <div class="map">
+        <div class="row"><span>العنوان</span><b>بلاتينيوم مول، الحي التالت، التجمع الخامس</b></div>
+        <div class="row"><span>المواعيد</span><b>كل يوم، 6 ص لحد 1 بالليل</b></div>
+        <div class="row"><span>واتساب</span><b dir="ltr">0101 666 6144</b></div>
+      </div>
+    </div>
+    <form id="f">
+      <div><label for="n">الاسم</label><input id="n" name="الاسم" required autocomplete="name"></div>
+      <div class="two">
+        <div><label for="p">الباقة</label><select id="p" name="الباقة"><option>عرض 6 + 6</option><option>شهر</option><option>3 شهور</option></select></div>
+        <div><label for="g">هدفك</label><select id="g" name="الهدف"><option>خسارة وزن</option><option>بناء عضل</option><option>لياقة عامة</option></select></div>
+      </div>
+      <div><label for="d">تحب تيجي إمتى؟</label><input id="d" type="date" name="اليوم"></div>
+      <button class="btn sun" type="submit">ابعت الطلب على واتساب</button>
+      <div class="note">هيفتحلك واتساب برسالة جاهزة، وانت اللي بتدوس إرسال.</div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  © 2026 Island Gym · تصور مقترح من Glitch<br>
+  الصور من Unsplash (Mohamed Fareed وغيره) وهتتبدل بصور الجيم الحقيقية.
+</footer>
+
+<nav class="bar" aria-label="تواصل">
+  <a class="wa" id="wa" href="#">واتساب</a>
+  <a class="callb" href="tel:+201016666144">اتصل</a>
+</nav>
+
+<script>
+const WA="201016666144";
 const wa=t=>"https://wa.me/"+WA+"?text="+encodeURIComponent(t);
-document.getElementById("fab").href=wa("السلام عليكم، عايز أستفسر");
-document.getElementById("f").addEventListener("submit",e=>{e.preventDefault();const d=new FormData(e.target);let t="اشتراك / استفسار – Island Gym\n";for(const [k,v] of d){if(v)t+=k+": "+v+"\n";}window.open(wa(t),"_blank");});
-</script></body></html>
+document.getElementById("wa").href=wa("السلام عليكم، عايز أستفسر عن عرض 6 + 6");
+document.getElementById("f").addEventListener("submit",e=>{e.preventDefault();let t="طلب اشتراك – Island Gym\n";for(const [k,v] of new FormData(e.target)){if(v)t+=k+": "+v+"\n"}window.open(wa(t),"_blank")});
+</script>
+</body>
+</html>

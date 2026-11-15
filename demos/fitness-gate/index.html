@@ -1,34 +1,265 @@
-<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Fitness Gate EMS – تصور مقترح</title><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Archivo+Black&display=swap" rel="stylesheet"><style>:root{--bg:#0b0d12;--card:#141823;--line:#252b3b;--ink:#f4f4f0;--muted:#a3a39a;--accent:#f5b301;--accent2:#f5b301;--onaccent:#0b0b0b;--navbg:#0b0d12e6;--font:Cairo;--display:'Archivo Black',Cairo;--r:12px}*{box-sizing:border-box;margin:0;padding:0}body{font-family:var(--font),Cairo,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}a{color:inherit;text-decoration:none}
-.concept{background:var(--accent);color:var(--onaccent);text-align:center;font-size:12px;font-weight:700;padding:6px}
-nav{position:sticky;top:0;z-index:20;background:var(--navbg);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:12px 20px}
-.brand{font-family:var(--display);font-size:24px;font-weight:800;letter-spacing:.5px}.brand small{display:block;font-family:var(--font);font-size:10px;letter-spacing:2px;color:var(--muted);font-weight:600;margin-top:-4px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:var(--r);padding:12px 20px;font-weight:700;font-size:15px;border:0;cursor:pointer;font-family:inherit}
-.btn-a{background:var(--accent);color:var(--onaccent)}.btn-g{border:1.5px solid var(--line);background:transparent;color:var(--ink)}
-.hero{padding:40px 20px 34px;display:grid;gap:26px}
-.eyebrow{display:inline-block;font-size:13px;font-weight:700;color:var(--accent2);letter-spacing:.5px}
-.hero h1{font-family:var(--display);font-size:36px;line-height:1.2;margin:10px 0 12px;font-weight:800}
-.hero p{color:var(--muted);font-size:16px;max-width:520px}.cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
-.art{border-radius:calc(var(--r)*1.4);overflow:hidden;aspect-ratio:4/3;border:1px solid var(--line)}.art svg{width:100%;height:100%;display:block}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:6px}.stat{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px 8px;text-align:center}.stat b{display:block;font-family:var(--display);font-size:22px;color:var(--accent2)}.stat span{font-size:12px;color:var(--muted)}
-section{padding:36px 20px}h2{font-family:var(--display);font-size:26px;font-weight:800;margin-bottom:6px}.sub{color:var(--muted);font-size:14px;margin-bottom:18px}
-.grid{display:grid;gap:12px}.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px}
-.card .ic{font-size:26px;margin-bottom:8px}.card h3{font-size:17px;margin-bottom:4px}.card p{color:var(--muted);font-size:14px}
-.price{display:flex;justify-content:space-between;align-items:baseline;padding:12px 0;border-bottom:1px dashed var(--line)}.price:last-child{border:0}.price b{font-size:15px}.price small{display:block;color:var(--muted);font-size:12px}.price span{color:var(--accent2);font-weight:800;white-space:nowrap}
-.plan{position:relative}.plan.hot{border:2px solid var(--accent)}.plan .tag{position:absolute;top:-11px;left:16px;background:var(--accent);color:var(--onaccent);font-size:11px;font-weight:800;padding:2px 10px;border-radius:99px}.plan .amt{font-family:var(--display);font-size:30px;font-weight:800;margin:6px 0}.plan .amt small{font-size:13px;color:var(--muted);font-weight:600}.plan ul{list-style:none;margin:10px 0 0;font-size:14px;color:var(--muted)}.plan li{padding:4px 0}.plan li:before{content:"✓ ";color:var(--accent2);font-weight:800}
-table{width:100%;border-collapse:collapse;font-size:14px}th,td{padding:10px 8px;border-bottom:1px solid var(--line);text-align:right}th{color:var(--muted);font-weight:600;font-size:12px}
-.steps{counter-reset:s;display:grid;gap:10px}.step{display:flex;gap:14px;align-items:flex-start}.step:before{counter-increment:s;content:counter(s);flex:none;width:34px;height:34px;border-radius:50%;background:var(--accent);color:var(--onaccent);display:grid;place-items:center;font-weight:800}.step b{display:block}.step span{color:var(--muted);font-size:14px}
-details{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px;margin-bottom:8px}summary{cursor:pointer;font-weight:700}details p{color:var(--muted);font-size:14px;margin-top:8px}
-form{display:grid;gap:12px}label{font-size:13px;color:var(--muted);display:block;margin-bottom:4px}input,select,textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:calc(var(--r)*.7);background:var(--bg);color:var(--ink);font:inherit}.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.note{font-size:12px;color:var(--muted);text-align:center}
-.info .r{display:flex;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid var(--line);font-size:15px}.info .r:last-child{border:0}.info span{color:var(--muted)}
-footer{text-align:center;color:var(--muted);font-size:13px;padding:26px 20px 90px;border-top:1px solid var(--line)}
-.fab{position:fixed;bottom:16px;left:16px;z-index:30;width:56px;height:56px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.25)}
-@media(min-width:820px){.hero{grid-template-columns:1.1fr 1fr;align-items:center;padding:60px 9vw}.hero h1{font-size:50px}section{padding:50px 9vw}.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}}</style></head><body><div class="concept">تصور مقترح من Glitch لموقع Fitness Gate EMS – مش الموقع الرسمي</div><nav><div class="brand">FITNESS GATE<small>EMS CENTRE</small></div><a class="btn btn-a" href="#book">جلسة تجريبية</a></nav><header class="hero"><div><span class="eyebrow">مركز EMS وتغذية · القاهرة الجديدة</span><h1>تمرين <span style='color:var(--accent)'>EMS</span> مع مدرب… ونتايج تحسها</h1><p>جلسات EMS مع مدرب بيظبطلك التمرين حسب مستواك، ومتابعة مع أخصائية تغذية. احجز جلستك التجريبية من الموبايل.</p><div class="cta"><a class="btn btn-a" href="#book">احجز جلسة تجريبية</a><a class="btn btn-g" href="#ems">إزاي EMS بيشتغل</a></div><div class="stats" style="margin-top:24px"><div class="stat"><b>4.6 ⭐</b><span>99 تقييم على جوجل</span></div><div class="stat"><b>EMS</b><span>+ تغذية</span></div><div class="stat"><b>10 – 10</b><span>مواعيد الجلسات</span></div></div></div><div class="art"><svg viewBox="0 0 400 300"><rect width="400" height="300" fill="#0b0d12"/><circle cx="300" cy="80" r="120" fill="#f5b301" opacity=".13"/><circle cx="70" cy="260" r="90" fill="#f5b301" opacity=".08"/>
-<g transform="translate(200 135)" stroke="#f5b301" stroke-width="10" stroke-linecap="round"><line x1="-90" y1="0" x2="90" y2="0"/><rect x="-118" y="-38" width="22" height="76" rx="6" fill="#f5b301" stroke="none"/><rect x="-96" y="-28" width="14" height="56" rx="4" fill="#f5b301" stroke="none"/><rect x="96" y="-38" width="22" height="76" rx="6" fill="#f5b301" stroke="none"/><rect x="82" y="-28" width="14" height="56" rx="4" fill="#f5b301" stroke="none"/></g>
-<text x="200" y="235" text-anchor="middle" font-family="Archivo Black,Impact" font-size="40" fill="#f4f4f0" letter-spacing="5">EMS</text>
-<text x="200" y="268" text-anchor="middle" font-family="Cairo" font-size="16" fill="#f5b301" font-weight="700">Fitness Gate · New Cairo</text></svg></div></header><section id="ems"><h2>إزاي EMS بيشتغل</h2><div class="sub"></div><div class="steps"><div class="step"><div><b>بتلبس بدلة الـ EMS</b><span>والمدرب بيظبط الشدة حسب مستواك.</span></div></div><div class="step"><div><b>تمرين مع مدرب</b><span>تمارين بسيطة والبدلة بتشغّل العضلات معاك.</span></div></div><div class="step"><div><b>متابعة وتغذية</b><span>خطة أكل مع أخصائية التغذية ومتابعة لتقدمك.</span></div></div></div></section><section id="why"><h2>ليه Fitness Gate</h2><div class="sub">ده اللي الأعضاء بيقولوه في ريفيوهات جوجل.</div><div class="grid g2"><div class="card"><div class="ic">👨‍🏫</div><h3>مدربين محترفين</h3><p>بيغيّروا التمرين ويزوّدوا الشدة بالتدريج.</p></div><div class="card"><div class="ic">🥗</div><h3>أخصائية تغذية</h3><p>متابعة وخطة أكل مناسبة ليك.</p></div><div class="card"><div class="ic">📈</div><h3>تقدم ملحوظ</h3><p>الأعضاء بيحسوا بفرق في لياقتهم وطاقتهم.</p></div><div class="card"><div class="ic">🎯</div><h3>تمرين على مقاسك</h3><p>كل جلسة مظبوطة على هدفك ومستواك.</p></div></div></section><section id="plans"><h2>الباقات</h2><div class="sub"></div><div class="grid g3"><div class="card plan"><h3>جلسة تجريبية</h3><div class="amt">[السعر] <small></small></div><ul><li>جلسة مع مدرب</li><li>تقييم مبدئي</li></ul></div><div class="card plan hot"><span class=tag>الأكثر طلباً</span><h3>باقة 12 جلسة</h3><div class="amt">[السعر] <small>ج</small></div><ul><li>جلستين في الأسبوع</li><li>متابعة تغذية</li></ul></div><div class="card plan"><h3>باقة 24 جلسة</h3><div class="amt">[السعر] <small>ج</small></div><ul><li>أفضل سعر للجلسة</li><li>متابعة تغذية</li></ul></div></div><div class="note" style="margin-top:10px">الأسعار هنا مكانها بس – هتتحط أسعاركم الحقيقية.</div></section><section id="faq"><h2>أسئلة شائعة</h2><div class="sub"></div><details><summary>الجلسة بتاخد قد إيه؟</summary><p>[مدة الجلسة] – هتتكتب هنا.</p></details><details><summary>محتاج أكون رياضي؟</summary><p>لأ، المدرب بيظبط الشدة حسب مستواك من أول جلسة.</p></details><details><summary>فيه متابعة تغذية؟</summary><p>أيوه، مع أخصائية التغذية في المركز.</p></details></section><section id="book"><h2>احجز حصة تجريبية</h2><div class="sub">املا البيانات وهيتأكد معاك الميعاد على واتساب.</div><div class="card"><form id="f"><div><label>الاسم</label><input name="الاسم" type="text" placeholder="اسمك"></div><div class="row2"><div><label>الاهتمام</label><select name="الاهتمام"><option>جلسة EMS تجريبية</option><option>متابعة تغذية</option><option>باقة جلسات</option></select></div><div><label>اليوم</label><input name="اليوم" type="date" placeholder=""></div></div><div><label>الهدف</label><select name="الهدف"><option>خسارة وزن</option><option>بناء عضل</option><option>لياقة عامة</option></select></div><button class="btn btn-a" type="submit">احجز على واتساب</button><div class="note">الطلب بيتبعت على واتساب، والفريق بيأكد معاك.</div></form></div></section><section><h2>العنوان والتواصل</h2><div class="card info"><div class="r"><span>العنوان</span><b>القاهرة الجديدة – قسم أول</b></div><div class="r"><span>المواعيد</span><b>10 ص – 10 م</b></div><div class="r"><span>واتساب</span><b>01287820444</b></div></div></section><footer>© 2026 Fitness Gate EMS Centre<br>تصور مقترح من Glitch</footer><a class="fab" id="fab" href="#" aria-label="واتساب"><svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2z"/></svg></a><script>
-const WA="201287820444"; // حط رقم الواتساب هنا (مثلاً 2010xxxxxxx)
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fitness Gate EMS – تصور مقترح من Glitch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f3f4f1;   /* clinic white, slightly warm */
+  --white:#ffffff;
+  --ink:#16181d;
+  --slate:#5d6470;
+  --rule:#d9dcd6;
+  --volt:#3b3bff;    /* the electrical signal */
+  --volt-soft:#e6e6ff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Alexandria,system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.75;font-size:16px;font-weight:400;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+:focus-visible{outline:3px solid var(--volt);outline-offset:3px}
+
+.disclaimer{background:var(--ink);color:#c9ccd3;font-size:12px;text-align:center;padding:7px 14px}
+.disclaimer b{color:#fff;font-weight:600}
+
+.top{display:flex;justify-content:space-between;align-items:center;padding:18px 22px}
+.logo{font-weight:800;font-size:19px;letter-spacing:-.3px;display:flex;align-items:center;gap:10px}
+.logo i{width:26px;height:26px;border-radius:7px;background:var(--volt);display:grid;place-items:center}
+.logo i svg{width:16px;height:16px}
+.logo small{font-weight:400;color:var(--slate);font-size:12px;display:block;line-height:1}
+.top a{font-size:14px;font-weight:600;color:var(--volt)}
+
+/* HERO: the signal line is the memorable thing */
+.hero{padding:18px 22px 0}
+.hero h1{font-weight:800;font-size:clamp(34px,9.5vw,64px);line-height:1.15;letter-spacing:-1px;max-width:14ch}
+.hero p{color:var(--slate);font-size:17px;margin-top:14px;max-width:38ch}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.btn{display:inline-flex;align-items:center;gap:8px;font:600 16px Alexandria;padding:14px 22px;border-radius:10px;border:0;cursor:pointer}
+.btn.volt{background:var(--volt);color:#fff}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--rule)}
+
+.signal{margin:34px -22px 0;height:90px;position:relative}
+.signal svg{width:100%;height:100%;display:block}
+.signal path{fill:none;stroke:var(--volt);stroke-width:2.5;stroke-linejoin:round;stroke-linecap:round}
+.heroimg{margin:0 -22px;position:relative}
+.heroimg img{width:100%;aspect-ratio:4/3;object-fit:cover;background:#cfd3cc}
+.heroimg .tag{position:absolute;bottom:14px;inset-inline-end:14px;background:var(--white);border-radius:10px;padding:10px 14px;font-size:13px;box-shadow:0 1px 0 var(--rule)}
+.heroimg .tag b{display:block;font-size:20px;font-weight:800;color:var(--volt);line-height:1.2}
+
+section{padding:68px 22px}
+h2{font-weight:800;font-size:clamp(26px,7vw,40px);line-height:1.2;letter-spacing:-.5px;margin-bottom:10px;max-width:18ch}
+.lede{color:var(--slate);max-width:46ch;margin-bottom:30px}
+
+/* how it works: a real sequence, so numbered */
+.how{background:var(--white)}
+.steps{list-style:none;display:grid;gap:0;border-top:1px solid var(--rule)}
+.steps li{display:grid;grid-template-columns:52px 1fr;gap:14px;padding:22px 0;border-bottom:1px solid var(--rule)}
+.steps .num{font-weight:800;font-size:28px;color:var(--volt);line-height:1.2}
+.steps b{font-size:18px;display:block}
+.steps span{color:var(--slate);font-size:15px}
+
+/* trainer + nutrition, two halves */
+.duo{display:grid;gap:34px}
+.duo article img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:12px;background:#cfd3cc;margin-bottom:18px}
+.duo h3{font-size:21px;font-weight:600;margin-bottom:6px}
+.duo p{color:var(--slate)}
+
+/* what members mention */
+.voices{background:var(--ink);color:#fff}
+.voices .lede{color:#a9aeb8}
+.mentions{display:flex;flex-wrap:wrap;gap:10px}
+.mentions span{border:1px solid #3a3e47;border-radius:999px;padding:9px 16px;font-size:15px}
+.score{display:flex;align-items:baseline;gap:12px;margin-bottom:26px}
+.score b{font-size:64px;font-weight:800;line-height:1;color:#fff}
+.score span{color:#a9aeb8}
+
+/* packages */
+.pk{display:grid;gap:12px}
+.pk div{background:var(--white);border:1px solid var(--rule);border-radius:12px;padding:20px;display:grid;grid-template-columns:1fr auto;gap:2px 14px;align-items:center}
+.pk h3{font-size:18px;font-weight:600}
+.pk p{color:var(--slate);font-size:14px;grid-column:1}
+.pk strong{grid-row:1/3;grid-column:2;font-size:22px;font-weight:800}
+.pk div.first{border:2px solid var(--volt)}
+.pk div.first h3{color:var(--volt)}
+.fine{font-size:13px;color:var(--slate);margin-top:12px}
+
+details{border-bottom:1px solid var(--rule);padding:18px 0}
+details:first-of-type{border-top:1px solid var(--rule)}
+summary{font-weight:600;font-size:17px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::after{content:"+";color:var(--volt);font-size:22px;line-height:1}
+details[open] summary::after{content:"–"}
+details p{color:var(--slate);margin-top:8px}
+
+form{display:grid;gap:14px;background:var(--white);border:1px solid var(--rule);border-radius:14px;padding:22px}
+label{font-size:13px;color:var(--slate);display:block;margin-bottom:6px}
+input,select{width:100%;font:400 16px Alexandria;padding:13px 14px;border-radius:10px;border:1px solid var(--rule);background:var(--paper);color:var(--ink)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+form .btn{justify-content:center;width:100%}
+.note{font-size:12.5px;color:var(--slate);text-align:center}
+.info{margin-top:22px;display:grid;gap:10px;font-size:15px}
+.info div{display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid var(--rule);padding-bottom:10px}
+.info span{color:var(--slate)}
+
+footer{padding:30px 22px 110px;color:var(--slate);font-size:12.5px;text-align:center;border-top:1px solid var(--rule)}
+.bar{position:fixed;inset:auto 12px 12px 12px;z-index:20;display:flex;gap:8px}
+.bar a{flex:1;text-align:center;padding:14px;border-radius:12px;font-weight:600;font-size:15px}
+.bar .book{background:var(--volt);color:#fff}
+.bar .wa{background:#25D366;color:#03140b;flex:.6}
+
+@media (prefers-reduced-motion:no-preference){
+  .signal path{stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 2.2s cubic-bezier(.6,0,.2,1) .3s forwards}
+  @keyframes draw{to{stroke-dashoffset:0}}
+}
+
+@media(min-width:860px){
+  .top{padding:22px 7vw}
+  .hero{padding:30px 7vw 0;display:grid;grid-template-columns:1fr 1fr;gap:0 56px;align-items:end}
+  .hero .copy{padding-bottom:40px}
+  .signal{grid-column:1/-1;grid-row:2;margin:0 -7vw;height:110px}
+  .heroimg{margin:0;grid-column:2;grid-row:1}
+  .heroimg img{border-radius:14px;aspect-ratio:4/5}
+  section{padding:100px 7vw}
+  .how .wrap,.book .wrap{display:grid;grid-template-columns:1fr 1.3fr;gap:56px;align-items:start}
+  .duo{grid-template-columns:1fr 1fr;gap:40px}
+  .pk{grid-template-columns:repeat(3,1fr)}
+  .pk div{grid-template-columns:1fr}
+  .pk strong{grid-row:auto;grid-column:auto;margin-top:12px}
+  .bar{inset:auto auto 20px 20px}
+  .bar a{padding:13px 24px}
+  footer{padding-bottom:40px}
+}
+</style>
+</head>
+<body>
+
+<div class="disclaimer"><b>تصور مقترح من Glitch لموقع Fitness Gate</b> · مش الموقع الرسمي</div>
+
+<div class="top">
+  <div class="logo"><i><svg viewBox="0 0 24 24" fill="#fff"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></i><div>Fitness Gate<small>EMS Centre · القاهرة الجديدة</small></div></div>
+  <a href="#book">احجز جلسة</a>
+</div>
+
+<header class="hero">
+  <div class="copy">
+    <h1>تمرين EMS مع مدرب، ومتابعة أكل مع أخصائية تغذية</h1>
+    <p>المدرب بيظبط شدة البدلة على مستواك، وبيزوّدها بالتدريج كل ما تتقدم. ومعاك خطة أكل تمشي عليها.</p>
+    <div class="cta">
+      <a class="btn volt" href="#book">احجز جلسة تجريبية</a>
+      <a class="btn ghost" href="#how">إزاي بيشتغل؟</a>
+    </div>
+  </div>
+  <div class="heroimg">
+    <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=1200&q=70" alt="مدربة بتتابع متدرب">
+    <div class="tag"><b>4.6</b>99 تقييم على جوجل</div>
+  </div>
+  <div class="signal" aria-hidden="true">
+    <svg viewBox="0 0 1200 110" preserveAspectRatio="none"><path d="M0 60 H330 L350 60 L362 20 L378 96 L392 8 L408 92 L420 60 H640 L656 60 L668 30 L682 88 L694 18 L708 84 L718 60 H1200"/></svg>
+  </div>
+</header>
+
+<section class="how" id="how">
+  <div class="wrap">
+    <div>
+      <h2>الجلسة بتمشي إزاي</h2>
+      <p class="lede">مش محتاج تكون رياضي. أول جلسة بتبدأ بشدة خفيفة.</p>
+    </div>
+    <ol class="steps">
+      <li><span class="num">1</span><div><b>بتلبس بدلة الـ EMS</b><span>والمدرب بيظبط الشدة على مستواك وهدفك.</span></div></li>
+      <li><span class="num">2</span><div><b>تمارين بسيطة مع المدرب</b><span>حركات بوزن جسمك، والبدلة بتشغّل العضلات معاك.</span></div></li>
+      <li><span class="num">3</span><div><b>متابعة وأكل</b><span>الأخصائية بتعملك خطة أكل، والمدرب بيزوّد الشدة كل ما تتقدم.</span></div></li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <h2>مدرب وأخصائية تغذية في نفس المكان</h2>
+  <p class="lede">التمرين لوحده نص الطريق. هنا الاتنين ماشيين مع بعض.</p>
+  <div class="duo">
+    <article>
+      <img loading="lazy" src="https://images.pexels.com/photos/6551097/pexels-photo-6551097.jpeg?auto=compress&w=1000" alt="مدرب بيتابع متدربة">
+      <h3>مدرب معاك طول الجلسة</h3>
+      <p>بيغيّر التمارين ويزوّد الشدة بالتدريج، عشان تفضل تتقدم.</p>
+    </article>
+    <article>
+      <img loading="lazy" src="https://images.unsplash.com/photo-1768326119231-bf064c1b8fdf?auto=format&fit=crop&w=1000&q=70" alt="طبق أكل صحي">
+      <h3>خطة أكل على مقاسك</h3>
+      <p>متابعة مع أخصائية التغذية بخطة أكل تناسب يومك وهدفك.</p>
+    </article>
+  </div>
+</section>
+
+<section class="voices">
+  <div class="score"><b>4.6</b><span>من 99 تقييم على جوجل ماب</span></div>
+  <h2>الأعضاء بيتكلموا عن</h2>
+  <p class="lede">أكتر حاجات بتتكرر في ريفيوهات جوجل.</p>
+  <div class="mentions">
+    <span>المدربين محترفين</span><span>الشدة بتزيد بالتدريج</span><span>متابعة التغذية</span><span>فرق في اللياقة والطاقة</span><span>تمرين على قد المستوى</span>
+  </div>
+</section>
+
+<section>
+  <h2>الباقات</h2>
+  <p class="lede">ابدأ بجلسة تجريبية، وبعدها اختار الباقة.</p>
+  <div class="pk">
+    <div class="first"><h3>جلسة تجريبية</h3><p>جلسة مع مدرب وتقييم مبدئي</p><strong>[السعر]</strong></div>
+    <div><h3>12 جلسة</h3><p>جلستين في الأسبوع ومتابعة تغذية</p><strong>[السعر]</strong></div>
+    <div><h3>24 جلسة</h3><p>أوفر سعر للجلسة ومتابعة تغذية</p><strong>[السعر]</strong></div>
+  </div>
+  <p class="fine">الأسعار وعدد الجلسات هنا مكانهم بس، وهتتحط باقاتكم الحقيقية.</p>
+</section>
+
+<section style="padding-top:0">
+  <h2>أسئلة بتتسأل كتير</h2>
+  <details><summary>محتاج أكون رياضي؟</summary><p>لأ. المدرب بيظبط الشدة على مستواك من أول جلسة.</p></details>
+  <details><summary>الجلسة بتاخد قد إيه؟</summary><p>[مدة الجلسة]، وهتتكتب هنا.</p></details>
+  <details><summary>فيه متابعة تغذية؟</summary><p>أيوه، مع أخصائية التغذية في المركز.</p></details>
+  <details><summary>مين ما ينفعش يعمل EMS؟</summary><p>[الحالات اللي محتاجة استشارة دكتور الأول]، وهتتكتب هنا بوضوح.</p></details>
+</section>
+
+<section class="book" id="book" style="background:var(--white)">
+  <div class="wrap">
+    <div>
+      <h2>احجز جلستك التجريبية</h2>
+      <p class="lede">الطلب هيوصل على واتساب المركز، ويأكدوا معاك الميعاد.</p>
+      <div class="info">
+        <div><span>العنوان</span><b>القاهرة الجديدة، قسم أول</b></div>
+        <div><span>المواعيد</span><b>10 ص لحد 10 م</b></div>
+        <div><span>واتساب</span><b dir="ltr">0128 782 0444</b></div>
+      </div>
+    </div>
+    <form id="f">
+      <div><label for="n">الاسم</label><input id="n" name="الاسم" required autocomplete="name"></div>
+      <div class="two">
+        <div><label for="w">عايز</label><select id="w" name="الطلب"><option>جلسة تجريبية</option><option>باقة جلسات</option><option>متابعة تغذية</option></select></div>
+        <div><label for="g">هدفك</label><select id="g" name="الهدف"><option>خسارة وزن</option><option>شد وتقوية</option><option>لياقة عامة</option></select></div>
+      </div>
+      <div><label for="d">اليوم المناسب</label><input id="d" type="date" name="اليوم"></div>
+      <button class="btn volt" type="submit">ابعت الحجز على واتساب</button>
+      <div class="note">هيفتحلك واتساب برسالة جاهزة، وانت اللي بتدوس إرسال.</div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  © 2026 Fitness Gate EMS Centre · تصور مقترح من Glitch<br>
+  الصور من Unsplash وPexels، وهتتبدل بصور المركز الحقيقية.
+</footer>
+
+<nav class="bar" aria-label="تواصل">
+  <a class="book" href="#book">احجز جلسة</a>
+  <a class="wa" id="wa" href="#">واتساب</a>
+</nav>
+
+<script>
+const WA="201287820444";
 const wa=t=>"https://wa.me/"+WA+"?text="+encodeURIComponent(t);
-document.getElementById("fab").href=wa("السلام عليكم، عايز أستفسر");
-document.getElementById("f").addEventListener("submit",e=>{e.preventDefault();const d=new FormData(e.target);let t="حجز جلسة – Fitness Gate EMS\n";for(const [k,v] of d){if(v)t+=k+": "+v+"\n";}window.open(wa(t),"_blank");});
-</script></body></html>
+document.getElementById("wa").href=wa("السلام عليكم، عايز أستفسر عن جلسات الـ EMS");
+document.getElementById("f").addEventListener("submit",e=>{e.preventDefault();let t="حجز – Fitness Gate EMS\n";for(const [k,v] of new FormData(e.target)){if(v)t+=k+": "+v+"\n"}window.open(wa(t),"_blank")});
+</script>
+</body>
+</html>

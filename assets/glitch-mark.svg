@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Glitch">
+  <defs>
+    <path id="g" d="M46.1 17.9 A20 20 0 1 0 52 32 H33" fill="none" stroke-width="9" stroke-linecap="square"/>
+    <clipPath id="top"><rect x="0" y="0" width="64" height="40"/></clipPath>
+    <clipPath id="mid"><rect x="0" y="40" width="64" height="8"/></clipPath>
+    <clipPath id="bot"><rect x="0" y="48" width="64" height="16"/></clipPath>
+  </defs>
+  <use href="#g" stroke="#14161C" clip-path="url(#top)"/>
+  <use href="#g" stroke="#E0442E" clip-path="url(#mid)" transform="translate(-6 0)"/>
+  <use href="#g" stroke="#14161C" clip-path="url(#bot)"/>
+</svg>

@@ -217,3 +217,9 @@
   border-color: var(--border-glow);
   box-shadow: 0 12px 28px -12px rgba(20, 22, 28, 0.18);
 }
+
+/* Light theme: keep headings clean; the glitch split only on the logo */
+.glitch-text::before,
+.glitch-text::after { display: none; }
+.navbar .glitch-text::before,
+.navbar .glitch-text::after { display: block; opacity: .55; }

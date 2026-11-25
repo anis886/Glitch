@@ -124,7 +124,7 @@ function getGraphicMarkup(type, project) {
   switch (type) {
     case 'revgate':
       return `
-        <div class="w-100 p-3 rounded" style="background: rgba(0,0,0,0.6); border: 1px solid rgba(0,240,255,0.3);">
+        <div class="w-100 p-3 rounded" style="background: rgba(0,0,0,0.6); border: 1px solid rgba(194, 58, 36,0.3);">
           <div class="d-flex justify-content-between align-items-center mb-2">
             <span class="small font-monospace text-cyan"><i class="fa-solid fa-car me-1"></i>REVGATE // CAN-BUS HUD</span>
             <span class="badge bg-danger p-1" style="font-size:0.65rem;">LIVE STREAM</span>
@@ -153,7 +153,7 @@ function getGraphicMarkup(type, project) {
       `;
     case 'biteflow':
       return `
-        <div class="w-100 p-3 rounded" style="background: rgba(0,0,0,0.6); border: 1px solid rgba(157,78,221,0.3);">
+        <div class="w-100 p-3 rounded" style="background: rgba(0,0,0,0.6); border: 1px solid rgba(224, 68, 46,0.3);">
           <div class="d-flex justify-content-between align-items-center mb-2">
             <span class="small font-monospace text-purple"><i class="fa-solid fa-qrcode me-1"></i>BITEFLOW // TABLE #14</span>
             <span class="badge bg-success p-1" style="font-size:0.65rem;">ACTIVE SESSION</span>
@@ -162,14 +162,14 @@ function getGraphicMarkup(type, project) {
             <span class="small font-monospace text-light">2x Cyber Ramen Bowls</span>
             <span class="small text-cyan font-monospace">$38.00</span>
           </div>
-          <div class="progress" style="height: 6px; background: #1a1a24;">
+          <div class="progress" style="height: 6px; background: #2A2D35;">
             <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" style="width: 75%"></div>
           </div>
         </div>
       `;
     case 'flowdesk':
       return `
-        <div class="w-100 p-3 rounded" style="background: rgba(0,0,0,0.6); border: 1px solid rgba(0,240,255,0.3);">
+        <div class="w-100 p-3 rounded" style="background: rgba(0,0,0,0.6); border: 1px solid rgba(194, 58, 36,0.3);">
           <div class="d-flex justify-content-between align-items-center mb-2">
             <span class="small font-monospace text-cyan"><i class="fa-solid fa-chart-line me-1"></i>FLOWDESK // SAAS METRICS</span>
             <span class="small text-muted font-monospace">+18.4% MRR</span>
@@ -177,7 +177,7 @@ function getGraphicMarkup(type, project) {
           <div class="d-flex align-items-end justify-content-between gap-1" style="height: 50px;">
             <div class="bg-secondary opacity-50 w-100 rounded-top" style="height: 40%"></div>
             <div class="bg-secondary opacity-75 w-100 rounded-top" style="height: 60%"></div>
-            <div class="bg-cyan w-100 rounded-top" style="height: 85%; box-shadow: 0 0 10px #00f0ff;"></div>
+            <div class="bg-cyan w-100 rounded-top" style="height: 85%; "></div>
             <div class="bg-purple w-100 rounded-top" style="height: 100%; box-shadow: 0 0 10px #9d4edd;"></div>
           </div>
         </div>
@@ -319,7 +319,7 @@ window.openProjectModal = function(projectId) {
           ${project.tags.map(t => `<span class="badge-cyber">${t}</span>`).join('')}
         </div>
 
-        <div class="alert alert-dark border border-cyan border-opacity-25 rounded p-3 mb-3" style="background: rgba(0, 240, 255, 0.05);">
+        <div class="alert alert-dark border border-cyan border-opacity-25 rounded p-3 mb-3" style="background: rgba(194, 58, 36, 0.05);">
           <div class="d-flex gap-2 align-items-center mb-2">
             <i class="fa-solid fa-shield-halved text-cyan"></i>
             <span class="small text-cyan font-monospace">GLITCH ARCHITECTURE: Production-ready software solution engineered by Glitch Software House.</span>

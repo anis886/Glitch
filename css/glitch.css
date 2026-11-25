@@ -11,7 +11,7 @@
 .glitch-text {
   position: relative;
   color: var(--text-main);
-  text-shadow: 0 0 10px rgba(157, 78, 221, 0.4);
+  text-shadow: none;
 }
 
 .glitch-text::before,
@@ -90,13 +90,7 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(0, 240, 255, 0.3),
-    rgba(157, 78, 221, 0.4),
-    transparent
-  );
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
   transition: all 0.5s ease;
 }
 
@@ -107,14 +101,15 @@
 /* Cyber Grid Background */
 .cyber-grid-bg {
   background-image: 
-    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    linear-gradient(rgba(20, 22, 28, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(20, 22, 28, 0.04) 1px, transparent 1px);
   background-size: 50px 50px;
   background-position: center center;
 }
 
 /* Glowing Ambient Orbs */
 .orb {
+  display: none;
   position: absolute;
   border-radius: 50%;
   filter: blur(100px);
@@ -157,7 +152,7 @@
   height: 8px;
   border-radius: 50%;
   background-color: #10b981;
-  box-shadow: 0 0 10px #10b981;
+  
   animation: pulse-green 2s infinite;
 }
 
@@ -180,8 +175,8 @@
   letter-spacing: 1.5px;
   text-transform: uppercase;
   color: var(--accent-cyan);
-  background: rgba(0, 240, 255, 0.08);
-  border: 1px solid rgba(0, 240, 255, 0.3);
+  background: rgba(194, 58, 36, 0.08);
+  border: 1px solid rgba(194, 58, 36, 0.3);
   padding: 6px 14px;
   border-radius: 30px;
   display: inline-flex;
@@ -191,8 +186,8 @@
 
 .badge-purple {
   color: var(--accent-purple-bright);
-  background: rgba(157, 78, 221, 0.1);
-  border: 1px solid rgba(157, 78, 221, 0.3);
+  background: rgba(224, 68, 46, 0.1);
+  border: 1px solid rgba(224, 68, 46, 0.3);
 }
 
 .badge-concept {
@@ -200,9 +195,9 @@
   font-size: 0.7rem;
   font-weight: 600;
   letter-spacing: 1px;
-  color: #fbbf24;
-  background: rgba(251, 191, 36, 0.1);
-  border: 1px solid rgba(251, 191, 36, 0.4);
+  color: #8A5A00;
+  background: rgba(242, 178, 40, 0.15);
+  border: 1px solid rgba(180, 120, 0, 0.35);
   padding: 4px 10px;
   border-radius: 4px;
   text-transform: uppercase;
@@ -213,12 +208,12 @@
   background: var(--bg-card);
   border: 1px solid var(--border-dark);
   border-radius: 16px;
-  backdrop-filter: blur(10px);
+  
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .glass-card:hover {
   transform: translateY(-6px);
   border-color: var(--border-glow);
-  box-shadow: 0 12px 30px -10px rgba(157, 78, 221, 0.25), 0 0 15px rgba(0, 240, 255, 0.1);
+  box-shadow: 0 12px 28px -12px rgba(20, 22, 28, 0.18);
 }

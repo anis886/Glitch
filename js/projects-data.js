@@ -166,7 +166,7 @@ const PROJECTS_DATA = [
       "Appointment requests stored in a Supabase database"
     ],
     mockupType: "pearldental",
-    accentColor: "#00d2ff"
+    accentColor: "#E0442E"
   },
   {
     id: "bistro_dashboard",
@@ -191,7 +191,7 @@ const PROJECTS_DATA = [
       "Integrated customer relationship management & exportable sales reports"
     ],
     mockupType: "biteflow",
-    accentColor: "#00f0ff"
+    accentColor: "#E0442E"
   },
   {
     id: "concept_showcase",
@@ -216,7 +216,7 @@ const PROJECTS_DATA = [
       "Responsive glassmorphic UI layout with dark cyberpunk styling"
     ],
     mockupType: "blackcart",
-    accentColor: "#c77dff"
+    accentColor: "#E0442E"
   },
   {
     id: "blackcart",
@@ -241,7 +241,7 @@ const PROJECTS_DATA = [
       "Cross-browser sub-second page load performance"
     ],
     mockupType: "blackcart",
-    accentColor: "#c77dff"
+    accentColor: "#E0442E"
   },
   {
     id: "biteflow",
@@ -266,7 +266,7 @@ const PROJECTS_DATA = [
       "Dynamic inventory auto-86 based on stock threshold triggers"
     ],
     mockupType: "biteflow",
-    accentColor: "#9d4edd"
+    accentColor: "#E0442E"
   },
   {
     id: "flowdesk",
@@ -291,7 +291,7 @@ const PROJECTS_DATA = [
       "Customizable drag-and-drop dark widget dashboard layout"
     ],
     mockupType: "flowdesk",
-    accentColor: "#00f0ff"
+    accentColor: "#E0442E"
   },
   {
     id: "revgate",
@@ -316,7 +316,7 @@ const PROJECTS_DATA = [
       "Live CAN-bus telemetry stream monitoring"
     ],
     mockupType: "revgate",
-    accentColor: "#00f0ff"
+    accentColor: "#E0442E"
   }
 ];
 

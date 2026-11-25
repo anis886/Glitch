@@ -221,5 +221,4 @@
 /* Light theme: keep headings clean; the glitch split only on the logo */
 .glitch-text::before,
 .glitch-text::after { display: none; }
-.navbar .glitch-text::before,
-.navbar .glitch-text::after { display: block; opacity: .55; }
+

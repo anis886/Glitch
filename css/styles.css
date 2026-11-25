@@ -691,3 +691,6 @@ footer,footer .text-muted{--bs-body-color:#C9C5BB}
 .project-preview .text-muted,.hero-terminal .text-muted{color:#9A9CA3!important}
 .project-preview .bg-dark{background-color:#262931!important}
 .project-preview .text-cyan,.project-preview .text-info,.project-preview .text-purple{color:#FF8A70!important}
+
+.nav-link-glitch{white-space:nowrap;margin:0 6px;font-size:.9rem}
+.navbar .btn{white-space:nowrap}
